@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+
+<head>
+<title>JXHTMLEDIT Example</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="description" content="JXHTMLEDIT - Java Applet for WYSIWYG XHTML editing" />
+<meta name="author" content="Nicola Asuni" />
+<meta name="reply-to" content="info@tecnick.com" />
+<meta name="keywords" content="Tecnick.com, JXHTMLEDIT, setup, WYSIWYG, editor, xhtml, html, java, applet, content" />
+<link rel="stylesheet" href="default.css" type="text/css" />
+</head>
+
+<body onload="appletReady=true;">
+
+<h1>JXHTMLEDIT Example</h1>
+
+To view this demo, you must have the <a href="http://java.sun.com/products/plugin/index.html" target="_blank">Sun Java<sup>TM</sup> Plug-in 1.4</a> or higher installed. If this plug-in is not yet installed, you can download it from: <a href="http://java.sun.com/products/plugin/index.html" target="_blank">http://java.sun.com/products/plugin/index.html</a><br />
+<br />
+
+<form action="void()" name="test_form" id="test_form">
+<b>XHTML Source Code:</b><br />
+<textarea cols="60" rows="10" name="testarea" id="testarea">
+&lt;h1&gt;Demo Page&lt;/h1&gt;This is a demonstrative page.&lt;br /&gt;&lt;br /&gt;&lt;b&gt;List&lt;/b&gt;&lt;ol&gt;&lt;li&gt;first&lt;/li&gt;&lt;li&gt;second&lt;/li&gt;&lt;li&gt;third&lt;/li&gt;&lt;/ol&gt;&lt;table cellspacing="2" border="2" cellpadding="2" title="Demo table" summary="Demonstrative Table"&gt;&lt;tr&gt;&lt;th colspan="2"&gt;Demonstrative&lt;br /&gt;Table&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1-1&lt;/td&gt;&lt;td&gt;1-2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2-1&lt;/td&gt;&lt;td&gt;2-2&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+</textarea>
+<br />
+<input type="button" name="loadbutton" id="loadbutton" value="Load" onclick="loadCode()" title="copy html code from textarea to JXHTMLEdit" />
+<input type="button" name="savebutton" id="savebutton" value="Save" onclick="saveCode()" title="copy html code from JXHTMLEdit to textarea" />
+<input type="button" name="previewbutton" id="previewbutton" value="Preview" onclick="F_open_doc_preview()" title="diplay code preview on a separate window" />
+</form>
+
+<!--[if !IE]> Firefox and others will use outer object -->
+<object 
+	classid="java:com.tecnick.jxhtmledit.JXHTMLedit.class"
+	type="application/x-java-applet"
+	archive="jxhtmledit.jar"
+	standby="JXHTMLEDIT Loading ..."
+	width="640"
+	height="480"
+	hspace="0"
+	vspace="0"
+	align="middle"
+	border="0"
+	name="jxhtmleditA"
+	id="jxhtmleditA"
+>
+	<param name="java_codebase" value="java" />
+	<param name="java_archive" value="jxhtmledit.jar" />
+	<param name="java_code" value="com.tecnick.jxhtmledit.JXHTMLedit.class" />
+	<param name="java_type" value="application/x-java-applet;version=1.4" />
+	<param name="scriptable" value="true" />
+	<param name="mayscript" value="mayscript" />
+	<param name="progressbar" value="true" />
+	<param name="boxmessage" value="JXHTMLEDIT Loading ..." />
+	
+			<param name="param_page_encoding" value="UTF-8" />
+	<param name="param_encoding" value="UTF-8" />
+	<param name="param_lang" value="en" />
+	<param name="param_separate_window" value="false" />
+	<param name="param_callingform" value="test_form" />
+	<param name="param_callingfield" value="testarea" />
+	<param name="param_stylesheet" value="styles/default.css" />
+	<param name="param_hide_source" value="false" />
+	<param name="param_xhtml" value="true" />
+	<param name="param_indent" value="false" />
+	<param name="param_entities_off" value="false" />
+	<param name="param_config_files_path" value="config" />
+	<param name="param_buttons_images_path" value="buttons" />
+	<param name="param_images_path" value="images" />
+	<param name="param_images_list" value="_blank.png:bird.jpg" />
+	
+	<param name="cache_archive" value="jxhtmledit.jar" />
+	<param name="cache_version" value="0.0.0.1" />
+	<param name="cache_archive_ex" value="jxhtmledit.jar" />
+
+<!--<![endif]-->
+<!-- MSIE (Microsoft Internet Explorer) will use inner object --> 
+		
+	<object 
+		classid="clsid:8AD9C840-044E-11D1-B3E9-00805F499D93"
+	    codebase="http://javadl-esd.sun.com/update/1.5.0/jinstall-1_5_0_05-windows-i586.cab"
+		codetype="application/x-java-applet;version=1.4"
+		standby="JXHTMLEDIT Loading ..."
+		width="640"
+		height="480"
+		hspace="0"
+		vspace="0"
+		align="middle"
+		border="0"
+		name="jxhtmleditB"
+		id="jxhtmleditB"
+	>
+		<param name="java_codebase" value="java" />
+		<param name="java_archive" value="jxhtmledit.jar" />
+		<param name="java_code" value="com.tecnick.jxhtmledit.JXHTMLedit.class" />
+		<param name="java_type" value="application/x-java-applet;version=1.4" />
+		<param name="scriptable" value="true" />
+		<param name="mayscript" value="mayscript" />
+		<param name="progressbar" value="true" />
+		<param name="boxmessage" value="JXHTMLEDIT Loading ..." />
+		
+						<param name="param_page_encoding" value="UTF-8" />
+		<param name="param_encoding" value="UTF-8" />
+		<param name="param_lang" value="en" />
+		<param name="param_separate_window" value="false" />
+		<param name="param_callingform" value="test_form" />
+		<param name="param_callingfield" value="testarea" />
+		<param name="param_stylesheet" value="styles/default.css" />
+		<param name="param_hide_source" value="false" />
+		<param name="param_xhtml" value="true" />
+		<param name="param_indent" value="false" />
+		<param name="param_entities_off" value="false" />
+		<param name="param_config_files_path" value="config" />
+		<param name="param_buttons_images_path" value="buttons" />
+		<param name="param_images_path" value="images" />
+		<param name="param_images_list" value="_blank.png:bird.jpg" />
+		
+		<param name="cache_archive" value="jxhtmledit.jar" />
+		<param name="cache_version" value="0.0.0.1" />
+		<param name="cache_archive_ex" value="jxhtmledit.jar" />
+		<strong>This browser does not have a Java Plug-in.<br /><a href="http://java.sun.com/products/plugin/downloads/index.html">Get the latest Java Plug-in here.</a></strong>
+	</object> 
+<!--[if !IE]> close outer object -->
+</object>
+<!--<![endif]-->
+
+
+<script language="JavaScript" type="text/javascript">
+//<![CDATA[
+var appletReady = false; // become true after applet loading
+
+//Preview HTML Document
+function F_open_doc_preview() {
+	//open new browser window
+	docpreview=window.open('', 'docpreview', 'dependent, height=500, width=660, menubar=no, resizable=yes, scrollbars=yes, status=yes, toolbar=no');
+	//write code on window
+	docpreview.document.write('<html><body>');
+	docpreview.document.write(document.test_form.testarea.value);
+	docpreview.document.write('<\/body><\/html>');
+}
+
+// copy html code from JXHTMLEdit to textarea
+function saveCode() {
+	if (appletReady) {
+		try {
+			document.test_form.testarea.value=document.jxhtmleditA.getCode();
+		} catch(er) {
+			document.test_form.testarea.value=document.jxhtmleditB.getCode();
+		}
+	}
+}
+
+// copy html code from textarea to JXHTMLEdit
+function loadCode() {
+	if (appletReady) {
+		try {
+			document.jxhtmleditA.setCode(document.test_form.testarea.value);
+		} catch(er) {
+			document.jxhtmleditB.setCode(document.test_form.testarea.value);
+		}
+	}
+}
+//]]>
+</script>
+
+</body>
+</html>

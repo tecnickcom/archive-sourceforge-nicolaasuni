@@ -1,0 +1,430 @@
+/* ------------------------------------------------------------------
+GENERAL TAGS
+ ------------------------------------------------------------------*/
+* {
+	font-family : Arial, Helvetica, sans-serif;
+}
+
+body {
+	/* background-image : url(../../images/backgrounds/public/background_light.gif); */
+	background-color : White;
+	color : Black;
+	margin-left : 0px;
+	margin-right : 0px;
+	margin-top : 0px;
+	margin-bottom : 0px;
+}
+
+h1 {
+	color : #0060BF;
+}
+
+h2 {
+	color : #0060BF;
+}
+
+h3 {
+	color : #0060BF;
+}
+
+h4 {
+	color : #0060BF;
+}
+/*
+General PRE tag settings
+*/
+pre {
+	font-family : "Courier New", Courier, monospace;
+}
+
+small {
+	font-size : 11px;
+}
+
+.small {
+	font-size : 10px;
+}
+
+a {
+	color : #0060BF;
+	text-decoration : none;
+}
+
+a:visited {
+	color : #0060BF;
+	text-decoration : none;
+}
+
+a:hover {
+	color: #FF8000;
+	text-decoration: underline;
+}
+
+textarea {
+	font-family: 'Courier New', Courier, monospace;
+	font-size : 12px;
+}
+
+input {
+	font-family: 'Courier New', Courier, monospace;
+	font-size : 12px;
+}
+
+select {
+	font-family: 'Courier New', Courier, monospace;
+	font-size : 12px;
+}
+
+select.changelanguage {
+	color :Black;
+	font-size : 10px;
+	font-family : Arial, Helvetica, sans-serif;
+	background-color : White;
+}
+
+/* nescape 6 bug fix */
+img.blockview {
+	display: block;
+}
+
+ul.altmenu {
+	font-size : 10px;
+	margin-left : 10px;
+	padding-left : 0px;
+	background-color : White;
+	background : White;
+}
+
+li.altmenu {
+	font-size : 10px;
+	list-style : none;
+	list-style-image : none;
+	background-color : White;
+	background : White;
+}
+
+/* ------------------------------------------------------------------
+AIOCP CODE TAGS
+ ------------------------------------------------------------------*/
+p.aiocpcode{
+	background : Black;
+	color : Lime;
+	font-family : "Courier New", Courier, monospace;
+}
+
+blockquote.aiocpcode{
+	background : White;
+	color : Black;
+}
+
+a.aiocpcode{
+	
+}
+
+a:visited.aiocpcode{
+	
+}
+
+a:hover.aiocpcode{
+	
+}
+
+small.aiocpcode{
+	
+}
+
+b.aiocpcode{
+	
+}
+
+i.aiocpcode{
+	
+}
+
+sub.aiocpcode{
+	
+}
+
+sup.aiocpcode{
+	
+}
+
+ul.aiocpcode{
+	
+}
+
+ol.aiocpcode{
+	
+}
+
+li.aiocpcode{
+	
+}
+
+/* ------------------------------------------------------------------
+EDGE TABLE
+ ------------------------------------------------------------------*/
+TABLE.edge{
+	/* background-image : url(../../images/backgrounds/public/bg_oe.png);*/
+	background-color : #BFDFFF;
+	border : none;
+}
+
+TR.edge{
+	/* background-image : url(../../images/backgrounds/public/bg_oe.png);*/
+	background-color : #BFDFFF;
+}
+
+TH.edge{
+	/* background-image : url(../../images/backgrounds/public/bg_oe.png);*/
+	background-color : #BFDFFF;
+	color : Black;
+}
+
+TD.edge{
+	/* background-image : url(../../images/backgrounds/public/bg_oe.png);*/
+	background-color : #BFDFFF;
+	color : Black;
+}
+
+/* ------------------------------------------------------------------
+FILL TABLE
+ ------------------------------------------------------------------*/
+TABLE.fill {
+	/* background-image : url(../../images/backgrounds/public/bg_eo.png); */
+	background-color : #EBF5FF;
+	border : none;
+	width : 100%;
+}
+
+TR.fill {
+	/* background-image : url(../../images/backgrounds/public/bg_eo.png); */
+	background-color : #EBF5FF;
+}
+
+TH.fill {
+	/* background-image : url(../../images/backgrounds/public/bg_eo.png); */
+	background-color : #EBF5FF;
+	color : Black;
+}
+
+TD.fill {
+	/* background-image : url(../../images/backgrounds/public/bg_eo.png); */
+	background-color : #EBF5FF;
+	color : Black;
+}
+
+/* --- FILL TABLE VARIANTS --- 
+ O=odd; E=even;  XX = row | column
+*/
+TR.fillO {
+	/* background-image : url(../../images/backgrounds/public/bg_oe.png);*/
+	background-color : #BFDFFF;
+	color : Black;
+}
+
+TR.fillE {
+	/* background-image : url(../../images/backgrounds/public/bg_ee.png); */
+	background-color : #DCEDFF;
+	color : Black;
+}
+
+TH.fillO {
+	/* background-image : url(../../images/backgrounds/public/bg_oo.png); */
+	background-color : #CDE6FF;
+	color : Black;
+}
+
+TH.fillE {
+	/* background-image : url(../../images/backgrounds/public/bg_oe.png);*/
+	background-color : #BFDFFF;
+	color : Black;
+}
+
+TD.fillOO {
+	/* background-image : url(../../images/backgrounds/public/bg_oo.png); */
+	background-color : #CDE6FF;
+	color : Black;
+}
+
+TD.fillOE {
+	/* background-image : url(../../images/backgrounds/public/bg_oe.png);*/
+	background-color : #BFDFFF;
+	color : Black;
+}
+
+TD.fillEO {
+	/* background-image : url(../../images/backgrounds/public/bg_eo.png); */
+	background-color : #EBF5FF;
+	color : Black;
+}
+
+TD.fillEE {
+	/* background-image : url(../../images/backgrounds/public/bg_ee.png); */
+	background-color : #DCEDFF;
+	color : Black;
+}
+
+/* ------------------------------------------------------------------
+VARIOUS
+ ------------------------------------------------------------------*/
+ a.edge {
+	color : #660000;
+}
+
+a:visited.edge {
+	color : #660000;
+}
+
+ a:hover.edge {
+	color : #660000;
+}
+ 
+ /*  fixed font size */
+ b.fixed {
+	font-family : "Courier New", Courier, monospace;
+}
+
+/* PRE for shell output */
+pre.shell {
+	font-family : "Courier New", Courier, monospace;
+	color : White;
+	background-color : Black;
+}
+
+/* error messages headers */
+b.error {
+	color : Maroon;
+}
+
+b.warning {
+	color : Green;
+}
+
+b.message {
+	color : Blue;
+}
+
+/*class for quick descriptions*/
+a.quickhelp {
+	text-decoration : none;
+	color : Black;
+}
+
+a:visited.quickhelp {
+	text-decoration : none;
+	color : Black;
+}
+
+a:hover.quickhelp {
+	text-decoration : none;
+	color : Black;
+}
+
+/*class for quick descriptions with onclick links*/
+a.quickhelplink {
+	color : Blue;
+}
+
+a:visited.quickhelplink {
+	color : Blue;
+}
+
+a:hover.quickhelplink {
+	color : Red;
+}
+
+div.transcodingbar {
+	background-color : #0060BF;
+	color : White;
+	font-size : 10px;
+	font-weight : bold;
+	text-align : right;
+}
+
+div.transcodingbar a {
+	text-decoration : none;
+	color : White;
+}
+
+div.transcodingbar a:hover {
+	text-decoration : none;
+	color : Yellow;
+}
+
+div.transcodingbar a:visited {
+	text-decoration : none;
+	color : White;
+}
+
+/*class overlib quick help*/
+.overlibfg {
+	background-color : #E5F2FF;
+}
+
+.overlibbg {
+	background-color : #0080FF;
+}
+
+.overlibtxt {
+	color : Black;
+	font-size : 10px;
+}
+
+.overlibcf {
+	color : White;
+	font-size : 11px;
+	font-weight : bold;
+	text-indent : 10px;
+}
+
+/* ------------------------------------------------------------------*/
+
+.listblock {
+	background: #EBF5FF;
+	color: #000000;
+	float: right;
+	border: none;
+	font-size : 80%;
+	font-family : "Courier New", Courier, monospace;
+	padding-bottom : 6px;
+	padding-left : 6px;
+	padding-right : 6px;
+	padding-top : 6px;
+}
+
+.hintblock {
+	background: #EBF5FF;
+	color: #000000;
+	float: left;
+	width: 25%;
+	border: none;
+	font-size : 80%;
+	font-family : "Times New Roman", Times, serif;
+	font-style : italic;
+	padding-bottom : 6px;
+	padding-left : 6px;
+	padding-right : 6px;
+	padding-top : 6px;
+}
+
+a.new {
+	color : Maroon;
+	text-decoration : none;
+	background-color : #FFFF99;
+}
+
+a.new:visited {
+	color : Maroon;
+	text-decoration : none;
+	background-color : #FFFF99;
+}
+
+a.new:hover {
+	color : Red;
+	text-decoration: underline;
+	background-color : Yellow;
+}
+/* ------------------------------------------------------------------
+END
+ ------------------------------------------------------------------*/

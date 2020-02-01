@@ -1,0 +1,31 @@
+0	true	cp_dpage.php?aiocp_dp=jddm			Description\test\test	JDDM Description										FFFFFF	000000	CCCCCC	00CC00	0000CC	CC0000	FF0000	00FF00	0000FF	1	1	java/images/doc_qmark.gif	java/images/doc.gif	java/images/doc.gif					
+0	true	cp_dpage.php?aiocp_dp=jddm_setup			Setup	JDDM Setup instructions																					java/images/tools_left.gif	java/images/tools_right.gif	java/images/tools_right.gif					
+0	true	cp_show_ec_shopping_cart.php?npid=1			Buy	Buy JDDM																					java/images/smile.gif	java/images/smile_big.gif	java/images/smile_big.gif					
+0	true				Examples	JDDM Examples																					java/images/book_close.gif	java/images/book_open.gif	java/images/book_full_open.gif						SHIFT+A
+1	true				Test L1	Test capabilities																													SHIFT+B
+2	true	http://www.tecnick.com	_blank		Target	JDDM Frame target example																												
+2	true	javascript:alert('JDDM Javascript Example')			Javascript	JDDM Javascript example																												
+2	true	mailto:info@tecnick.com			Email	JDDM Email example																												
+2	true				Test	Test capabilities																												
+3	true	http://www.tecnick.com	_blank		Target	JDDM Frame target example																												
+3	true	javascript:alert('JDDM Javascript Example')			Javascript	JDDM Javascript example																												
+3	true	mailto:info@tecnick.com			Email	JDDM Email example																												
+1	true				Test	Test capabilities																												
+2	true				Test	Test capabilities																												
+3	true				Test	Test capabilities																												
+3	true				Test	Test capabilities																												
+3	true				Test	Test capabilities																												
+3	true				Test	Test capabilities																												
+3	true				Test	Test capabilities																												
+4	true				Test	Test capabilities																												
+5	true				Test	Test capabilities																												
+1	true	cp_dpage.php?aiocp_dp=jddm_example_1			example 1	JDDM Example n.1																												
+1	true	cp_dpage.php?aiocp_dp=jddm_example_2			example 2	JDDM Example n.2																												
+1	true	cp_dpage.php?aiocp_dp=jddm_example_3			example 3	JDDM Example n.3																												
+1	true	cp_dpage.php?aiocp_dp=jddm_example_4			example 4	JDDM Example n.4																												
+1	true	cp_dpage.php?aiocp_dp=jddm_example_5			example 5	JDDM Example n.5																												
+1	true	cp_dpage.php?aiocp_dp=jddm_example_6			example 6	JDDM Example n.6																												
+1	true	cp_dpage.php?aiocp_dp=jddm_example_7			example 7	JDDM Example n.7																												
+2	true	cp_dpage.php?aiocp_dp=jddm_example_7			example 8	JDDM Example n.7																												
+3	true	cp_dpage.php?aiocp_dp=jddm_example_7			example 9	JDDM Example n.7																												
+4	true	cp_dpage.php?aiocp_dp=jddm_example_7			example 10	JDDM Example n.7																												

@@ -1,0 +1,43 @@
+2.1.003 (2006-02-04)
+	- released as open source
+	
+2.1.002 (2005-04-19)
+	- updated documentation
+
+2.1.001 (2005-03-10)
+	- fixed minor bug related to padding specification
+
+2.1.000 (2005-01-14)
+	- some new features were introduced:
+	- shortcut# : new parameter that allows to specify a keyboard shortcut for a main item (e.g.: SHIFT+A)
+	- default_vmargin : default vertical space in pixels between buttons
+	- default_hmargin : default horizontal space in pixels between buttons
+	- default_padding : allows to specify a different padding value for left, right, top and bottom using the syntax L:R:T:B (e.g.: 2:3:10:4)
+	- padding# : allows to specify a different padding value for left, right, top and bottom using the syntax L:R:T:B (e.g.: 2:3:10:4)
+
+2.0.010 (2004-05-01)
+	- fixed mozilla bug for javascript links
+
+2.0.009 (2003-12-11)
+	- improved mouse events handling
+
+2.0.008 (2003-12-10)
+	- added double buffering to minimize rendering issues
+
+2.0.007 (2003-09-16)
+	- improved code cleanup
+
+2.0.006 (2003-09-15)
+	- improved internal code documentation
+
+2.0.005 (2003-05-26)
+	- changed limitations on DEMO version
+
+2.0.004 (2003-05-14)
+	- fixed items nesting bug
+
+2.0.001 (2003-05-12)
+	- updated licenses
+
+2.0.000 (2003-01-22)
+	- first release

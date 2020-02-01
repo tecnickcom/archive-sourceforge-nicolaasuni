@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it" dir="ltr">
+
+<head>
+<title>JADC (Advanced Digital Clock)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="description" content="JADC (Advanced Digital Clock) by Tecnick.com S.r.l." />
+<meta name="author"      content="Nicola Asuni" />
+<meta name="reply-to"    content="info@tecnick.com" />
+<meta name="keywords"    content="Tecnick.com, JADC" />
+<link rel="stylesheet" href="default.css" type="text/css" />
+</head>
+
+<body>
+
+<h1>JADC (Advanced Digital Clock)</h1>
+
+<table id="jadc_info" title="JADC Informazioni" summary="Informazioni su JADC (Advanced Digital Clock)" border="1" cellspacing="0" cellpadding="4">
+<tr valign="top"><td>Nome</td><td><a href="http://jadc.sourceforge.net">JADC (Advanced Digital Clock)</a></td></tr>
+<tr valign="top"><td>Versione</td><td>1.0.007</td></tr>
+<tr valign="top"><td>Data</td><td>2006-02-04</td></tr>
+<tr valign="top"><td>Autore</td><td>Nicola Asuni</td></tr>
+<tr valign="top"><td>Copyright</td><td><a href="http://www.tecnick.com">Tecnick.com S.r.l.</a><br />
+Via Ugo Foscolo n.19<br />
+09045 Quartu Sant'Elena (CA)<br />
+ITALY<br />
+<a href="http://www.tecnick.com">www.tecnick.com</a>
+</td></tr>
+<tr valign="top"><td>Licenza</td><td><a href="http://www.gnu.org/copyleft/gpl.html" target="_blank">GNU GENERAL PUBLIC LICENSE v.2</a></td></tr>
+</table>
+
+<br />
+<div align="center"><small>[ <a href="#description">descrizione</a> | <a href="#features">caratteristiche</a> | <a href="#example">esempio</a> | <a href="#setup">impostazione</a> ]</small></div>
+<br />
+
+<a name="description" id="description"></a>
+<h2>Descrizione</h2>
+
+JADC (Advanced Digital Clock) &egrave; sia un orologio digitale che un contatore di tempo (segna il tempo mancante o il tempo trascorso da una particolare data-ora).
+<br />
+JADC &egrave; un'applet Java, browser-independent (non dipende dal browser usato) ed &egrave; altamente configurabile, pu&ograve; essere facilmente personalizzato utilizzando la propria grafica e scegliendo il formato data-ora pi&ugrave; appropriato cos&igrave; da poter ottenere un numero illimitato di varianti.<br />
+Questa distribuzione include 255 immagini (17 differenti set di cifre).
+
+<a name="features" id="features"></a>
+<h2>Caratteristiche Principali</h2>
+<ul>
+<li>indipendente dal browser, funziona con ogni browser che supporta almeno Java 1.1</li>
+<li>funziona sia come orologio digitale che come contatore di tempo (countdown, countup)</li>
+<li>personalizzazione dei formati di specifica e visualizzazione del tempo</li>
+<li>personalizzazione del fuso orario</li>
+<li>personalizzazione del colore di sfondo</li>
+<li>personalizzazione dell'immagine di sfondo</li>
+<li>personalizzazione della grafica per le cifre ed i simboli</li>
+<li>255 immagini pronte all'uso (17 set)</li>
+<li>supporto per immagini con trasparenze</li>
+</ul>
+<br />
+
+<a name="example" id="example"></a>
+<h2>Esempio</h2>
+
+<applet
+	codebase = "java/" 
+	archive  = "jadc.jar" 
+	code     = "com.tecnick.jadc.Jadc.class" 
+	name     = "jadc"
+	id       = "jadc"
+	alt      = "JADC example"
+	width    = "300"
+	height   = "31"
+	hspace   = "0"
+	vspace   = "0"
+	align    = "top"
+>
+
+
+<param name="counter_mode" value="false" />
+<param name="local_time" value="true" />
+<param name="timezone_hours" value="0" />
+<param name="timezone_minutes" value="0" />
+<param name="display_pattern" value="yyyy-MM-dd HH:mm:ss" />
+<param name="input_pattern" value="yyyy-MM-dd HH:mm:ss" />
+<param name="counter_time" value="2000-01-01 00:00:00" />
+<param name="background_color" value="99CC99" />
+<param name="background_image" value="" />
+<param name="img_0" value="java/images/lcd_14x23/green/0.gif" />
+<param name="img_1" value="java/images/lcd_14x23/green/1.gif" />
+<param name="img_2" value="java/images/lcd_14x23/green/2.gif" />
+<param name="img_3" value="java/images/lcd_14x23/green/3.gif" />
+<param name="img_4" value="java/images/lcd_14x23/green/4.gif" />
+<param name="img_5" value="java/images/lcd_14x23/green/5.gif" />
+<param name="img_6" value="java/images/lcd_14x23/green/6.gif" />
+<param name="img_7" value="java/images/lcd_14x23/green/7.gif" />
+<param name="img_8" value="java/images/lcd_14x23/green/8.gif" />
+<param name="img_9" value="java/images/lcd_14x23/green/9.gif" />
+<param name="img_sep" value="java/images/lcd_14x23/green/sep.gif" />
+<param name="img_dec" value="java/images/lcd_14x23/green/dec.gif" />
+<param name="img_blk" value="java/images/lcd_14x23/green/blk.gif" />
+<param name="img_pos" value="java/images/lcd_14x23/green/pos.gif" />
+<param name="img_neg" value="java/images/lcd_14x23/green/neg.gif" />
+
+</applet>
+
+<a name="setup" id="setup"></a>
+<h2>Impostazione</h2>
+
+Per visualizzare il JADC (Advanced Digital Clock), copiate il file <b>.jar</b> sul vostro sito ed aggiungete il tag <b>applet</b> nel vostro documento XHTML/HTML. Per personalizzare rapidamente l'applet, il mio consiglio &egrave; quello di copiare ed incollare il codice applet usato negli <a href="http://www.tecnick.com/public/code/cp_dpage.php?aiocp_dp=jadc_examples">esempi</a> e modificarlo secondo le vostre esigenze.<br />
+<br />
+Le seguenti tabelle illustrano il significato e la funzione di ogni parametro dell'applet.
+ 
+<br /><br />
+<table class="edge" border="0" cellspacing="1" cellpadding="2">
+<tr class="edge"><th align="center" class="edge">Attributi Applet<br /><i>(&lt;applet attribute_name="attribute_value" ... &gt;)</i></th></tr>
+<tr class="edge"><td class="edge">
+
+<table class="fill" border="0" cellspacing="1" cellpadding="4" title="Attributi Applet" summary="Lista degli attributi applet per JADC (Advanced Digital Clock)">
+<tr class="fillO">
+	<th class="fillOO">nome</th>
+	<th class="fillOE">valore</th>
+	<th class="fillOO">predefinito</th>
+	<th class="fillOE">richiesto</th>
+</tr>
+
+<tr class="fillE">
+	<td valign="top" class="fillEO">codebase</td>
+	<td valign="top" class="fillEE"><i>percorso relativo della directory contenente il file .jar (es: "../java/")</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">si</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">archive</td>
+	<td valign="top" class="fillOE">jadc.jar <i>(nome dell'archivio java)</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">si</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">code</td>
+	<td valign="top" class="fillEE">com.tecnick.jadc.Jadc.class <i>(nome della classe principale)</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">si</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">width</td>
+	<td valign="top" class="fillOE"><i>larghezza dell'applet in pixel</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">si</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">height</td>
+	<td valign="top" class="fillEE"><i>altezza dell'applet in pixel</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">si</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">hspace</td>
+	<td valign="top" class="fillOE"><i>spazio orizzontale dell'applet</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">vspace</td>
+	<td valign="top" class="fillEE"><i>spazio verticale dell'applet</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">align</td>
+	<td valign="top" class="fillOE"><i>allineamento applet</i><ul><li>left <i>(sinistra)</i></li><li>right <i>(destra)</i></li><li>top <i>(alto)</i></li><li>middle <i>(centrata)</i></li><li>bottom <i>(basso)</i></li></ul></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">name</td>
+	<td valign="top" class="fillEE"><i>nome dell'applet</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">id</td>
+	<td valign="top" class="fillOE"><i>id dell'applet</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">alt</td>
+	<td valign="top" class="fillEE"><i>testo alternativo all'applet</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+</table>
+
+</td></tr>
+</table>
+
+
+<br /><br />
+I seguenti sono i parametri principali dell'applet.<br />
+<br /><br />
+
+<table class="edge" border="0" cellspacing="1" cellpadding="2">
+<tr class="edge"><th align="center" class="edge">Parametri Principali<br /><i>(&lt;param name="param_name" value="param_value" /&gt;)</i></th></tr>
+<tr class="edge"><td class="edge">
+
+<table class="fill" border="0" cellspacing="1" cellpadding="4" title="Parametri Principali" summary="Lista dei parametri principali di JADC">
+<tr class="fillO">
+	<th class="fillOO">nome</th>
+	<th class="fillOE">valore</th>
+	<th class="fillOO">predefinito</th>
+	<th class="fillOE">richiesto</th>
+</tr>
+
+
+<tr class="fillO">
+	<td valign="top" class="fillOO">counter_mode</td>
+	<td valign="top" class="fillOE"><ul><li>true <i>l'applet funziona come un timer</i></li><li>false <i>l'applet funziona come un orologio digitale</i></li></ul></td>
+	<td valign="top" class="fillOO">false</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">local_time</td>
+	<td valign="top" class="fillEE"><ul><li>true <i>verr&agrave; usato il tempo della macchina client</i></li><li>false <i>il tempo verr&agrave; aggiustato utilizzando i seguenti due parametri (timezone_hours, timezone_minutes)</i></li></ul></td>
+	<td valign="top" class="fillEO">true</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">timezone_hours</td>
+	<td valign="top" class="fillOE">&plusmn;0-23 <br /><i>Sono le ore da aggiungere a counter_time per ottenere il tempo UTC quando il parametro counter_mode &egrave; impostato a true.<br />Sono le ore da aggiungere all'UTC per ottenere il tempo locale quando il parametro counter_mode &egrave; impostato a false.</i></td>
+	<td valign="top" class="fillOO">0</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">timezone_minutes</td>
+	<td valign="top" class="fillEE">&plusmn;0-59 <br /><i>Sono i minuti da aggiungere a counter_time per ottenere il tempo UTC quando il parametro counter_mode &egrave; impostato a true.<br />Sono i minuti da aggiungere all'UTC per ottenere il tempo locale quando il parametro counter_mode &egrave; impostato a false.</i></td>
+	<td valign="top" class="fillEO">0</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">display_pattern</td>
+	<td valign="top" class="fillOE"><i>Schema personalizzato per la rappresentazione del tempo.<br />In questo schema i seguenti caratteri rappresentano le possibili componenti da visualizzare:
+<ul>
+<li><b>y</b> Anno</li>
+<li><b>M</b> Mese</li>
+<li><b>d</b> Giorno</li>
+<li><b>H</b> Ora</li>
+<li><b>m</b> Minuti</li>
+<li><b>s</b> Secondi</li>
+<li><b>-</b> Simbolo tempo mancante</li>
+<li><b>+</b> Simbolo tempo avanzante</li>
+<li><b>:</b> Simbolo separatore</li>
+<li><b>.</b> Simbolo separatore</li>
+<li><b>&nbsp;</b> Spazio vuoto</li>
+</ul>
+<br />
+lettere addizionali solo per la modalit&agrave; orologio (counter_mode impostato a false):
+<ul>
+<li><b>w</b> Settimana dell'anno</li>
+<li><b>W</b> Settimana del mese</li>
+<li><b>D</b> Giorno dell'anno</li>
+<li><b>F</b> Giorno della settimana nel mese</li>
+<li><b>k</b> Ora del giorno (1-24)</li>
+<li><b>K</b> Ora in am/pm (0-11)</li>
+<li><b>h</b> Ora in am/pm (1-12)</li>
+<li><b>Z</b> Zona di fuso orario RFC 822</li>
+</ul>
+</i></td>
+	<td valign="top" class="fillOO"><nobr>yyyy-MM-dd HH:mm:ss</nobr></td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">input_pattern</td>
+	<td valign="top" class="fillEE"><i>Schema personalizzato per la rappresentazione del tempo nel parametro counter_time.<br />In questo schema i seguenti caratteri rappresentano le possibili componenti specificabili:
+<ul>
+<li><b>G</b> Simbolo era (es.: AD)</li>
+<li><b>y</b> Anno</li>
+<li><b>M</b> Mese dell'anno</li>
+<li><b>w</b> Settimana dell'anno</li>
+<li><b>W</b> Settimana del mese</li>
+<li><b>D</b> Giorno dell'anno</li>
+<li><b>d</b> Giorno del mese</li>
+<li><b>F</b> Giorno della settimana nel mese</li>
+<li><b>E</b> Giorno della settimana (es.: Text Tuesday; Tue)</li>
+<li><b>a</b> Indicatore Am/pm (es.: PM)</li>
+<li><b>H</b> Ora del giorno (0-23)</li>
+<li><b>k</b> Ora del giorno (1-24)</li>
+<li><b>K</b> Ora in am/pm (0-11)</li>
+<li><b>h</b> Ora in am/pm (1-12)</li>
+<li><b>m</b> Minuti nell'ora</li>
+<li><b>s</b> Secondi nel minuto</li>
+<li><b>z</b> Zona di fuso orario (es.: PST)</li>
+<li><b>Z</b> Zona di fuso orario RFC 822</li>
+</ul></i></td>
+	<td valign="top" class="fillEO">yyyy-MM-dd HH:mm:ss</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">counter_time</td>
+	<td valign="top" class="fillOE"><i>Tempo di riferimento per la modalit&agrave; contatore (parametro counter_mode impostato a true).<br />Il formato di questo parametro &egrave; specificato nel parametro precedente.</i></td>
+	<td valign="top" class="fillOO">2000-01-01 00:00:00</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">background_color</td>
+	<td valign="top" class="fillEE"><i>colore di sfondo dell'applet<br />- Il colore &egrave; rappresentato da una terna di tre numeri esadecimali (da 00 a FF) che rappresentano i colori primari RRGGBB (R=Red=Rosso, G=Green=Verde, B=Blue=Blu)</i></td>
+	<td valign="top" class="fillEO">FFFFFF</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">background_image</td>
+	<td valign="top" class="fillOE"><i>percorso relativo al file contenente un'immagine da usare come sfondo</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">img_0</td>
+	<td valign="top" class="fillEE"><i>percorso relativo al file di immagine per la cifra "0"</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">si</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">img_1</td>
+	<td valign="top" class="fillOE"><i>percorso relativo al file di immagine per la cifra "1"</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">si</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">img_2</td>
+	<td valign="top" class="fillEE"><i>percorso relativo al file di immagine per la cifra "2"</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">si</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">img_3</td>
+	<td valign="top" class="fillOE"><i>percorso relativo al file di immagine per la cifra "3"</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">si</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">img_4</td>
+	<td valign="top" class="fillEE"><i>percorso relativo al file di immagine per la cifra "4"</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">si</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">img_5</td>
+	<td valign="top" class="fillOE"><i>percorso relativo al file di immagine per la cifra "5"</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">si</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">img_6</td>
+	<td valign="top" class="fillEE"><i>percorso relativo al file di immagine per la cifra "6"</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">si</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">img_7</td>
+	<td valign="top" class="fillOE"><i>percorso relativo al file di immagine per la cifra "7"</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">si</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">img_8</td>
+	<td valign="top" class="fillEE"><i>percorso relativo al file di immagine per la cifra "8"</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">si</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">img_9</td>
+	<td valign="top" class="fillOE"><i>percorso relativo al file di immagine per la cifra "9"</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">si</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">img_sep</td>
+	<td valign="top" class="fillEE"><i>percorso relativo al file di immagine per il separatore ":"</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">si</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillOO">img_blk</td>
+	<td valign="top" class="fillOE"><i>percorso relativo al file di immagine per lo spazio vuoto " "</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">si</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">img_neg</td>
+	<td valign="top" class="fillEE"><i>percorso relativo al file di immagine per il simbolo "+"</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">si</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">img_pos</td>
+	<td valign="top" class="fillOE"><i>percorso relativo al file di immagine per il simbolo "-"</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">si</td>
+</tr>
+
+</table>
+
+</td></tr>
+</table>
+
+<a href="http://opensource.tecnick.com" title="[extrnal site on a new window]" target="_blank">Progetti Open Source dello stesso autore &gt;&gt;</a>
+
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+GESTPAY CONFIGURATION
+www.sellanet.it
+
+Set $myshoplogin value in cp_gestpay.php
+
+List of pages to set on customer bank profile:
+
+url server to server: http://www.yoursite.com/public/code/req_gestpay_server.php
+url positive answer: http://www.yoursite.com/public/code/req_gestpay_user.php
+url negative answer: http://www.yoursite.com/public/code/req_gestpay_user.php
+
+Enable the following parameters on your shop profile (on sellanet site):
+(Configurazione Clienti -> Campi e parametri)
+ShopLogin
+Currency
+Amount
+ShopTransactionID
+BuyerName
+BuyerEmail
+Language

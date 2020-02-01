@@ -1,0 +1,31 @@
+Angoli
+Area
+Dati Binari
+Densità
+Movimento Dielettrico
+Capacità Elettrica
+Carica Elettrica, Quantità di Elettricità
+Conduttanza Elettrica
+Corrente Elettrica
+Permettività Elettrica (costante dielettrica)
+Differenza di Potenziale Elettrica
+Resistenza Elettrica
+Energia
+Forza
+Induttanza
+Lunghezza o Distanza
+Intensità del Campo Magnetico
+Flusso Magnetico
+Densità del Flusso Magnetico
+Permeabilità Magnetica
+Riluttanza magnetica
+Massa o Peso
+Polarizzabilità
+Potenza
+Pressione o Spinta
+Velocità
+Tempo
+Temperatura
+Tipografici
+Volume o Capacità
+Vini ed Alcoolici

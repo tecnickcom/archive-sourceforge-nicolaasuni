@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 
+HTML-XHTML elements definitions
+
+Elements definitions:
+
+item        = element ID
+name        = element name
+description = element description
+category    = element category ID (see categories.xml)
+status      = element status ID (see status.xml)
+endtag      = 0 no self-closing, 1 if element is self-closing, 2 if is self-closing + newline
+attributes  = list of attributes IDs separated by semicolon (see attributes.xml)
+dtdtype     = DTD type ID
+
+Copyright (c) 2004-2005 Tecnick.com S.r.l (www.tecnick.com) Via Ugo Foscolo n.19 - 09045 Quartu Sant'Elena (CA) - ITALY - www.tecnick.com - info@tecnick.com<br/>
+License: http://www.gnu.org/copyleft/lesser.html LGPL
+@author Nicola Asuni [www.tecnick.com].
+@version 1.0
+-->
+
+<jxedata version="1.0">
+	<item id="1">
+		<name>a</name>
+		<description>anchor</description>
+		<category>2</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>104:128:129:155:49:108:4:67:31:139:156:69:94:159:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="2">
+		<name>abbr</name>
+		<description>abbreviated form (e.g., WWW, HTTP, etc.)</description>
+		<category>3</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="3">
+		<name>acronym</name>
+		<description>acronym</description>
+		<category>3</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="4">
+		<name>address</name>
+		<description>information on author</description>
+		<category>3</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="5">
+		<name>applet</name>
+		<description>Java applet</description>
+		<category>2</category>
+		<status>3</status>
+		<endtag>1</endtag>
+		<attributes>179:185:103:7:40:14:70:17:66:89:38:35:72:153:158</attributes>
+		<dtdtype>1</dtdtype>
+	</item>
+	<item id="6">
+		<name>area</name>
+		<description>client-side image map area</description>
+		<category>2</category>
+		<status>1</status>
+		<endtag>0</endtag>
+		<attributes>138:156:15:48:99:67:155:4:104:108:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="7">
+		<name>b</name>
+		<description>bold text style</description>
+		<category>3</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="8">
+		<name>base</name>
+		<description>document base URI</description>
+		<category>1</category>
+		<status>1</status>
+		<endtag>0</endtag>
+		<attributes>68:156</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="9">
+		<name>basefont</name>
+		<description>base font size</description>
+		<category>3</category>
+		<status>3</status>
+		<endtag>0</endtag>
+		<attributes>42:58:143:72</attributes>
+		<dtdtype>1</dtdtype>
+	</item>
+	<item id="10">
+		<name>bdo</name>
+		<description>I18N BiDi over-ride</description>
+		<category>3</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>55:35:72:76:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="11">
+		<name>big</name>
+		<description>large text style</description>
+		<category>3</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="12">
+		<name>blockquote</name>
+		<description>long quotation</description>
+		<category>3</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>33:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="13">
+		<name>body</name>
+		<description>document body</description>
+		<category>1</category>
+		<status>1</status>
+		<endtag>2</endtag>
+		<attributes>13:178:123:20:24:157:113:78:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="14">
+		<name>br</name>
+		<description>forced line break</description>
+		<category>3</category>
+		<status>1</status>
+		<endtag>0</endtag>
+		<attributes>37:35:72:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="15">
+		<name>button</name>
+		<description>push button</description>
+		<category>5</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>108:104:4:155:174:168:88:56:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="16">
+		<name>caption</name>
+		<description>table caption</description>
+		<category>6</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>6:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="17">
+		<name>center</name>
+		<description>shorthand for DIV align=center</description>
+		<category>3</category>
+		<status>3</status>
+		<endtag>1</endtag>
+		<attributes>35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>1</dtdtype>
+	</item>
+	<item id="18">
+		<name>cite</name>
+		<description>citation</description>
+		<category>3</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="19">
+		<name>code</name>
+		<description>computer code fragment</description>
+		<category>3</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="20">
+		<name>col</name>
+		<description>table column</description>
+		<category>6</category>
+		<status>1</status>
+		<endtag>0</endtag>
+		<attributes>186:12:170:30:145:29:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="21">
+		<name>colgroup</name>
+		<description>table column group</description>
+		<category>6</category>
+		<status>1</status>
+		<endtag>2</endtag>
+		<attributes>146:170:30:29:12:187:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="22">
+		<name>dd</name>
+		<description>definition description</description>
+		<category>4</category>
+		<status>1</status>
+		<endtag>2</endtag>
+		<attributes>35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="23">
+		<name>del</name>
+		<description>deleted text</description>
+		<category>3</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>51:34:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="24">
+		<name>dfn</name>
+		<description>instance definition</description>
+		<category>3</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="25">
+		<name>dir</name>
+		<description>directory list</description>
+		<category>4</category>
+		<status>3</status>
+		<endtag>1</endtag>
+		<attributes>46:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>1</dtdtype>
+	</item>
+	<item id="26">
+		<name>div</name>
+		<description>generic language/style container</description>
+		<category>3</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>11:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="27">
+		<name>dl</name>
+		<description>definition list</description>
+		<category>4</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>46:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="28">
+		<name>dt</name>
+		<description>definition term</description>
+		<category>4</category>
+		<status>1</status>
+		<endtag>2</endtag>
+		<attributes>35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="29">
+		<name>em</name>
+		<description>emphasis</description>
+		<category>3</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="30">
+		<name>fieldset</name>
+		<description>form control group</description>
+		<category>5</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="31">
+		<name>font</name>
+		<description>local change to font</description>
+		<category>3</category>
+		<status>3</status>
+		<endtag>1</endtag>
+		<attributes>141:42:58:35:54:72:76:153:158</attributes>
+		<dtdtype>1</dtdtype>
+	</item>
+	<item id="32">
+		<name>form</name>
+		<description>interactive form</description>
+		<category>5</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>156:91:3:57:86:5:2:119:121:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="33">
+		<name>frame</name>
+		<description>subwindow</description>
+		<category>1</category>
+		<status>1</status>
+		<endtag>0</endtag>
+		<attributes>149:136:81:100:82:80:92:61:35:72:153:158</attributes>
+		<dtdtype>2</dtdtype>
+	</item>
+	<item id="34">
+		<name>frameset</name>
+		<description>window subdivision</description>
+		<category>1</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>112:43:130:122:35:72:153:158</attributes>
+		<dtdtype>2</dtdtype>
+	</item>
+	<item id="35">
+		<name>h1</name>
+		<description>heading 1</description>
+		<category>3</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>11:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="36">
+		<name>h2</name>
+		<description>heading 2</description>
+		<category>3</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>11:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="37">
+		<name>h3</name>
+		<description>heading 3</description>
+		<category>3</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>11:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="38">
+		<name>h4</name>
+		<description>heading 4</description>
+		<category>3</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>11:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="39">
+		<name>h5</name>
+		<description>heading 5</description>
+		<category>3</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>11:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="40">
+		<name>h6</name>
+		<description>heading 6</description>
+		<category>3</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>11:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="41">
+		<name>head</name>
+		<description>document head</description>
+		<category>1</category>
+		<status>1</status>
+		<endtag>2</endtag>
+		<attributes>124:54:76</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="42">
+		<name>hr</name>
+		<description>horizontal rule</description>
+		<category>2</category>
+		<status>1</status>
+		<endtag>0</endtag>
+		<attributes>101:180:140:10:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="43">
+		<name>html</name>
+		<description>document root element</description>
+		<category>1</category>
+		<status>1</status>
+		<endtag>2</endtag>
+		<attributes>177:54:76</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="44">
+		<name>i</name>
+		<description>italic text style</description>
+		<category>3</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="45">
+		<name>iframe</name>
+		<description>inline subwindow</description>
+		<category>2</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>61:7:92:81:149:181:80:82:136:63:35:72:153:158</attributes>
+		<dtdtype>1</dtdtype>
+	</item>
+	<item id="46">
+		<name>img</name>
+		<description>Embedded image</description>
+		<category>2</category>
+		<status>1</status>
+		<endtag>0</endtag>
+		<attributes>182:7:65:73:26:169:150:70:93:15:179:79:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="47">
+		<name>input</name>
+		<description>form control</description>
+		<category>5</category>
+		<status>1</status>
+		<endtag>0</endtag>
+		<attributes>120:104:56:4:95:127:3:16:83:7:105:108:171:142:32:73:155:148:169:164:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="48">
+		<name>ins</name>
+		<description>inserted text</description>
+		<category>3</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>34:51:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="49">
+		<name>isindex</name>
+		<description>single line prompt</description>
+		<category>5</category>
+		<status>3</status>
+		<endtag>0</endtag>
+		<attributes>125:35:54:72:76:153:158</attributes>
+		<dtdtype>1</dtdtype>
+	</item>
+	<item id="50">
+		<name>kbd</name>
+		<description>text to be entered by the user</description>
+		<category>3</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="51">
+		<name>label</name>
+		<description>form field label text</description>
+		<category>5</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>104:59:4:108:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="52">
+		<name>legend</name>
+		<description>fieldset legend</description>
+		<category>5</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>4:8:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="53">
+		<name>li</name>
+		<description>list item</description>
+		<category>4</category>
+		<status>1</status>
+		<endtag>2</endtag>
+		<attributes>175:165:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="54">
+		<name>link</name>
+		<description>a media-independent link</description>
+		<category>1</category>
+		<status>1</status>
+		<endtag>0</endtag>
+		<attributes>85:159:129:156:31:128:69:67:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="55">
+		<name>map</name>
+		<description>client-side image map</description>
+		<category>2</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>96:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="56">
+		<name>menu</name>
+		<description>menu list</description>
+		<category>4</category>
+		<status>3</status>
+		<endtag>1</endtag>
+		<attributes>46:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>1</dtdtype>
+	</item>
+	<item id="57">
+		<name>meta</name>
+		<description>generic metainformation</description>
+		<category>1</category>
+		<status>1</status>
+		<endtag>0</endtag>
+		<attributes>47:98:134:71:54:76</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="58">
+		<name>noframes</name>
+		<description>alternate content container for non frame-based rendering</description>
+		<category>1</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>2</dtdtype>
+	</item>
+	<item id="59">
+		<name>noscript</name>
+		<description>alternate content container for non script-based rendering</description>
+		<category>7</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="60">
+		<name>object</name>
+		<description>generic embedded object</description>
+		<category>2</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>95:65:70:155:151:50:26:179:39:52:36:182:7:160:169:41:18:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="61">
+		<name>ol</name>
+		<description>ordered list</description>
+		<category>4</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>152:46:166:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="62">
+		<name>optgroup</name>
+		<description>option group</description>
+		<category>5</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>56:75:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="63">
+		<name>option</name>
+		<description>selectable choice</description>
+		<category>5</category>
+		<status>1</status>
+		<endtag>2</endtag>
+		<attributes>74:172:137:56:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="64">
+		<name>p</name>
+		<description>paragraph</description>
+		<category>3</category>
+		<status>1</status>
+		<endtag>2</endtag>
+		<attributes>11:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="65">
+		<name>param</name>
+		<description>named property value</description>
+		<category>2</category>
+		<status>1</status>
+		<endtag>0</endtag>
+		<attributes>176:161:97:173:72</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="66">
+		<name>pre</name>
+		<description>preformatted text</description>
+		<category>3</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>188:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="67">
+		<name>q</name>
+		<description>short inline quotation</description>
+		<category>3</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>33:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="68">
+		<name>s</name>
+		<description>strike-through text style</description>
+		<category>3</category>
+		<status>3</status>
+		<endtag>1</endtag>
+		<attributes>35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>1</dtdtype>
+	</item>
+	<item id="69">
+		<name>samp</name>
+		<description>sample program output, scripts, etc.</description>
+		<category>3</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="70">
+		<name>script</name>
+		<description>script statements</description>
+		<category>7</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>53:162:147:77:31</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="71">
+		<name>select</name>
+		<description>option selector</description>
+		<category>5</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>56:104:144:108:105:87:155:90:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="72">
+		<name>small</name>
+		<description>small text style</description>
+		<category>3</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="73">
+		<name>span</name>
+		<description>generic language/style container</description>
+		<category>3</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="74">
+		<name>strike</name>
+		<description>strike-through text</description>
+		<category>3</category>
+		<status>3</status>
+		<endtag>1</endtag>
+		<attributes>35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>1</dtdtype>
+	</item>
+	<item id="75">
+		<name>strong</name>
+		<description>strong emphasis</description>
+		<category>3</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="76">
+		<name>style</name>
+		<description>style info</description>
+		<category>3</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>84:163:54:76:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="77">
+		<name>sub</name>
+		<description>subscript</description>
+		<category>3</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="78">
+		<name>sup</name>
+		<description>superscript</description>
+		<category>3</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="79">
+		<name>table</name>
+		<description>table</description>
+		<category>6</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>183:9:133:21:60:27:154:28:25:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="80">
+		<name>tbody</name>
+		<description>table body</description>
+		<category>6</category>
+		<status>1</status>
+		<endtag>2</endtag>
+		<attributes>30:170:12:29:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="81">
+		<name>td</name>
+		<description>table data cell</description>
+		<category>6</category>
+		<status>1</status>
+		<endtag>2</endtag>
+		<attributes>29:170:30:64:23:45:102:1:132:19:135:12:184:62:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="82">
+		<name>textarea</name>
+		<description>multi-line text field</description>
+		<category>5</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>155:126:56:120:44:105:108:104:88:131:4:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="83">
+		<name>tfoot</name>
+		<description>table footer</description>
+		<category>6</category>
+		<status>1</status>
+		<endtag>2</endtag>
+		<attributes>29:170:30:12:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="84">
+		<name>th</name>
+		<description>table header cell</description>
+		<category>6</category>
+		<status>1</status>
+		<endtag>2</endtag>
+		<attributes>45:62:29:19:12:135:132:23:30:170:102:1:64:184:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="85">
+		<name>thead</name>
+		<description>table header</description>
+		<category>6</category>
+		<status>1</status>
+		<endtag>2</endtag>
+		<attributes>29:12:30:170:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="86">
+		<name>title</name>
+		<description>document title</description>
+		<category>1</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>54:76</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="87">
+		<name>tr</name>
+		<description>table row</description>
+		<category>6</category>
+		<status>1</status>
+		<endtag>2</endtag>
+		<attributes>22:29:170:30:12:35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="88">
+		<name>tt</name>
+		<description>teletype or monospaced text style</description>
+		<category>3</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="89">
+		<name>u</name>
+		<description>underlined text style</description>
+		<category>3</category>
+		<status>3</status>
+		<endtag>1</endtag>
+		<attributes>35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>1</dtdtype>
+	</item>
+	<item id="90">
+		<name>ul</name>
+		<description>unordered list</description>
+		<category>4</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>46:167</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+	<item id="91">
+		<name>var</name>
+		<description>instance of a variable or program argument</description>
+		<category>3</category>
+		<status>1</status>
+		<endtag>1</endtag>
+		<attributes>35:54:72:76:106:107:109:110:111:114:115:116:117:118:153:158</attributes>
+		<dtdtype>0</dtdtype>
+	</item>
+</jxedata>

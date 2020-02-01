@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 
+HTML-XHTML elements status
+
+Elements definitions:
+
+item        = status ID
+name        = status name
+description = status description
+
+Copyright (c) 2004-2005 Tecnick.com S.r.l (www.tecnick.com) Via Ugo Foscolo n.19 - 09045 Quartu Sant'Elena (CA) - ITALY - www.tecnick.com - info@tecnick.com<br/>
+License: http://www.gnu.org/copyleft/lesser.html LGPL
+@author Nicola Asuni [www.tecnick.com].
+@version 1.0
+-->
+
+<jxedata version="1.0">
+	<item id="1">
+		<name>general</name>
+		<description>tag part of the current standard and not deprecated</description>
+	</item>
+	<item id="2">
+		<name>browser specific</name>
+		<description>element specific for a particular browser</description>
+	</item>
+	<item id="3">
+		<name>deprecated</name>
+		<description>deprecated element</description>
+	</item>
+	<item id="4">
+		<name>obsolete</name>
+		<description>obsolete tag</description>
+	</item>
+</jxedata>

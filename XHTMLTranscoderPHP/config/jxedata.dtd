@@ -1,0 +1,112 @@
+<!-- JXEDATA
+DTD to define HTML/XHTML elements.
+
+Use in JXEDATA: <!DOCTYPE jxedata SYSTEM "jxedata.dtd">
+
+An SGML application conforming to:
+- International Standard ISO 8879 Standard Generalized Markup Language, 
+- XML (Extensible Markup Language), W3C Recommendation
+
+All JXEDATA element and attribute names must be in lowercase.
+
+Copyright (c) 2004-2005 Tecnick.com S.r.l (www.tecnick.com) Via Ugo Foscolo n.19 - 09045 Quartu Sant'Elena (CA) - ITALY - www.tecnick.com - info@tecnick.com<br/>
+License: http://www.gnu.org/copyleft/lesser.html LGPL
+@author Nicola Asuni [www.tecnick.com].
+@version 1.0
+
+-->
+
+<!ENTITY  lt   "&#38;#60;" >
+<!ENTITY  amp  "&#38;#38;" >
+<!ENTITY  gt   "&#62;" >
+<!ENTITY  apos "&#39;" >
+<!ENTITY  quot "&#34;" >
+
+
+<!--     ELEM                CONTENT                -->
+<!--     ATTR       
+         NAME                TYPE           DEFAULT -->
+
+
+<!-- Base Document Element -->
+   <!ELEMENT jxedata             (item*) > 
+   <!ATTLIST jxedata
+         version             CDATA          #FIXED "1.0" >
+
+
+<!-- Item -->
+   <!ELEMENT item            ((item|name|description|category|status|endtag|attributes|dtdtype|type|options|default|icon|intag|outtag|action|keystroke|keymodifier|value)*) >
+   <!ATTLIST item
+         id                  CDATA          #IMPLIED
+         creationdate        CDATA          #IMPLIED
+         changedate          CDATA          #IMPLIED >
+   
+<!-- Name: element name (TMX identifier) -->
+   <!ELEMENT name            (#PCDATA)* >
+   <!-- No attributes            -->
+
+<!-- Description: element description (TMX identifier) -->
+   <!ELEMENT description     (#PCDATA)* >
+   <!-- No attributes            -->
+   
+<!-- Category: element category ID -->
+   <!ELEMENT category        (#PCDATA)* >
+   <!-- No attributes            -->
+   
+<!-- Status: element status ID -->
+   <!ELEMENT status          (#PCDATA)* >
+   <!-- No attributes            -->
+
+<!-- Endtag: false if element is self-closing -->
+   <!ELEMENT endtag          (#PCDATA)* >
+   <!-- No attributes            -->
+   
+<!-- Attributes: list of attributes IDs separated by semicolon -->
+   <!ELEMENT attributes      (#PCDATA)* >
+   <!-- No attributes            -->
+
+<!-- DTD type ID -->
+   <!ELEMENT dtdtype         (#PCDATA)* >
+   <!-- No attributes            -->
+   
+<!-- Type: type of input component -->
+   <!ELEMENT type            (#PCDATA)* >
+   <!-- No attributes            -->
+   
+<!-- Options: list of selectable values separated by semicolon -->
+   <!ELEMENT options         (#PCDATA)* >
+   <!-- No attributes            -->
+   
+<!-- Deafult: default value -->
+   <!ELEMENT default         (#PCDATA)* >
+   <!-- No attributes            -->
+
+<!-- Icon: button icon -->
+   <!ELEMENT icon         (#PCDATA)* >
+   <!-- No attributes            -->
+
+<!-- InTag: opening tag to add at the start of selected text when button is pressed-->
+   <!ELEMENT intag         (#PCDATA)* >
+   <!-- No attributes            -->
+
+<!-- OutTag: closing tag to add at the end of selected text when button is pressed -->
+   <!ELEMENT outtag         (#PCDATA)* >
+   <!-- No attributes            -->
+
+<!-- KeyStroke: integer number representing the keyboard key to associate to this action  -->
+   <!ELEMENT keystroke         (#PCDATA)* >
+   <!-- No attributes            -->
+
+<!-- KeyModifier: integer number representing the keyboard modifier key to associate to previous keystroke  -->
+   <!ELEMENT keymodifier         (#PCDATA)* >
+   <!-- No attributes            -->
+   
+<!-- Action: button action  -->
+   <!ELEMENT action         (#PCDATA)* >
+   <!-- No attributes            -->
+   
+<!-- Value: value associated to the key  -->
+   <!ELEMENT value         (#PCDATA)* >
+   <!-- No attributes            -->
+   
+<!-- End -->

@@ -1,0 +1,53 @@
+0	TRUE				The Club	The Club
+1	TRUE	english/club_e/history_e/history_e.htm	main		History	History
+1	TRUE				Facilities	Facilities
+2	TRUE	english/club_e/facilities_e/facilities_e.htm	main		Clubhouse & Grounds	Clubhouse & Grounds
+2	TRUE				The Harbor	The Harbor
+3	TRUE	english/club_e/harbor_e/harbor_e.htm	main		Harbor Plan	Harbor Plan
+3	FALSE				Slip List	Slip List
+2	TRUE	english/club_e/harbor_e/gas_e.htm	main		Gas Dock	Gas Dock
+1	TRUE	"english/club_e/facilities_e/services_e.htm"""	main		Services	Services
+1	TRUE	english/club_e/social_e/social.htm	main		Social Events	Social Events
+1	TRUE	english/club_e/calendar_e/2003_jul.htm	main		Calendar	Calendar
+1	TRUE	english/club_e/executives_e/exec.htm	main		Executives	Executives
+1	FALSE				Store	Store
+1	TRUE				Rules	Rules
+2	TRUE	english/club_e/rules_e/house_e.htm	main		House & Grounds	House & Grounds
+2	TRUE	english/club_e/rules_e/automobiles_e.htm	main		Automobiles & Bicycles	Automobiles & Bicycles
+2	TRUE	english/club_e/rules_e/harbor_e.htm	main		Harbor & Mooring	Harbor & Mooring
+2	TRUE	english/club_e/rules_e/launch_e.htm	main		Launch	Launch
+2	TRUE	english/club_e/rules_e/cradles_e.htm	main		Cradles	Cradles
+2	TRUE	english/club_e/rules_e/haulout_e.htm	main		Haulout	Haulout
+2	TRUE	english/club_e/rules_e/hull_wash_e.htm	main		Hull Washing	Hull Washing
+2	TRUE	english/club_e/rules_e/mast_storage_e.htm	main		Mast Storage	Mast Storage
+2	TRUE	english/club_e/harbor_e/gas_e.htm	main		Fuelling	Fuelling
+2	TRUE	english/club_e/rules_e/flag_etiquette_e.htm	main		Flag Etiquette	Flag Etiquette
+0	TRUE				Membership	Membership
+1	TRUE	english/club_e/membership_e/types_e.htm	main		Types	Membership Types
+1	TRUE				Fees	Fees
+2	TRUE	english/club_e/membership_e/fees_entrance_2003_e.htm	main		Entrance	Entrance Fees
+2	TRUE	english/club_e/membership_e/fees_annual_2003_e.htm	main		Annual	Annual Fees
+1	TRUE				Application Forms	Applications Forms
+2	TRUE	english/club_e/membership_e/application_senior_e.htm	main		Senior	Senior Application Form
+2	TRUE	english/club_e/membership_e/application_associate_e.htm	main		Associate	Associate Application Form
+2	TRUE	english/club_e/membership_e/application_intermediate_e.htm	main		Intermediate	Intermediate Application Form
+2	TRUE	english/club_e/membership_e/application_junior_e.htm	main		Junior	Junior Application Form
+0	TRUE				The Galley	The Galley
+1	TRUE	english/galley_e/hours.htm	main		Hours	The Galley Hours
+1	TRUE				Menus	Menus
+2	TRUE	english/galley_e/menu_tuesday.htm	main		Tuesday Night Pasta	Tuesday Night Pasta
+2	TRUE	english/galley_e/menu_friday.htm	main		Friday Night BBQ	Friday Night BBQ
+2	TRUE	english/galley_e/menu_general.htm	main		General	General Menu
+0	TRUE				Racing	Racing
+1	TRUE				GNS	Good Neighbor Series
+2	TRUE	english/race_GNS_registration.htm	main		Registration	Registration
+2	FALSE				Rules	Good Neighbor Series Rules
+2	FALSE				Results	Good Neighbor Series Results
+0	TRUE				Photo Gallery	Photo Gallery
+1	FALSE				2002 Season	2002 Season
+1	FALSE				2003 Season	2003 Season
+0	FALSE				Classifieds	Classified Advertisements
+0	FALSE				Links	Links to External Sites
+0	FALSE				Reciprocals	Clubs with Reciprocity Agreements
+0	FALSE				Learn to Sail	Learn to Sail
+0	FALSE				Safety	Safety

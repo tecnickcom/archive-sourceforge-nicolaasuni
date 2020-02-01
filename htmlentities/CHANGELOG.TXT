@@ -1,0 +1,10 @@
+1.0.004 (2005-03-30)
+	- jar file were added on www directory
+1.0.003 (2005-03-24)
+	- java.net release
+1.0.002 (2005-03-20)
+	- improved unhtmlentities
+1.0.001 (2005-03-20)
+	- added support for hexadecimal entities (e.g.: &#x20AC;)
+1.0.000 (2005-03-15)
+	- sourceforge release

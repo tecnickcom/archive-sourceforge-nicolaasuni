@@ -1,0 +1,4 @@
+1.0.004 (2006-02-04)
+	- first public release
+1.0.000 (2005-12-11)
+	- first release

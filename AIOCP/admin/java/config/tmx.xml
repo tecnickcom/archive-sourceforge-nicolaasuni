@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd" [
+<!ENTITY % html_entities SYSTEM "html_entities.ent" >
+%html_entities;
+]>
+<!-- 
+TMX document containing localized strings for JXHTMLEDIT Project.
+(see http://www.lisa.org/tmx).
+-->
+
+<tmx version="1.4">
+ <header
+  creationtool="Hand made by Nicola Asuni"
+  creationtoolversion=""
+  datatype="plaintext"
+  segtype="sentence"
+  adminlang="en-us"
+  srclang="EN"
+  o-tmf="Text"
+  creationdate="20031226T173500Z"
+  creationid="NicolaAsuni"
+  changedate="20031226T190000Z"
+  changeid="NicolaAsuni"
+  o-encoding="UTF-8"
+ >
+ </header>
+	<body>
+		<tu tuid="R_GET_COLOR" datatype="plaintext">
+			<tuv xml:lang="en"><seg>get color</seg></tuv>
+			<tuv xml:lang="it"><seg>seleziona colore</seg></tuv>
+		</tu>
+		<tu tuid="R_COLOR_CHOOSER" datatype="plaintext">
+			<tuv xml:lang="en"><seg>color chooser</seg></tuv>
+			<tuv xml:lang="it"><seg>colori</seg></tuv>
+		</tu>
+		<tu tuid="R_STATUS" datatype="plaintext">
+			<tuv xml:lang="en"><seg>Status</seg></tuv>
+			<tuv xml:lang="it"><seg>Stato</seg></tuv>
+		</tu>
+		<tu tuid="R_INFO_DESC" datatype="plaintext">
+			<tuv xml:lang="en"><seg>Display info about this software</seg></tuv>
+			<tuv xml:lang="it"><seg>Mostra informazioni su questo software</seg></tuv>
+		</tu>
+		<tu tuid="R_INFO" datatype="plaintext">
+			<tuv xml:lang="en"><seg>info</seg></tuv>
+			<tuv xml:lang="it"><seg>info</seg></tuv>
+		</tu>
+		<tu tuid="R_SOURCE_EDIT_DESC" datatype="plaintext">
+			<tuv xml:lang="en"><seg>Edit source code</seg></tuv>
+			<tuv xml:lang="it"><seg>Modifica il codice sorgente</seg></tuv>
+		</tu>
+		<tu tuid="R_SOURCE_EDIT" datatype="plaintext">
+			<tuv xml:lang="en"><seg>HTML</seg></tuv>
+			<tuv xml:lang="it"><seg>HTML</seg></tuv>
+		</tu>
+		<tu tuid="R_WYSIWYG_EDIT_DESC" datatype="plaintext">
+			<tuv xml:lang="en"><seg>WYSIWYG editor</seg></tuv>
+			<tuv xml:lang="it"><seg>Editor WYSIWYG</seg></tuv>
+		</tu>
+		<tu tuid="R_WYSIWYG_EDIT" datatype="plaintext">
+			<tuv xml:lang="en"><seg>WYSIWYG</seg></tuv>
+			<tuv xml:lang="it"><seg>WYSIWYG</seg></tuv>
+		</tu>
+		<tu tuid="R_HTML_COMBO_DESC" datatype="plaintext">
+			<tuv xml:lang="en"><seg>Allows you to set all attributes of selected HTML element for inserting</seg></tuv>
+			<tuv xml:lang="it"><seg>Permette di inserire un elemento HTML impostandone tutti gli attributi</seg></tuv>
+		</tu>
+		<tu tuid="R_HEADINGS_DESC" datatype="plaintext">
+			<tuv xml:lang="en"><seg>Insert a title heading</seg></tuv>
+			<tuv xml:lang="it"><seg>Inserisce uno stile per titoli</seg></tuv>
+		</tu>
+		<tu tuid="R_CHARS_DESC" datatype="plaintext">
+			<tuv xml:lang="en"><seg>Insert an extended char</seg></tuv>
+			<tuv xml:lang="it"><seg>Inserisce un carattere esteso</seg></tuv>
+		</tu>
+		<tu tuid="R_SET_BR_DESC" datatype="plaintext">
+			<tuv xml:lang="en"><seg>enable/disable automatic BR</seg></tuv>
+			<tuv xml:lang="it"><seg>abilita/disabilita l'inserimento automatico dei BR</seg></tuv>
+		</tu>
+		<tu tuid="R_SET_LI_DESC" datatype="plaintext">
+			<tuv xml:lang="en"><seg>enable/disable automatic list item</seg></tuv>
+			<tuv xml:lang="it"><seg>abilita/disabilita l'inserimento automatico dei list item</seg></tuv>
+		</tu>
+		<tu tuid="R_ATTRIBUTES" datatype="plaintext">
+			<tuv xml:lang="en"><seg>Attributes</seg></tuv>
+			<tuv xml:lang="it"><seg>Attributi</seg></tuv>
+		</tu>
+		<tu tuid="R_CATEGORY" datatype="plaintext">
+			<tuv xml:lang="en"><seg>Category</seg></tuv>
+			<tuv xml:lang="it"><seg>Categoria</seg></tuv>
+		</tu>
+		<tu tuid="R_ELEMENT" datatype="plaintext">
+			<tuv xml:lang="en"><seg>Element</seg></tuv>
+			<tuv xml:lang="it"><seg>Elemento</seg></tuv>
+		</tu>
+		<tu tuid="R_INSERT_HYPERLINK" datatype="plaintext">
+			<tuv xml:lang="en"><seg>Insert Hyperlink</seg></tuv>
+			<tuv xml:lang="it"><seg>Inserisci Collegamento</seg></tuv>
+		</tu>
+		<tu tuid="R_INSERT_IMAGE" datatype="plaintext">
+			<tuv xml:lang="en"><seg>Insert Image</seg></tuv>
+			<tuv xml:lang="it"><seg>Inserisci Immagine</seg></tuv>
+		</tu>
+		<tu tuid="R_INSERT_TABLE" datatype="plaintext">
+			<tuv xml:lang="en"><seg>Insert Table</seg></tuv>
+			<tuv xml:lang="it"><seg>Inserisci Tabella</seg></tuv>
+		</tu>
+		<tu tuid="R_HREF_DESC" datatype="plaintext">
+			<tuv xml:lang="en"><seg>URI for linked resource</seg></tuv>
+			<tuv xml:lang="it"><seg>URI della risorsa</seg></tuv>
+		</tu>
+		<tu tuid="R_TARGET" datatype="plaintext">
+			<tuv xml:lang="en"><seg>target</seg></tuv>
+			<tuv xml:lang="it"><seg>target</seg></tuv>
+		</tu>
+		<tu tuid="R_TARGET_DESC" datatype="plaintext">
+			<tuv xml:lang="en"><seg>render in this frame</seg></tuv>
+			<tuv xml:lang="it"><seg>apre il link in questo frame</seg></tuv>
+		</tu>
+		<tu tuid="R_TAG_ID_DESC" datatype="plaintext">
+			<tuv xml:lang="en"><seg>document-wide unique id</seg></tuv>
+			<tuv xml:lang="it"><seg>id unico per il documento</seg></tuv>
+		</tu>
+		<tu tuid="R_ALIGNMENT" datatype="plaintext">
+			<tuv xml:lang="en"><seg>alignment</seg></tuv>
+			<tuv xml:lang="it"><seg>allineamento</seg></tuv>
+		</tu>
+		<tu tuid="R_NAME" datatype="plaintext">
+			<tuv xml:lang="en"><seg>name</seg></tuv>
+			<tuv xml:lang="it"><seg>nome</seg></tuv>
+		</tu>
+		<tu tuid="R_NAME_DESC" datatype="plaintext">
+			<tuv xml:lang="en"><seg>element name</seg></tuv>
+			<tuv xml:lang="it"><seg>nome di questo elemento</seg></tuv>
+		</tu>
+		<tu tuid="R_BORDER_SIZE" datatype="plaintext">
+			<tuv xml:lang="en"><seg>border size</seg></tuv>
+			<tuv xml:lang="it"><seg>dimensioni del bordo</seg></tuv>
+		</tu>
+		<tu tuid="R_VERTICAL_SPACE" datatype="plaintext">
+			<tuv xml:lang="en"><seg>vertical gutter</seg></tuv>
+			<tuv xml:lang="it"><seg>margine verticale</seg></tuv>
+		</tu>
+		<tu tuid="R_HORIZONTAL_SPACE" datatype="plaintext">
+			<tuv xml:lang="en"><seg>horizontal gutter</seg></tuv>
+			<tuv xml:lang="it"><seg>margine orizzontale</seg></tuv>
+		</tu>
+		<tu tuid="R_HEIGHT" datatype="plaintext">
+			<tuv xml:lang="en"><seg>height</seg></tuv>
+			<tuv xml:lang="it"><seg>altezza</seg></tuv>
+		</tu>
+		<tu tuid="R_WIDTH" datatype="plaintext">
+			<tuv xml:lang="en"><seg>width</seg></tuv>
+			<tuv xml:lang="it"><seg>larghezza</seg></tuv>
+		</tu>
+		<tu tuid="R_ALT" datatype="plaintext">
+			<tuv xml:lang="en"><seg>alternative content</seg></tuv>
+			<tuv xml:lang="it"><seg>contenuto alternativo</seg></tuv>
+		</tu>
+		<tu tuid="R_HREF" datatype="plaintext">
+			<tuv xml:lang="en"><seg>link</seg></tuv>
+			<tuv xml:lang="it"><seg>link</seg></tuv>
+		</tu>
+		<tu tuid="R_BGCOLOR" datatype="plaintext">
+			<tuv xml:lang="en"><seg>background color</seg></tuv>
+			<tuv xml:lang="it"><seg>colore sfondo</seg></tuv>
+		</tu>
+		<tu tuid="R_FGCOLOR" datatype="plaintext">
+			<tuv xml:lang="en"><seg>foreground color</seg></tuv>
+			<tuv xml:lang="it"><seg>colore testo</seg></tuv>
+		</tu>
+		<tu tuid="R_CELL_SPACING" datatype="plaintext">
+			<tuv xml:lang="en"><seg>spacing between cell</seg></tuv>
+			<tuv xml:lang="it"><seg>spazio tra le celle</seg></tuv>
+		</tu>
+		<tu tuid="R_CELL_PADDING" datatype="plaintext">
+			<tuv xml:lang="en"><seg>spacing within cells</seg></tuv>
+			<tuv xml:lang="it"><seg>spazio nelle celle</seg></tuv>
+		</tu>
+		<tu tuid="R_ROWS" datatype="plaintext">
+			<tuv xml:lang="en"><seg>number of rows</seg></tuv>
+			<tuv xml:lang="it"><seg>numero di righe</seg></tuv>
+		</tu>
+		<tu tuid="R_COLS" datatype="plaintext">
+			<tuv xml:lang="en"><seg>number of columns</seg></tuv>
+			<tuv xml:lang="it"><seg>numero di colonne</seg></tuv>
+		</tu>
+		<tu tuid="R_FIND" datatype="plaintext">
+			<tuv xml:lang="en"><seg>Find</seg></tuv>
+			<tuv xml:lang="it"><seg>Trova</seg></tuv>
+		</tu>
+		<tu tuid="R_SEARCH_TEXT" datatype="plaintext">
+			<tuv xml:lang="en"><seg>Text to search</seg></tuv>
+			<tuv xml:lang="it"><seg>Testo da cercare</seg></tuv>
+		</tu>
+		<tu tuid="R_SET_FONT" datatype="plaintext">
+			<tuv xml:lang="en"><seg>Font settings</seg></tuv>
+			<tuv xml:lang="it"><seg>Impostazione Font</seg></tuv>
+		</tu>
+		<tu tuid="R_SIZE" datatype="plaintext">
+			<tuv xml:lang="en"><seg>size</seg></tuv>
+			<tuv xml:lang="it"><seg>dimensione</seg></tuv>
+		</tu>
+		<tu tuid="R_FONT_SIZE" datatype="plaintext">
+			<tuv xml:lang="en"><seg>font size (absolute or relative)</seg></tuv>
+			<tuv xml:lang="it"><seg>dimensione del font (assoluta o relativa)</seg></tuv>
+		</tu>
+		<tu tuid="R_FONT" datatype="plaintext">
+			<tuv xml:lang="en"><seg>font</seg></tuv>
+			<tuv xml:lang="it"><seg>carattere</seg></tuv>
+		</tu>
+		<tu tuid="R_AUTO_BR" datatype="plaintext">
+			<tuv xml:lang="en"><seg>auto BR</seg></tuv>
+			<tuv xml:lang="it"><seg>auto BR</seg></tuv>
+		</tu>
+		<tu tuid="R_AUTO_LI" datatype="plaintext">
+			<tuv xml:lang="en"><seg>auto LI</seg></tuv>
+			<tuv xml:lang="it"><seg>auto LI</seg></tuv>
+		</tu>
+	</body>
+</tmx>

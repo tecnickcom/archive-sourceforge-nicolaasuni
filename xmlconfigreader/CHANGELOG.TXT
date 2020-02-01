@@ -1,0 +1,10 @@
+1.0.003 (2006-02-03)
+	- imports were reorganized
+	- unused variable were removed
+1.0.002 (2005-03-24)
+	- config files may be located on jar file
+	- jar file were added on www directory
+1.0.001 (2005-03-24)
+	- java.net release
+1.0.000 (2005-03-15)
+	- sourceforge release

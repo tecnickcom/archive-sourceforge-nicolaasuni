@@ -1,0 +1,1 @@
+Place here payment modules for e-commerce

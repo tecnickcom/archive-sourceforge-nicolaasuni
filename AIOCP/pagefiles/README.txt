@@ -1,0 +1,1 @@
+This directory contain the files (images, multimedia files) for dynamic pages.

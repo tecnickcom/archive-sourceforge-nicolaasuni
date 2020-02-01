@@ -1,0 +1,659 @@
+/*
+//============================================================+
+// File name   : default.css
+// Begin       : 2004-04-27
+// Last Update : 2006-03-17
+// 
+// Description : Default CSS for admin area
+//
+// Author: Nicola Asuni
+//
+// (c) Copyright:
+//               Tecnick.com LTD
+//               Manor Coach House, Church Hill
+//               Aldershot, Hants, GU12 4RQ
+//               UK
+//               www.tecnick.com
+//               info@tecnick.com
+//
+// License: GNU GENERAL PUBLIC LICENSE v.2
+//          http://www.gnu.org/copyleft/gpl.html
+//============================================================+
+*/
+ 
+html { 
+	height: 100%;
+} 
+
+body {
+	background-color: White;
+	color: Black;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	font-size: 100%;
+	font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
+}
+
+div.spacer {
+    clear: both;
+}
+
+pre {
+	font-family : "Courier New", Courier, monospace;
+}
+
+a {
+	color : #0060BF;
+	text-decoration : none;
+}
+
+a:visited {
+	color : #0060BF;
+	text-decoration : none;
+}
+
+a:hover {
+	color: #FF8000;
+	text-decoration: underline;
+}
+
+label { 
+	cursor: pointer;
+	font-size: 90%;
+} 
+
+textarea {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 90%;
+}
+
+input {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 90%;
+}
+
+select {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 90%;
+}
+
+/* TITLE ------------------------------- */
+
+div.title {
+	width: 90%;
+	padding: 5px 0px 5px 0px;
+	margin: 0px 10px 0px 10px;
+	font-size : 140%;
+	color : #003399;
+	font-weight : bold;
+}
+
+div.popuptitle {
+	width: 100%;
+	padding: 5px 0px 5px 0px;
+	margin: 0px 10px 0px 10px;
+	font-size : 130%;
+	color : #003399;
+	font-weight : bold;
+}
+
+h1 {
+	width: 90%;
+	padding: 5px 0px 5px 0px;
+	margin: 0px 10px 0px 10px;
+	font-size : 140%;
+	color : #003399;
+	font-weight : bold;
+}
+
+h2 {
+	width: 85%;
+	padding: 5px 0px 5px 0px;
+	margin: 0px 10px 0px 10px;
+	font-size : 120%;
+	color : #003399;
+	font-weight : bold;
+}
+
+
+/*  SYSTEM MESSAGES  ------------------- */
+
+div.error {
+	width: 100%;
+	background-color: #ff9999;
+	padding: 3px 3px 3px 3px;
+	margin: 0px 0px 0px 0px;
+	font-weight: bold;
+	font-size : 80%;
+}
+
+div.warning {
+	width: 100%;
+	background-color: #99ff99;
+	padding: 3px 3px 3px 3px;
+	margin: 0px 0px 0px 0px;
+	font-weight: bold;
+	font-size : 80%;
+}
+
+div.message {
+	width: 100%;
+	background-color: #99ccff;
+	padding: 3px 3px 3px 3px;
+	margin: 0px 0px 0px 0px;
+	font-weight: bold;
+	font-size : 80%;
+}
+
+/*  confirmation box for delete/cancel action  ------------------- */
+div.confirmbox {
+	width: 100%;
+	background-color: #99ff99;
+	padding: 3px 3px 3px 3px;
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+}
+
+/* USER BAR  ------------------- */
+
+div.userbar {
+	clear: both;
+	background-color: #003399;
+	color: #ffffff;
+	padding: 0px 0px 0px 0px;
+	margin: 10px 0px 0px 0px;
+	font-size : 80%;
+}
+
+div.userbar a {
+	color: #ccffcc;
+	text-decoration: none;
+}
+
+div.userbar a:visited {
+	color: #ccffcc;
+	text-decoration: none;
+}
+
+div.userbar a:hover {
+	color: #ffff00;
+	text-decoration: none;
+}
+
+div.userbar span.left {
+	background-color: #003399;
+	float: left;
+	text-align: left;
+	width: 70%;
+	padding: 2px 0px 2px 0px;
+}
+
+div.userbar span.right{
+	background-color: #003399;
+	float: left;
+	text-align: right;
+	width: 30%;
+	padding: 2px 0px 2px 0px;
+}
+
+/* header (logo + timer) ------------ */
+div.header {
+	width: 100%;
+	height: 40px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	background-color: #003399;
+	border: 0px none #003399;
+}
+
+/* header logo ------------ */
+div.header div.left {
+	width:170px;
+	height : 40px;
+	float: left;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	background-color: #003399;
+	border: 0px none #003399;
+	text-align : left;
+	background-image : url(../../images/tcexam_logo_136x40.png);
+	background-position : top;
+	background-repeat : no-repeat;
+}
+
+/* header banner ------------ */
+div.header div.right {
+	width:100%;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	background-color: #003399;
+	border: 0px none #003399;
+	text-align : right;
+}
+
+div.header div.right input{
+	background-color: #003399;
+	color: White;
+	border : 0px none #003399;
+	font-family: 'Courier New', Courier, monospace;
+	font-size : 100%;
+	text-align : right;
+}
+
+/* DIV container:
+contains form box and help box */
+
+div.container {
+	width: 100%;
+	padding: 5px 5px 5px 5px;
+	margin: 0px 0px 0px 0px ;
+}
+
+div.popupcontainer {
+	width: 100%;
+	padding: 5px 5px 5px 5px;
+	margin: 0px 0px 0px 0px ;
+	font-size : 80%;
+}
+
+/* PAGE HELP ------------------------------- */
+
+div.pagehelp {
+	width: 100%;
+	background-color: #ddeeff;
+	border: 1px dotted Gray;
+	color: #333333;
+	padding: 5px 5px 5px 5px;
+	margin: 5px 0px 0px 0px;
+	font-size : 80%;
+}
+
+/* FORM BOX --------------------- */
+
+div.tceformbox {
+	width: 100%;
+	background-color: #f6f6f6;
+	border: 1px solid Gray;
+	padding: 5px 5px 5px 5px;
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+}
+
+div.tcecontentbox {
+	width: 100%;
+	background-color: #f6f6f6;
+	border: 1px solid Gray;
+	padding: 5px 5px 5px 5px;
+	margin: 0px 0px 0px 0px;
+	text-align: left;
+}
+
+div.rowl {
+	clear: both;
+	text-align: left;
+	padding: 1px 1px 1px 1px;
+}
+
+div.row {
+	clear: both;
+	text-align: center;
+	padding: 1px 1px 1px 1px;
+}
+
+div.row span.label {
+	float: left;
+	width: 30%;
+	text-align: right;
+}
+
+div.row span.formw {
+	float: right;
+	width: 69%;
+	text-align: left;
+	font-size: 90%;
+}
+
+div.row span.value {
+	float: right;
+	width: 69%;
+	text-align: left;
+	font-weight : bold;
+}
+
+div.row span.left {
+	float: left;
+	width: 49%;
+	text-align: left;
+	font-size : 90%;
+}
+
+div.row span.right {
+	float: right;
+	width: 49%;
+	text-align: right;
+	font-size : 90%;
+}
+
+div.float {
+    padding-right: 10px;
+    padding-left: 10px;
+    float: left;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+/* Page selector --------------------------*/
+div.pageselector {
+	width: 90%;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	font-size : 80%;
+	text-align: center;
+}
+
+/* user select table --------------------------*/
+table.userselect {
+	width: 100%;
+	background-color: #f6f6f6;
+	border: 1px solid Gray;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+}
+
+table.userselect tr{
+	border: 1px solid Gray;
+	 font-size : 80%;
+}
+
+table.userselect th {
+		border: 1px solid Gray;
+}
+
+table.userselect td {
+	border: 1px solid Gray;
+}
+
+/* PME CODE TAGS --------------------------*/
+p.tcecode{
+}
+
+p.tcecodepre{
+	font-family: monospace;
+	display: block;
+	white-space: pre;
+}
+
+blockquote.tcecode{
+}
+
+a.tcecode{
+}
+
+a:visited.tcecode{
+}
+
+a:hover.tcecode{
+}
+
+small.tcecode{
+}
+
+b.tcecode{
+}
+
+strong.tcecode{
+}
+
+i.tcecode{
+}
+
+sub.tcecode{
+}
+
+sup.tcecode{
+}
+
+ul.tcecode{
+}
+
+ol.tcecode{
+}
+
+li.tcecode{
+}
+
+img.tcecode{
+	border: 0px none White;
+}
+
+/* ---------- */
+div.creditslogos {
+	text-align : center;
+}
+
+ul.credits {
+	color: #333333;
+	padding: 5px 5px 5px 5px;
+	margin: 5px 5px 5px 5px;
+	text-align: left;
+	font-size : 80%;
+}
+
+/* BODY (menu + main) ------------ */
+div.body {
+	clear: both;
+	width: 99%;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+div.content {
+	float: left;
+	text-align: left;
+	padding: 0px;
+	width: 84%;
+	padding: 5px 5px 5px 5px;
+	margin: 0px 0px 0px 0px;
+}
+
+/* TOP MENU ------------ */
+div.scrollmenu {
+	float: left;
+	position: relative;
+	width: 13%;
+	padding: 1px 1px 1px 1px;
+	margin: 1px 1px 1px 1px;
+	background-color: #ddeeff;
+	color : Gray;
+	font-size : 0.8em;
+	border: 1px dotted Gray;
+	text-align: left;
+}
+
+div.scrollmenu ul{
+	width: 100%;
+	list-style-type: none;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 10px;
+}
+
+div.scrollmenu ul li{
+	font-weight : bold;
+}
+
+div.scrollmenu ul ul li{
+	font-weight : normal;
+}
+
+div.scrollmenu a{
+	background-color: #ddeeff;
+	color : Black;
+	text-decoration: none;
+}
+
+div.scrollmenu a:visited{
+	background-color: #ddeeff;
+	color : Black;
+	text-decoration: none;
+}
+
+div.scrollmenu a:hover{
+	background-color: #003399;
+	color: White;
+	text-decoration: none;
+}
+
+/* ----- */
+
+ol.qlist li {
+	font-family : "Courier New", Courier, monospace;
+	font-size : 80%;
+}
+
+textarea.answertext {
+	font-family : "Courier New", Courier, monospace;
+	font-size : 80%;
+}
+
+div.navlink {
+	font-family : "Courier New", Courier, monospace;
+	font-size : 80%;
+	font-weight : bold;
+}
+
+ul.question {
+	font-family : "Courier New", Courier, monospace;
+	font-size : 90%;
+	list-style-type: none;
+}
+
+ul.question li {
+	padding: 0px 0px 0px 0px;
+	margin: 10px 0px 10px 0px;
+}
+
+ul.question li div.paddingleft {
+	padding-left: 30px;
+}
+
+ol.answer {
+	list-style-type : lower-alpha;
+	font-family : "Courier New", Courier, monospace;
+	font-size : 90%;
+}
+
+ol.answer li {
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+ul.answer {
+	list-style-type : disc;
+}
+
+ul.answer li {
+	font-family : "Courier New", Courier, monospace;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+ul.log {
+}
+
+ul.log li{
+	font-family : "Courier New", Courier, monospace;
+	font-size: 90%;
+}
+
+/* W3C logos ------------ */
+
+div.minibutton {
+	clear: both;
+	text-align: right;
+	margin: 0px 5px 0px 0px;
+}
+
+a.minibutton:link, a.minibutton:visited, a.minibutton:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size : 9px;
+	border: 1px solid #000000;
+	background: #ffffff;
+	color: #000000;
+	padding: 0px 0px 0px 3px;
+	text-decoration: none;
+}
+
+a.minibutton span {
+	background-color: #FFCC66;
+	color: #000000;
+	padding: 0px 2px 0px 2px;
+	margin: 0px 0px 0px 0px;
+	text-decoration: none;
+}
+
+/* Logout link ------------ */
+
+a.logoutbutton:link, a.logoutbutton:visited {
+	border: 1px solid #000000;
+	background-color: #B22222;
+	padding: 1px 4px 1px 4px;
+	text-decoration: none;
+}
+
+a.logoutbutton:hover {
+	background-color: Red;
+}
+
+/* delete link ------------ */
+
+a.deletebutton:link, a.deletebutton:visited {
+	border: 1px solid #000000;
+	
+	padding: 0px 3px 0px 3px;
+	text-decoration: none;
+	color: #003399;
+	font-size: 75%;
+}
+
+a.deletebutton:hover {
+	background-color: #B22222;
+	color: #FFFFFF;
+}
+
+div.preview {
+	border: 1px solid Gray;
+	background-color: #FFFFFF;
+	padding: 5px 5px 5px 5px;
+}
+
+img.button {
+	border: 1px solid Gray;
+	margin: 0px 0px 0px 0px;
+}
+
+a.xmlbutton:link, a.xmlbutton:visited {
+	border: 1px solid #000000;
+	border-color: White #696969 #696969 White;
+	padding: 2px 4px 2px 4px;
+	margin: 0px 0px 0px 0px;
+	text-decoration: none;
+	font-size: 80%;
+	color:#000000;
+	background: #D3D3D3;
+}
+
+a.xmlbutton:hover {
+	background: #ddeeff;
+}
+/* ------------------------------------------------------------------
+END
+ ------------------------------------------------------------------*/

@@ -1,0 +1,385 @@
+<html>
+<body>
+
+
+<table id="junitconv_info" title="JUnitConv Information" summary="Information About JUnitConv" border="1" cellspacing="0" cellpadding="4">
+<tr valign="top"><td>Name</td><td><a href="http://junitconv.sourceforge.net">JUnitConv</a></td></tr>
+<tr valign="top"><td>Version</td><td>1.0.004</td></tr>
+<tr valign="top"><td>Date</td><td>2006-12-09</td></tr>
+<tr valign="top"><td>Author</td><td>Nicola Asuni</td></tr>
+<tr valign="top"><td>Copyright</td><td><a href="http://www.tecnick.com">Tecnick.com S.r.l.</a><br />
+Via Ugo Foscolo n.19<br />
+09045 Quartu Sant'Elena (CA)<br />
+ITALY<br />
+<a href="http://www.tecnick.com">www.tecnick.com</a>
+</td></tr>
+<tr valign="top"><td>License</td><td><a href="http://www.gnu.org/copyleft/lesser.html" target="_blank">GNU LESSER GENERAL PUBLIC LICENSE v.2.1</a></td></tr>
+</table>
+
+
+<a name="sourcedoc" id="sourcedoc"></a>
+<h3>Source Code and Documentation</h3>
+<ul>
+<li><a title="Browse JavaDoc Documentation" href="https://junitconv.dev.java.net/source/browse/*checkout*/junitconv/doc/index.html" target="_blank">Browse Documentation</a></li>
+<li><a title="Browse CVS" href="https://junitconv.dev.java.net/source/browse/junitconv/">Browse CVS</a></li>
+<li><a title="JADC on SourceForge" href="http://sourceforge.net/projects/junitconv/" target="_blank">Download JUnitConv from SourceForge</a></li>
+</ul>
+
+
+<a name="description" id="description"></a>
+<h3>Description</h3>
+
+JUnitConv is an universal Units of Measure Converter, it converts numbers from one unit of measure to another.<br />
+Built as a Java Applet, JUnitConv is platform-independent and highly-configurable, it supports an unlimited number of Units Categories, Units of Measure and Multiplier Prefixes that could be customized using external text files. You could setup your own data files using your preferred spoken language, units categories, units definitions and multiplier prefixes. The default configuration data files contains 580 basic units of measure definitions divided in 31 categories and 27 multiplier prefixes for a total of 15660 composed units.<br />
+
+<a name="features" id="features"></a>
+<h3>Main Features</h3>
+<ul>
+<li>browser-independent, works fine with any browser that support at least Java 1.1</li>
+<li>580 basic units of measure definitions divided in 31 categories and 27 multiplier prefixes</li>
+<li>customizables units, categories, multipliers and labels using external text files</li>
+<li>supports units descriptions, used to display units definitions and history (if available)</li>
+<li>supports multiplier prefixes</li>
+<li>supports basic formulas as units conversion parameters</li>
+<li>supports result precision (max number of decimal places)</li>
+<li>customizables charset encoding, supports international character sets (require appropriate OS/browsers)</li>
+<li>customizables background and foreground colors</li>
+<li>customizables font type, style and size</li>
+</ul>
+<br />
+Note: the conversion accuracy is influenced by a couple of factors such as client machine precision and units data definitions.<br />
+<br />
+
+<a name="example" id="example"></a>
+<h3>Example</h3>
+
+<applet
+	codebase = "java/" 
+	archive  = "junitconv.jar" 
+	code     = "com.tecnick.junitconv.JUnitConv.class" 
+	name     = "junitconv"
+	id       = "junitconv"
+	alt      = "junitconv example"
+	width    = "600"
+	height   = "400"
+	hspace   = "0"
+	vspace   = "0"
+	align    = "top"
+>
+
+
+<param name="background_color" value="DDDDDD" />
+<param name="foreground_color" value="000000" />
+<param name="background_image" value="" />
+<param name="font" value="Arial,Verdana,Helvetica" />
+<param name="font_style" value="PLAIN" />
+<param name="font_size" value="12" />
+<param name="encoding" value="utf-8" />
+<param name="page_encoding" value="iso-8859-1" />
+<param name="labels_data_file" value="java/eng/labels.txt" />
+<param name="multiplier_data_file" value="java/eng/muldata.txt" />
+<param name="categories_data_file" value="java/eng/catdata.txt" />
+<param name="units_data_file" value="java/eng/unitdata.txt" />
+
+</applet>
+
+
+<a name="setup" id="setup"></a>
+<h3>Setup</h3>
+
+To display the JUnitConv, copy the <b>.jar</b> file on your site and add the <b>applet</b> tag to your XHTML/HTML document. To customize quickly the applet, I suggest to cut and paste the applet tag code used in the online <a href="http://www.tecnick.com/public/code/cp_dpage.php?aiocp_dp=junitconv_example">example</a> and modify it to fit your needs.<br />
+<br />
+The following tables illustrates the meaning and function of each parameter.
+ 
+<br /><br />
+<table class="edge" border="0" cellspacing="1" cellpadding="2">
+<tr class="edge"><th align="center" class="edge">Applet Attributes <br /><i>(&lt;applet attribute_name="attribute_value" ... &gt;)</i></th></tr>
+<tr class="edge"><td class="edge">
+
+<table class="fill" border="0" cellspacing="1" cellpadding="4" title="Applet Attributes" summary="List of attributes for JUnitConv">
+<tr class="fillO">
+	<th class="fillOO">name</th>
+	<th class="fillOE">values</th>
+	<th class="fillOO">default</th>
+	<th class="fillOE">required</th>
+</tr>
+
+<tr class="fillE">
+	<td valign="top" class="fillEO">codebase</td>
+	<td valign="top" class="fillEE"><i>relative path to applet archive directory (e.g.: "../java/")</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">yes</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">archive</td>
+	<td valign="top" class="fillOE">junitconv.jar <i>(name of applet archive)</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">yes</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">code</td>
+	<td valign="top" class="fillEE">com.tecnick.junitconv.JUnitConv.class <i>(name of main class)</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">yes</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">width</td>
+	<td valign="top" class="fillOE"><i>applet width in pixels</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">yes</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">height</td>
+	<td valign="top" class="fillEE"><i>applet height in pixels</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">yes</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">hspace</td>
+	<td valign="top" class="fillOE"><i>applet horizontal space</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">vspace</td>
+	<td valign="top" class="fillEE"><i>applet vertical space</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">align</td>
+	<td valign="top" class="fillOE"><i>applet alignment</i><ul><li>left</li><li>right</li><li>top</li><li>middle</li><li>bottom</li></ul></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">name</td>
+	<td valign="top" class="fillEE"><i>applet name</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">id</td>
+	<td valign="top" class="fillOE"><i>applet id</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">alt</td>
+	<td valign="top" class="fillEE"><i>applet alternate text content</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+</table>
+
+</td></tr>
+</table>
+
+
+<br /><br />
+The following are the main applet parameters.<br />
+<br /><br />
+
+<table class="edge" border="0" cellspacing="1" cellpadding="2">
+<tr class="edge"><th align="center" class="edge">Main Parameters <br /><i>(&lt;param name="param_name" value="param_value" /&gt;)</i></th></tr>
+<tr class="edge"><td class="edge">
+
+<table class="fill" border="0" cellspacing="1" cellpadding="4" title="Main Parameters" summary="List main parameters of JDDM">
+<tr class="fillO">
+	<th class="fillOO">name</th>
+	<th class="fillOE">values</th>
+	<th class="fillOO">default</th>
+	<th class="fillOE">required</th>
+</tr>
+
+
+<tr class="fillO">
+	<td valign="top" class="fillOO">background_color</td>
+	<td valign="top" class="fillOE"><i>applet background color<br />- the color format is a set of three hexadecimal numbers (from 00 to FF) representing primary colors RRGGBB (R=Red, G=Green, B=Blue)</i></td>
+	<td valign="top" class="fillOO">CCCCCC</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">foreground_color</td>
+	<td valign="top" class="fillEE"><i>applet foreground color (text color)<br />- the color format is a set of three hexadecimal numbers (from 00 to FF) representing primary colors RRGGBB (R=Red, G=Green, B=Blue)</i></td>
+	<td valign="top" class="fillEO">000000</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">font</td>
+	<td valign="top" class="fillOE">font name</td>
+	<td valign="top" class="fillOO">Helvetica, Verdana, Arial</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">font_style</td>
+	<td valign="top" class="fillEE"><i>font style</i><ul><li>PLAIN</li><li>BOLD</li><li>ITALIC</li><li>BOLD+ITALIC</li></ul></td>
+	<td valign="top" class="fillEO">PLAIN</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">font_size</td>
+	<td valign="top" class="fillOE"><i>font height in pixels</i></td>
+	<td valign="top" class="fillOO">11</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">page_encoding</td>
+	<td valign="top" class="fillEE"><a href="http://www.iana.org/assignments/character-sets" target="_blank">encoding character set</a> of the html page where the applet is loaded</td>
+	<td valign="top" class="fillEO">iso-8859-1</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">encoding</td>
+	<td valign="top" class="fillOE"><a href="http://www.iana.org/assignments/character-sets" target="_blank">encoding character set</a> for the applet</td>
+	<td valign="top" class="fillOO">iso-8859-1</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">labels_data_file</td>
+	<td valign="top" class="fillOE"><i>relative path to text file containing the applet labels (fields names)</i></td>
+	<td valign="top" class="fillOO">eng/labels.txt</td>
+	<td valign="top" align="center" class="fillOE">yes</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">multiplier_data_file</td>
+	<td valign="top" class="fillEE"><i>relative path to text file containing the multipliers definitions</i></td>
+	<td valign="top" class="fillEO">eng/muldata.txt</td>
+	<td valign="top" align="center" class="fillEE">yes</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">categories_data_file</td>
+	<td valign="top" class="fillOE"><i>relative path to text file containing the units categories</i></td>
+	<td valign="top" class="fillOO">eng/catdata.txt</td>
+	<td valign="top" align="center" class="fillOE">yes</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">units_data_file</td>
+	<td valign="top" class="fillEE"><i>relative path to text file containing the units definitions</i></td>
+	<td valign="top" class="fillEO">eng/unitdata.txt</td>
+	<td valign="top" align="center" class="fillEE">yes</td>
+</tr>
+
+</table>
+
+</td></tr>
+</table>
+
+<br /><br />
+
+<a name="customize" id="customize"></a>
+<h3>Customize Units</h3>
+
+<a name="formula" id="formula"></a>
+<h3>Conversion Formula</h3>
+
+All conversions are performed using the following formula:<br />
+<br />
+<b class="fixedfont">OV = ( ( IV &middot; IS &middot; IM<sup>IP</sup> ) + IO - OO ) / ( OS &middot; OM<sup>OP</sup>)</b><br />
+<br />
+where:
+<ul>
+<li class="fixedfont"><b class="fixedfont">IV</b> = Input Value</li>
+<li class="fixedfont"><b class="fixedfont">IS</b> = Input Conversion Factor</li>
+<li class="fixedfont"><b class="fixedfont">IM</b> = Input Multiplier Value</li>
+<li class="fixedfont"><b class="fixedfont">IP</b> = Input Multiplier Exponent</li>
+<li class="fixedfont"><b class="fixedfont">IO</b> = Input Conversion Offset</li>
+<li class="fixedfont"><b class="fixedfont">OV</b> = Output Value</li>
+<li class="fixedfont"><b class="fixedfont">OS</b> = Output Conversion Factor</li>
+<li class="fixedfont"><b class="fixedfont">OM</b> = Output Multiplier Value</li>
+<li class="fixedfont"><b class="fixedfont">OP</b> = Output Multiplier Exponent</li>
+<li class="fixedfont"><b class="fixedfont">OO</b> = Output Conversion Offset</li>
+</ul>
+
+<h3>Data Files</h3>
+
+Labels, Categories, Units and Multipliers are specified on external text files (data files). These data files can be changed manually using a simple text editor or using a spreadsheet editor such as Microsoft Excel (open and save files using the  <i>Tab delimited Text</i> format).<br />
+<br />
+<i>Tab delimited Text</i> means that each file row identify one element (one category, one unit, one multiplier or one label). Each row terminate with newline character '\n' (rows separator). The data values of each single element are separated by tabulation character '\t' (columns separator), even if not present.<br />
+<br />
+
+<h4>labels_data_file</h4>
+
+On this file each row represent one JUnitConv label (field name).<br />
+
+<h4>multiplier_data_file</h4>
+
+This file contains the Multiplier Prefixes definitions (e.g.: k = kilo = 10<sup>3</sup> = 1000)<br />
+The columns fields are:
+<ul>
+<li>symbol</li>
+<li>name</li>
+<li><a href="#number">value</a> (IM or OM on <a href="#formula">formula</a>)</li>
+</ul><br />
+
+<h4>categories_data_file</h4>
+
+This file contains the Units Categories Names.<br />
+The row number of each category represent the CATEGORY_ID index.<br />
+
+<h4>units_data_file</h4>
+
+This file contains the Units of Measure definitions.<br />
+The columns fields are:
+<ul>
+<li>CATEGORY_ID (see the previous categories_data_file description)</li>
+<li>symbol</li>
+<li>name</li>
+<li><a href="#number">conversion factor</a> (IS or OS on <a href="#formula">formula</a>), the reference unit has value 1</li>
+<li><a href="#number">offset</a> (IO or OO on <a href="#formula">formula</a>), it's used to convert between temperatures scales, normally it's zero</li>
+<li><a href="#number">unit multiplier exponent</a> (IP or OP on <a href="#formula">formula</a>), for example this has value 1 on meters, 2 on m<sup>2</sup> and 3 on m<sup>3</sup></li>
+<li>description</li>
+</ul><br />
+
+
+
+<a name="number" id="number"></a>
+<h3>Numeric Fields</h3>
+
+On data files, each numeric field support scientific notation (e.g.: 3.7E-2 = 3.7 &middot; 10<sup>-2</sup> = 0.037) but can be also specified using basic formulas and constants.<br />
+<br />
+On formulas the following symbols are used (in order of precedence):<br />
+<ul>
+<li><b>P</b> = Pi = 3.14159...</li>
+<li><b>X</b> = e = 2.71828...</li>
+<li><b>*</b> = multiplication</li>
+<li><b>/</b> = division</li>
+<li><b>+</b> = sum</li>
+<li><b>-</b> = difference</li>
+<li><b>^</b> = power elevation</li>
+</ul>
+Note that parenthesis are not supported, so please check twice the operators precedence.<br />
+<br />
+Examples:
+<ul>
+<li>P/180^2 = (Pi/180)<sup>2</sup> = 3.046174...</li>
+<li>1+3.7E-2 = 1 + (3.7 &middot; 10<sup>-2</sup>) = 1.037</li>
+<li>5^3-1 = 5<sup>3-1</sup> = 5<sup>2</sup> = 25</li>
+<li>72*4.55/25.4 = (72 &middot; 4.55) / 25.4 = 12.8976...</li>
+</ul>
+
+<a name="references" id="references"></a>
+<h3>References</h3>
+
+The following documents, books and software applications has been used as reference to build the default units data file (unitdata.txt).
+
+<ul>
+<li><a href="http://info.astrian.net/jargon/" target="_blank">The Jargon Dictionary</a></li>
+<li><a href="http://physics.nist.gov/cuu/Units/current.html" target="_blank">NIST Definitions of the SI base units</a></li>
+<li><a href="http://ts.nist.gov/ts/htdocs/230/235/appxc/appxc.htm" target="_blank">NIST Handbook 44,Appendix C</a></li>
+<li><a href="http://www.megaconverter.com/Mega2/index.html" target="_blank">MegaConverter2</a></li>
+<li><a href="http://www.csgnetwork.com/tempconv.html" target="_blank">Celsius, Fahrenheit, Kelvin, Réaumur,and Rankine Temperature Conversion</a></li>
+<li><a href="http://www.csgnetwork.com/converttable.html" target="_blank">Unit Conversion Table</a></li>
+<li><a href="http://www.processassociates.com/cgi-bin/convert.exe" target="_blank">Angle Conversion Factors</a></li>
+<li><a href="http://www.boomershoot.org/general/mils.htm" target="_blank">Mils Versus Mils Versus Mils By Joe Huffman</a></li>
+<li><a href="http://members.aol.com/JackProot/met/antbible.html" target="_blank">Measures from Antiquity and the Bible</a></li>
+<li>G. Biondo, E. Sacchi - Manuale di Elettronica e telecomunicazioni - HOEPLI</li>
+</ul>
+
+<br /><br /><a href="http://sourceforge.net"><img src="http://sourceforge.net/sflogo.php?group_id=159265&type=1" width="88" height="31" border="0" alt="SourceForge.net Logo" /></a><a href="http://sourceforge.net/donate/index.php?group_id=159265"><img src="http://images.sourceforge.net/images/project-support.jpg" width="88" height="32" border="0" alt="Support This Project" /></a><br /><br />
+
+<br/><br/>
+<a href="http://opensource.tecnick.com" title="[extrnal site on a new window]" target="_blank">Open Source projects from the same author &gt;&gt;</a>
+
+</body>
+</html>

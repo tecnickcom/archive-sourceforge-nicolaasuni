@@ -1,0 +1,128 @@
+* {
+	font-family : Arial, Helvetica, sans-serif;
+}
+
+body {
+	background-color : White;
+	color : Black;
+}
+
+h1 {
+	color : #0060BF;
+}
+
+h2 {
+	color : #0060BF;
+}
+
+h3 {
+	color : #0060BF;
+}
+
+h4 {
+	color : #0060BF;
+}
+
+a {
+	color : #0060BF;
+	text-decoration : none;
+}
+
+a:visited {
+	color : #0060BF;
+	text-decoration : none;
+}
+
+a:hover {
+	color: #FF8000;
+	text-decoration: underline;
+}
+
+/* ------------------------------------------------------------------
+EDGE TABLE
+ ------------------------------------------------------------------*/
+TABLE.edge{
+	background-color : #BFDFFF;
+	border : none;
+}
+
+TR.edge{
+	background-color : #BFDFFF;
+}
+
+TH.edge{
+	background-color : #BFDFFF;
+	color : Black;
+}
+
+TD.edge{
+	background-color : #BFDFFF;
+	color : Black;
+}
+
+/* ------------------------------------------------------------------
+FILL TABLE
+ ------------------------------------------------------------------*/
+TABLE.fill {
+	background-color : #EBF5FF;
+	border : none;
+	width : 100%;
+}
+
+TR.fill {
+	background-color : #EBF5FF;
+}
+
+TH.fill {
+	background-color : #EBF5FF;
+	color : Black;
+}
+
+TD.fill {
+	background-color : #EBF5FF;
+	color : Black;
+}
+
+TR.fillO {
+	background-color : #BFDFFF;
+	color : Black;
+}
+
+TR.fillE {
+	background-color : #DCEDFF;
+	color : Black;
+}
+
+TH.fillO {
+	background-color : #CDE6FF;
+	color : Black;
+}
+
+TH.fillE {
+	background-color : #BFDFFF;
+	color : Black;
+}
+
+TD.fillOO {
+	background-color : #CDE6FF;
+	color : Black;
+}
+
+TD.fillOE {
+	background-color : #BFDFFF;
+	color : Black;
+}
+
+TD.fillEO {
+	background-color : #EBF5FF;
+	color : Black;
+}
+
+TD.fillEE {
+	background-color : #DCEDFF;
+	color : Black;
+}
+
+.fixedfont {
+	font-family : monospace;
+}

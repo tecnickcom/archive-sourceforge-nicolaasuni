@@ -1,0 +1,5 @@
+1.0.007 (2006-02-04)
+	- released as open source
+	
+1.0.000 (2003-01-22)
+	- first release

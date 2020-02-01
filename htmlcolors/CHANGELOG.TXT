@@ -1,0 +1,6 @@
+1.0.002 (2005-03-30)
+	- jar file were added on www directory
+1.0.001 (2005-03-24)
+	- java.net release
+1.0.000 (2005-03-15)
+	- sourceforge release

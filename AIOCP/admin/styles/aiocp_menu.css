@@ -1,0 +1,142 @@
+/* ------------------------------------------------------------------
+GENERAL TAGS
+ ------------------------------------------------------------------*/
+* {
+	font-family : Arial, Helvetica, sans-serif;
+}
+
+body {
+	background-image : url(../../images/backgrounds/cp/background_cp.gif);
+	background-color : #575757;
+	color : #FFFFFF;
+	margin-bottom : 5px;
+	margin-left : 5px;
+	margin-right : 5px;
+	margin-top : 5px;
+	font-size : 0.8em;
+}
+
+/*
+General PRE tag settings
+*/
+pre {
+	font-family : "Courier New", Courier, monospace;
+}
+
+small {
+	font-size : 0.7em;
+}
+
+a {
+	text-decoration: none;
+	color : #FFFFFF;
+}
+
+a:visited {
+	text-decoration: none;
+	color : #FFFFFF;
+}
+
+a:Hover {
+	text-decoration: underline;
+	color : Yellow;
+}
+
+/* fix Netscape 6 table issue */
+td img {vertical-align: bottom;}
+
+/* ---------------------
+Settings for alternate menu tree
+---------------------*/
+
+ul.altmenu {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	list-style: none;
+	list-style-type: none;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: Silver;
+	color: Black;
+	font-weight : bold;
+	font-size : 0.9em;
+}
+
+ul.altmenu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	list-style-type: none;
+	font-weight : normal;
+}
+
+ul.altmenu li{
+	margin: 0;
+	padding: 0;
+}
+
+ul.altmenu a{
+	padding: 0px 5px 0px 5px;
+	background-color: Silver;
+	color: Black;
+	text-decoration: none;
+}
+
+ul.altmenu a:visited{
+	padding: 0px 5px 0px 5px;
+	background-color: Silver;
+	color: Black;
+	text-decoration: none;
+}
+
+ul.altmenu a:hover{
+	padding: 0px 5px 0px 5px;
+	color: White;
+	background-color: Black;
+	text-decoration: none;
+}
+
+ul.altmenu ul a{
+	padding: 0px 5px 0px 20px;
+	background-color: Silver;
+	color: Black;
+	text-decoration: none;
+}
+
+ul.altmenu ul a:visited{
+	padding: 0px 5px 0px 20px;
+	background-color: Silver;
+	color: Black;
+	text-decoration: none;
+}
+
+ul.altmenu ul a:hover{
+	padding: 0px 5px 0px 20px;
+	color: White;
+	background-color: Black;
+	text-decoration: none;
+}
+
+ul.altmenu ul ul a{
+	padding: 0px 5px 0px 30px;
+	background-color: Silver;
+	color: Black;
+	text-decoration: none;
+}
+
+ul.altmenu ul ul a:visited{
+	padding: 0px 5px 0px 30px;
+	background-color: Silver;
+	color: Black;
+	text-decoration: none;
+}
+
+ul.altmenu ul ul a:hover{
+	padding: 0px 5px 0px 30px;
+	color: White;
+	background-color: Black;
+	text-decoration: none;
+}
+
+/* ------------------------------------------------------------------
+END
+ ------------------------------------------------------------------*/

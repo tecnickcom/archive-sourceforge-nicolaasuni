@@ -1,0 +1,69 @@
+4.0.005 (2006-02-03)
+	- complete refactoring
+	- the source of following classes were removed from src directory and added as
+		".class" resources on classes directory.
+		- com.tecnick.htmlutils.htmlcolors.HTMLColors.class 
+			(http://htmlcolors.sourceforge.net)
+		- com.tecnick.htmlutils.htmlentities.HTMLEntities.class 
+			(http://htmlentities.sourceforge.net)
+		- com.tecnick.htmlutils.htmlstrings.HTMLStrings.class
+			(http://htmlstrings.sourceforge.net)
+		- com.tecnick.htmlutils.htmlurls.HTMLURLs.class
+			(http://htmlurls.sourceforge.net)
+		- com.tecnick.htmlutils.xhtmltranscoder.XHTMLTranscoder.class
+		  - XHTMLElements.class
+			(http://xhtmltranscoder.sourceforge.net)
+		- com.tecnick.xmlconfigreader.XMLConfigReader.class 
+			(http://xmlconfigreader.sourceforge.net)
+		- com.tecnick.tmxjavabridge.TMXResourceBundle.class 
+			(http://tmxjavabridge.sourceforge.net)
+			
+4.0.005 (2005-03-22)
+		- full refactoring;
+		- project porting to eclipse;
+		- fixed some bugs and improved compatibility;
+		- directories on parameters are now relative to jar file position;
+		- all external classes were changed to OpenSource versions;
+		- setCode(String code) method to set HTML code from JavaScript were added;
+		- getCode() method to get HTML code via JavaScript call were added.
+		
+2004-02-26: 
+		- fixed transcoding bug 
+		
+2004-02-13: 
+		- fixed bug on insetTag function 
+		
+2004-01-27: 
+		- added custom comboBox tags list 
+		- added appletSecurityManager for applet signing 
+		
+2004-01-26: 
+		- fixed minor bugs 
+		- converted strings to TMX 
+		
+2004-01-25: 
+		- enable/disable source edit 
+		- added stylesheet support 
+		- added extended characters selector 
+		- support custom tags 
+		
+2004-01-24: 
+		- configurable buttons by XML 
+		
+2004-01-23: 
+		- configurable html entities by XML 
+		- added param_entities_off 
+		- cross platform LookAndFeel
+		
+2004-01-22: 
+		- improved transcoder with htmlentities functions 
+		
+2003-11-13: 
+		- save button do not close windows because w98 bug 
+		- blank button now reload the code on form 
+		
+2003-08-10: 
+		- optimized imports, improved comments 
+		
+2003-03-14: 
+		- added id attribute on img wizard

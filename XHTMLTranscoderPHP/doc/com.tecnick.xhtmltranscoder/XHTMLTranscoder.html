@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class XHTMLTranscoder</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class XHTMLTranscoder</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">XHTMLTranscoder is an open-source PHP 5 class that quickly converts broken HTML code to well-formed XHTML.</p>
+<p class="description"><p>XHTMLTranscoder is a fast transcoder useful to convert HTML code in real-time.  This class do not check headers, it checks only the general rules for tags, attributes and nesting: tags (elements) names in lowercase; attributes names in lowercase; elements nesting; elements termination; unquoted attributes; unminimized attributes; unterminated empty tags; preserve other languages elements (php, asp, jsp, ...).</p></p>
+	<ul class="tags">
+				<li><span class="field">copyright:</span> Copyright (c) 2004-2005 - Tecnick.com S.r.l (www.tecnick.com) - Via Ugo Foscolo n.19 - 09045 Quartu Sant'Elena (CA) - ITALY - www.tecnick.com - info@tecnick.com</li>
+				<li><span class="field">version:</span> 1.0.000</li>
+				<li><span class="field">author:</span> Nicola Asuni [www.tecnick.com]</li>
+				<li><span class="field">license:</span> <a href="http://www.gnu.org/copyleft/lesser.html">LGPL</a></li>
+				<li><span class="field">abstract:</span> PHP 5 class that quickly converts broken HTML code to well-formed XHTML.</li>
+				<li><span class="field">link:</span> <a href="http://xmlvalidator.sourceforge.net">http://xmlvalidator.sourceforge.net</a></li>
+				<li><span class="field">name:</span> XHTMLTranscoder</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_XHTMLTranscoder_php.html">/XHTMLTranscoder.php</a> (line <span class="field">51</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$html_attributes" title="details" class="var-name">$html_attributes</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$html_attributes_obj" title="details" class="var-name">$html_attributes_obj</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$html_categories" title="details" class="var-name">$html_categories</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$html_categories_obj" title="details" class="var-name">$html_categories_obj</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$html_status" title="details" class="var-name">$html_status</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$html_status_obj" title="details" class="var-name">$html_status_obj</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$html_tags" title="details" class="var-name">$html_tags</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$html_tags_obj" title="details" class="var-name">$html_tags_obj</a>
+				</div>
+							</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+								
+				<div class="method-definition">
+											<span class="method-result">XHTMLTranscoder</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">String</span>
+										<a href="#htmlentitiesUTF8" title="details" class="method-name">htmlentitiesUTF8</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">String</span>
+										<a href="#transcode" title="details" class="method-name">transcode</a>
+											(<span class="var-type">code_to_clean</span>&nbsp;<span class="var-name">$code_to_clean</span>, [<span class="var-type">indent</span>&nbsp;<span class="var-name">$indent</span> = <span class="var-default">true</span>], [<span class="var-type">entities_off</span>&nbsp;<span class="var-name">$entities_off</span> = <span class="var-default">false</span>], [<span class="var-type">encoding</span>&nbsp;<span class="var-name">$encoding</span> = <span class="var-default">"UTF-8"</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#unhtmlentities" title="details" class="method-name">unhtmlentities</a>
+											(<span class="var-type">$text_to_convert</span>&nbsp;<span class="var-name">$text_to_convert</span>, [<span class="var-type">$preserve_tagsign</span>&nbsp;<span class="var-name">$preserve_tagsign</span> = <span class="var-default">true</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#unicodeToChars" title="details" class="method-name">unicodeToChars</a>
+											(<span class="var-type">$matches</span>&nbsp;<span class="var-name">$char</span>)
+									</div>
+							</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$html_attributes" id="$html_attributes"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$html_attributes</span>
+						(line <span class="line-number">92</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">XHTML elements attributes array.</p>
+	<ul class="tags">
+				<li><span class="field">static:</span> </li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$html_attributes_obj" id="$html_attributes_obj"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$html_attributes_obj</span>
+						(line <span class="line-number">71</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">XHTML elements attributes object.</p>
+	<ul class="tags">
+				<li><span class="field">static:</span> </li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$html_categories" id="$html_categories"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$html_categories</span>
+						(line <span class="line-number">82</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">XHTML elements categories array.</p>
+	<ul class="tags">
+				<li><span class="field">static:</span> </li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$html_categories_obj" id="$html_categories_obj"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$html_categories_obj</span>
+						(line <span class="line-number">61</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">XHTML elements categories object.</p>
+	<ul class="tags">
+				<li><span class="field">static:</span> </li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$html_status" id="$html_status"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$html_status</span>
+						(line <span class="line-number">77</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">XHTML elements status array.</p>
+	<ul class="tags">
+				<li><span class="field">static:</span> </li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$html_status_obj" id="$html_status_obj"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$html_status_obj</span>
+						(line <span class="line-number">56</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">XHTML elements status object.</p>
+	<ul class="tags">
+				<li><span class="field">static:</span> </li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$html_tags" id="$html_tags"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$html_tags</span>
+						(line <span class="line-number">87</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">XHTML elements definitions array.</p>
+	<ul class="tags">
+				<li><span class="field">static:</span> </li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$html_tags_obj" id="$html_tags_obj"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$html_tags_obj</span>
+						(line <span class="line-number">66</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">XHTML elements definitions object.</p>
+	<ul class="tags">
+				<li><span class="field">static:</span> </li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">97</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Initialize transcoder loading XHTML elements data from XML files.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">XHTMLTranscoder</span>
+		<span class="method-name">
+			__construct
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodhtmlentitiesUTF8" id="htmlentitiesUTF8"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">htmlentitiesUTF8</span> (line <span class="line-number">605</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Converts extended UTF-8 characters to &amp;#number; notation.<br /></p>
+<p class="description"><p>Invalid byte sequences will be replaced with 0xFFFD (replacement character)<br />  Based on: http://www.faqs.org/rfcs/rfc3629.html  <pre> 	  Char. number range  |        UTF-8 octet sequence
+       (hexadecimal)    |              (binary)
+    --------------------+-----------------------------------------------
+    0000 0000-0000 007F | 0xxxxxxx
+    0000 0080-0000 07FF | 110xxxxx 10xxxxxx
+    0000 0800-0000 FFFF | 1110xxxx 10xxxxxx 10xxxxxx
+    0001 0000-0010 FFFF | 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx
+    ---------------------------------------------------------------------
+
+   ABFN notation:
+   ---------------------------------------------------------------------
+   UTF8-octets = *( UTF8-char )
+   UTF8-char   = UTF8-1 / UTF8-2 / UTF8-3 / UTF8-4
+   UTF8-1      = %x00-7F
+   UTF8-2      = %xC2-DF UTF8-tail
+
+   UTF8-3      = %xE0 %xA0-BF UTF8-tail / %xE1-EC 2( UTF8-tail ) /
+                 %xED %x80-9F UTF8-tail / %xEE-EF 2( UTF8-tail )
+   UTF8-4      = %xF0 %x90-BF 2( UTF8-tail ) / %xF1-F3 3( UTF8-tail ) /
+                 %xF4 %x80-8F 2( UTF8-tail )
+   UTF8-tail   = %x80-BF
+   ---------------------------------------------------------------------</pre></p></p>
+	<ul class="tags">
+				<li><span class="field">static:</span> </li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">String</span>
+		<span class="method-name">
+			htmlentitiesUTF8
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: string to process.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodtranscode" id="transcode"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">transcode</span> (line <span class="line-number">139</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get generic HTML and returns XHTML code cleaned up.</p>
+<p class="description"><p>XHTMLTranscoder is a &lt;em&gt;fast&lt;/em&gt; transcoder useful to convert HTML  code in real-time.  This class do not check headers, it checks only the general rules for  tags, attributes and nesting:  tags (elements) names in lowercase;  attributes names in lowercase;  elements nesting;  elements termination;  unquoted attributes;  unminimized attributes;  unterminated empty tags;  preserve other languages elements (php, asp, jsp, ...).</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> the transcoded text</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">String</span>
+		<span class="method-name">
+			transcode
+		</span>
+					(<span class="var-type">code_to_clean</span>&nbsp;<span class="var-name">$code_to_clean</span>, [<span class="var-type">indent</span>&nbsp;<span class="var-name">$indent</span> = <span class="var-default">true</span>], [<span class="var-type">entities_off</span>&nbsp;<span class="var-name">$entities_off</span> = <span class="var-default">false</span>], [<span class="var-type">encoding</span>&nbsp;<span class="var-name">$encoding</span> = <span class="var-default">"UTF-8"</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">code_to_clean</span>
+				<span class="var-name">$code_to_clean</span><span class="var-description">: String the text to transcode</span>			</li>
+					<li>
+				<span class="var-type">indent</span>
+				<span class="var-name">$indent</span><span class="var-description">: boolean if true return the text indented</span>			</li>
+					<li>
+				<span class="var-type">entities_off</span>
+				<span class="var-name">$entities_off</span><span class="var-description">: boolean if true replace htmlentities with extended chars</span>			</li>
+					<li>
+				<span class="var-type">encoding</span>
+				<span class="var-name">$encoding</span><span class="var-description">: String document encoding (e.g.: &quot;UTF-8&quot;)</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodunhtmlentities" id="unhtmlentities"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">unhtmlentities</span> (line <span class="line-number">506</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Reverse function for htmlentities.</p>
+<p class="description"><p>Convert entities in UTF-8.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> converted in UTF-8</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			unhtmlentities
+		</span>
+					(<span class="var-type">$text_to_convert</span>&nbsp;<span class="var-name">$text_to_convert</span>, [<span class="var-type">$preserve_tagsign</span>&nbsp;<span class="var-name">$preserve_tagsign</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">$text_to_convert</span>
+				<span class="var-name">$text_to_convert</span><span class="var-description">: Text to convert.</span>			</li>
+					<li>
+				<span class="var-type">$preserve_tagsign</span>
+				<span class="var-name">$preserve_tagsign</span><span class="var-description">: If true preserve the characters: '&lt;' and '&gt;'(default = true).</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodunicodeToChars" id="unicodeToChars"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">unicodeToChars</span> (line <span class="line-number">550</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Convert unicode number to string.</p>
+<p class="description"><p>This is a callback function used by preg_replace_callback.  Based on: http://www.faqs.org/rfcs/rfc3629.html  <pre> 	  Char. number range  |        UTF-8 octet sequence
+       (hexadecimal)    |              (binary)
+    --------------------+-----------------------------------------------
+    0000 0000-0000 007F | 0xxxxxxx
+    0000 0080-0000 07FF | 110xxxxx 10xxxxxx
+    0000 0800-0000 FFFF | 1110xxxx 10xxxxxx 10xxxxxx
+    0001 0000-0010 FFFF | 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx
+    ---------------------------------------------------------------------
+
+   ABFN notation:
+   ---------------------------------------------------------------------
+   UTF8-octets = *( UTF8-char )
+   UTF8-char   = UTF8-1 / UTF8-2 / UTF8-3 / UTF8-4
+   UTF8-1      = %x00-7F
+   UTF8-2      = %xC2-DF UTF8-tail
+
+   UTF8-3      = %xE0 %xA0-BF UTF8-tail / %xE1-EC 2( UTF8-tail ) /
+                 %xED %x80-9F UTF8-tail / %xEE-EF 2( UTF8-tail )
+   UTF8-4      = %xF0 %x90-BF 2( UTF8-tail ) / %xF1-F3 3( UTF8-tail ) /
+                 %xF4 %x80-8F 2( UTF8-tail )
+   UTF8-tail   = %x80-BF
+   ---------------------------------------------------------------------</pre></p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> to replace.</li>
+				<li><span class="field">static:</span> </li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			unicodeToChars
+		</span>
+					(<span class="var-type">$matches</span>&nbsp;<span class="var-name">$char</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">$matches</span>
+				<span class="var-name">$char</span><span class="var-description">: array containing number to convert at position 0.</span>			</li>
+				</ul>
+		
+		
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 20 Mar 2005 20:46:26 +0100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.3.0RC3</a>
+	</p>
+	</div></body>
+</html>

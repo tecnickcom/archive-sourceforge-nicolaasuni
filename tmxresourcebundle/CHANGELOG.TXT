@@ -1,0 +1,28 @@
+1.1.008 (2006-05-28)
+	- serialization system were added to reduce loading times.
+	
+1.1.006 (2006-02-03)
+	- imports were reorganized
+	
+1.1.005 (2005-03-30)
+	- TMX files may be located on jar file
+	- jar file were added on www directory
+	
+1.1.004 (2005-03-24)
+	- java.net release
+	
+1.1.003 (2005-03-15)
+	- the XML filename could be also an Internet address (URI resource).
+	
+1.1.002 (2005-03-05)
+	- the package name were changed to 'com.tecnick.tmxjavabridge'.
+	- the eclipse (www.eclipse.org) project files were added.
+	- a JUnit test were added.
+	- the documentation were updated.
+	
+1.1.001 (2005-01-23)
+	- the language code specification is now case insensitive
+	  (changed 'equals' method with 'equalsIgnoreCase' on line 114).
+	  
+1.1 (2005-01-08)
+	- sourceforge release

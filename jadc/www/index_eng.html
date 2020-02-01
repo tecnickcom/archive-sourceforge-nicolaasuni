@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+
+<head>
+<title>JADC (Advanced Digital Clock)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="description" content="JADC (Advanced Digital Clock) by Tecnick.com S.r.l." />
+<meta name="author"      content="Nicola Asuni" />
+<meta name="reply-to"    content="info@tecnick.com" />
+<meta name="keywords"    content="Tecnick.com, JADC" />
+<link rel="stylesheet" href="default.css" type="text/css" />
+</head>
+
+<body>
+
+<h1>JADC (Advanced Digital Clock)</h1>
+
+
+<table id="jadc_info" title="JADC Information" summary="Information About JADC (Advanced Digital Clock)" border="1" cellspacing="0" cellpadding="4">
+<tr valign="top"><td>Name</td><td><a href="http://jadc.sourceforge.net">JADC (Advanced Digital Clock)</a></td></tr>
+<tr valign="top"><td>Version</td><td>1.0.007</td></tr>
+<tr valign="top"><td>Date</td><td>2006-02-04</td></tr>
+<tr valign="top"><td>Author</td><td>Nicola Asuni</td></tr>
+<tr valign="top"><td>Copyright</td><td><a href="http://www.tecnick.com">Tecnick.com S.r.l.</a><br />
+Via Ugo Foscolo n.19<br />
+09045 Quartu Sant'Elena (CA)<br />
+ITALY<br />
+<a href="http://www.tecnick.com">www.tecnick.com</a>
+</td></tr>
+<tr valign="top"><td>License</td><td><a href="http://www.gnu.org/copyleft/gpl.html" target="_blank">GNU GENERAL PUBLIC LICENSE v.2</a></td></tr>
+</table>
+
+<br />
+<div align="center"><small>[ <a href="#description">description</a> | <a href="#features">features</a> | <a href="#example">example</a> | <a href="#setup">setup</a> ]</small></div>
+<br />
+
+<a name="description" id="description"></a>
+<h2>Description</h2>
+
+JADC (Advanced Digital Clock) is both a digital clock and a time counter (countdown or countup display, to or from a particular time).
+<br />
+JADC is browser-independent and highly-configurable Java applet, it could be easily customized with your own graphics and time format to achieve an unlimited variety of appearances and behaviors.<br />
+This distribution includes 255 images (17 different sets of digits).
+
+<a name="features" id="features"></a>
+<h2>Main Features</h2>
+<ul>
+<li>browser-independent, works fine with any browser that support at least Java 1.1</li>
+<li>works either as a digital clock or as a time counter</li>
+<li>customizable input and output time format</li>
+<li>adjustable time zone</li>
+<li>customizable background color</li>
+<li>customizable background image</li>
+<li>customizable graphic images for digits and symbols</li>
+<li>255 ready to use images (17 sets)</li>
+<li>support for image transparencies</li>
+</ul>
+<br />
+
+<a name="example" id="example"></a>
+<h2>Example</h2>
+
+<applet
+	codebase = "java/" 
+	archive  = "jadc.jar" 
+	code     = "com.tecnick.jadc.Jadc.class" 
+	name     = "jadc"
+	id       = "jadc"
+	alt      = "JADC example"
+	width    = "300"
+	height   = "31"
+	hspace   = "0"
+	vspace   = "0"
+	align    = "top"
+>
+
+
+<param name="counter_mode" value="false" />
+<param name="local_time" value="true" />
+<param name="timezone_hours" value="0" />
+<param name="timezone_minutes" value="0" />
+<param name="display_pattern" value="yyyy-MM-dd HH:mm:ss" />
+<param name="input_pattern" value="yyyy-MM-dd HH:mm:ss" />
+<param name="counter_time" value="2000-01-01 00:00:00" />
+<param name="background_color" value="99CC99" />
+<param name="background_image" value="" />
+<param name="img_0" value="java/images/lcd_14x23/green/0.gif" />
+<param name="img_1" value="java/images/lcd_14x23/green/1.gif" />
+<param name="img_2" value="java/images/lcd_14x23/green/2.gif" />
+<param name="img_3" value="java/images/lcd_14x23/green/3.gif" />
+<param name="img_4" value="java/images/lcd_14x23/green/4.gif" />
+<param name="img_5" value="java/images/lcd_14x23/green/5.gif" />
+<param name="img_6" value="java/images/lcd_14x23/green/6.gif" />
+<param name="img_7" value="java/images/lcd_14x23/green/7.gif" />
+<param name="img_8" value="java/images/lcd_14x23/green/8.gif" />
+<param name="img_9" value="java/images/lcd_14x23/green/9.gif" />
+<param name="img_sep" value="java/images/lcd_14x23/green/sep.gif" />
+<param name="img_dec" value="java/images/lcd_14x23/green/dec.gif" />
+<param name="img_blk" value="java/images/lcd_14x23/green/blk.gif" />
+<param name="img_pos" value="java/images/lcd_14x23/green/pos.gif" />
+<param name="img_neg" value="java/images/lcd_14x23/green/neg.gif" />
+
+</applet>
+
+<a name="setup" id="setup"></a>
+<h2>Setup</h2>
+
+To display the JADC (Advanced Digital Clock), copy the <b>.jar</b> file on your site and add the <b>applet</b> tag to your XHTML/HTML document. To customize quickly the applet, I suggest to cut and paste the applet tag code used in the online <a href="http://www.tecnick.com/public/code/cp_dpage.php?aiocp_dp=jadc_examples">examples</a> and modify it to fit your needs.<br />
+<br />
+The following tables illustrates the meaning and function of each parameter.
+ 
+<br /><br />
+<table class="edge" border="0" cellspacing="1" cellpadding="2">
+<tr class="edge"><th align="center" class="edge">Applet Attributes <br /><i>(&lt;applet attribute_name="attribute_value" ... &gt;)</i></th></tr>
+<tr class="edge"><td class="edge">
+
+<table class="fill" border="0" cellspacing="1" cellpadding="4" title="Applet Attributes" summary="List of attributes for JADC (Advanced Digital Clock)">
+<tr class="fillO">
+	<th class="fillOO">name</th>
+	<th class="fillOE">values</th>
+	<th class="fillOO">default</th>
+	<th class="fillOE">required</th>
+</tr>
+
+<tr class="fillE">
+	<td valign="top" class="fillEO">codebase</td>
+	<td valign="top" class="fillEE"><i>relative path to applet archive directory (e.g.: "../java/")</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">yes</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">archive</td>
+	<td valign="top" class="fillOE">jadc.jar <i>(name of applet archive)</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">yes</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">code</td>
+	<td valign="top" class="fillEE">com.tecnick.jadc.Jadc.class <i>(name of main class)</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">yes</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">width</td>
+	<td valign="top" class="fillOE"><i>applet width in pixels</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">yes</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">height</td>
+	<td valign="top" class="fillEE"><i>applet height in pixels</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">yes</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">hspace</td>
+	<td valign="top" class="fillOE"><i>applet horizontal space</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">vspace</td>
+	<td valign="top" class="fillEE"><i>applet vertical space</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">align</td>
+	<td valign="top" class="fillOE"><i>applet alignment</i><ul><li>left</li><li>right</li><li>top</li><li>middle</li><li>bottom</li></ul></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">name</td>
+	<td valign="top" class="fillEE"><i>applet name</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">id</td>
+	<td valign="top" class="fillOE"><i>applet id</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">alt</td>
+	<td valign="top" class="fillEE"><i>applet alternate text content</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+</table>
+
+</td></tr>
+</table>
+
+
+<br /><br />
+The following are the main applet parameters.<br />
+<br /><br />
+
+<table class="edge" border="0" cellspacing="1" cellpadding="2">
+<tr class="edge"><th align="center" class="edge">Main Parameters <br /><i>(&lt;param name="param_name" value="param_value" /&gt;)</i></th></tr>
+<tr class="edge"><td class="edge">
+
+<table class="fill" border="0" cellspacing="1" cellpadding="4" title="Main Parameters" summary="List main parameters of JDDM">
+<tr class="fillO">
+	<th class="fillOO">name</th>
+	<th class="fillOE">values</th>
+	<th class="fillOO">default</th>
+	<th class="fillOE">required</th>
+</tr>
+
+
+<tr class="fillO">
+	<td valign="top" class="fillOO">counter_mode</td>
+	<td valign="top" class="fillOE"><ul><li>true <i>the applet act as a time counter</i></li><li>false <i>the applet act as a digital clock</i></li></ul></td>
+	<td valign="top" class="fillOO">false</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">local_time</td>
+	<td valign="top" class="fillEE"><ul><li>true <i>the client local time will be used</i></li><li>false <i>the following two parameters (timezone_hours, timezone_minutes) will be used to adjust time</i></li></ul></td>
+	<td valign="top" class="fillEO">true</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">timezone_hours</td>
+	<td valign="top" class="fillOE">&plusmn;0-23 <br /><i>These are the hours to add to counter_time to get UTC time when counter_mode parameter is set to true.<br />These are the hours to add to UTC to get local time when counter_mode parameter is set to false.</i></td>
+	<td valign="top" class="fillOO">0</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">timezone_minutes</td>
+	<td valign="top" class="fillEE">&plusmn;0-59 <br /><i>These are the minutes to add to counter_time to get UTC time when counter_mode parameter is set to true.<br />These are the minutes to add to UTC to get local time when counter_mode parameter is set to false.</i></td>
+	<td valign="top" class="fillEO">0</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">display_pattern</td>
+	<td valign="top" class="fillOE"><i>Custom pattern for date-time display formatting.<br />Within date and time pattern string, the following letters are interpreted as pattern letters representing the components of a date or time string:
+<ul>
+<li><b>y</b> Year</li>
+<li><b>M</b> Month</li>
+<li><b>d</b> Day</li>
+<li><b>H</b> Hour</li>
+<li><b>m</b> Minute</li>
+<li><b>s</b> Second</li>
+<li><b>-</b> Minus symbol</li>
+<li><b>+</b> Plus Symbol</li>
+<li><b>:</b> Separator Symbol</li>
+<li><b>.</b> Separator Symbol</li>
+<li><b>&nbsp;</b> Blank space</li>
+</ul>
+<br />
+additional patterns for clock mode only (counter_mode set to false):
+<ul>
+<li><b>w</b> Week in year</li>
+<li><b>W</b> Week in month</li>
+<li><b>D</b> Day in year</li>
+<li><b>F</b> Day of week in month</li>
+<li><b>k</b> Hour in day (1-24)</li>
+<li><b>K</b> Hour in am/pm (0-11)</li>
+<li><b>h</b> Hour in am/pm (1-12)</li>
+<li><b>Z</b> RFC 822 time zone</li>
+</ul>
+</i></td>
+	<td valign="top" class="fillOO"><nobr>yyyy-MM-dd HH:mm:ss</nobr></td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">input_pattern</td>
+	<td valign="top" class="fillEE"><i>Custom pattern for counter_time input formatting.<br />Within date and time pattern string, the following letters are interpreted as pattern letters representing the components of a date or time string:
+<ul>
+<li><b>G</b> Era designator (e.g.: AD)</li>
+<li><b>y</b> Year</li>
+<li><b>M</b> Month in year</li>
+<li><b>w</b> Week in year</li>
+<li><b>W</b> Week in month</li>
+<li><b>D</b> Day in year</li>
+<li><b>d</b> Day in month</li>
+<li><b>F</b> Day of week in month</li>
+<li><b>E</b> Day in week (e.g.: Text Tuesday; Tue)</li>
+<li><b>a</b> Am/pm marker (e.g.: PM)</li>
+<li><b>H</b> Hour in day (0-23)</li>
+<li><b>k</b> Hour in day (1-24)</li>
+<li><b>K</b> Hour in am/pm (0-11)</li>
+<li><b>h</b> Hour in am/pm (1-12)</li>
+<li><b>m</b> Minute in hour</li>
+<li><b>s</b> Second in minute</li>
+<li><b>z</b> General Time zone (e.g.: PST)</li>
+<li><b>Z</b> RFC 822 time zone (e.g.: -0800)</li>
+</ul></i></td>
+	<td valign="top" class="fillEO">yyyy-MM-dd HH:mm:ss</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">counter_time</td>
+	<td valign="top" class="fillOE"><i>The target time used when counter_mode parameter is set to true.<br />The format is specified on previous input_pattern parameter.</i></td>
+	<td valign="top" class="fillOO">2000-01-01 00:00:00</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">background_color</td>
+	<td valign="top" class="fillEE"><i>applet background color<br />- the color format is a set of three hexadecimal numbers (from 00 to FF) representing primary colors RRGGBB (R=Red, G=Green, B=Blue)</i></td>
+	<td valign="top" class="fillEO">FFFFFF</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">background_image</td>
+	<td valign="top" class="fillOE"><i>relative path to optional background image</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">img_0</td>
+	<td valign="top" class="fillEE"><i>relative path to image representing the digit "0"</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">yes</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">img_1</td>
+	<td valign="top" class="fillOE"><i>relative path to image representing the digit "1"</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">yes</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">img_2</td>
+	<td valign="top" class="fillEE"><i>relative path to image representing the digit "2"</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">yes</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">img_3</td>
+	<td valign="top" class="fillOE"><i>relative path to image representing the digit "3"</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">yes</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">img_4</td>
+	<td valign="top" class="fillEE"><i>relative path to image representing the digit "4"</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">yes</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">img_5</td>
+	<td valign="top" class="fillOE"><i>relative path to image representing the digit "5"</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">yes</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">img_6</td>
+	<td valign="top" class="fillEE"><i>relative path to image representing the digit "6"</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">yes</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">img_7</td>
+	<td valign="top" class="fillOE"><i>relative path to image representing the digit "7"</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">yes</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">img_8</td>
+	<td valign="top" class="fillEE"><i>relative path to image representing the digit "8"</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">yes</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">img_9</td>
+	<td valign="top" class="fillOE"><i>relative path to image representing the digit "9"</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">yes</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">img_sep</td>
+	<td valign="top" class="fillEE"><i>relative path to image representing the separator symbol ":"</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">yes</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillOO">img_blk</td>
+	<td valign="top" class="fillOE"><i>relative path to image representing the blank space " "</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">yes</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">img_neg</td>
+	<td valign="top" class="fillEE"><i>relative path to image representing the plus symbol "+"</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">yes</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">img_pos</td>
+	<td valign="top" class="fillOE"><i>relative path to image representing the minus symbol "-"</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">yes</td>
+</tr>
+
+</table>
+
+</td></tr>
+</table>
+
+<br/><br/>
+<a href="http://opensource.tecnick.com" title="[extrnal site on a new window]" target="_blank">Open Source projects from the same author &gt;&gt;</a>
+
+</body>
+</html>

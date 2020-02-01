@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+
+<head>
+	<title>AIOCP - slider.js DEMO</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="aiocp_level" content="1" />
+	<meta name="description" content="slider.js demostrative application" />
+	<meta name="author"      content="Nicola Asuni - Tecnick.com LTD" />
+	<meta name="reply-to"    content="info@tecnick.com" />
+	<meta name="keywords"    content="Javascript,example,demo,slider" />
+</head>
+
+<body background="../../images/backgrounds/cp/background_cp.gif" bgcolor="#575757" text="#FFFFFF" link="#00FF00" vlink="#00FF00" alink="#FFFF00">
+
+<script language="JavaScript" src="slider.js" type="text/javascript"></script>
+
+<script language="JavaScript" type="text/javascript">
+//<![CDATA[
+// Handle pushed buttons
+function SPushed(key, pos) {
+	alert('Slider '+key+' moved to '+pos);
+}
+
+
+DrawHSlide(10,3);
+document.write('<br>');
+DrawHSlide(10,5);
+document.write('<br><br>');
+document.write('<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td>');
+DrawVSlide(10,3);
+document.write('</td><td>');
+DrawVSlide(10,7);
+document.write('</td></tr></table>');
+//]]>
+</script>
+
+</body>
+</html>

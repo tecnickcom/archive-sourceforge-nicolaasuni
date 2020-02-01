@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+
+<head>
+<title>JXHTMLEdit</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="description" content="JXHTMLEDIT - Java Applet for WYSIWYG XHTML editing" />
+<meta name="author" content="Nicola Asuni" />
+<meta name="reply-to" content="info@tecnick.com" />
+<meta name="keywords" content="Tecnick.com, JXHTMLEDIT, setup, WYSIWYG, editor, xhtml, html, java, applet, content" />
+<link rel="stylesheet" href="default.css" type="text/css" />
+</head>
+
+<body>
+
+<h1>JXHTMLEdit</h1>
+
+<table id="jxhtmledit_info" title="JXHTMLEDIT Information" summary="Information About JXHTMLEDIT" border="1" cellspacing="0" cellpadding="4">
+<tr valign="top"><td>Name</td><td><a href="http://jxhtmledit.sourceforge.net">JXHTMLEDIT</a></td></tr>
+<tr valign="top"><td>Version</td><td>4.0.005</td></tr>
+<tr valign="top"><td>Date</td><td>2006-02-04</td></tr>
+<tr valign="top"><td>Author</td><td>Nicola Asuni</td></tr>
+<tr valign="top"><td>Copyright</td><td><a href="http://www.tecnick.com">Tecnick.com S.r.l.</a><br />
+Via Ugo Foscolo n.19<br />
+09045 Quartu Sant'Elena (CA)<br />
+ITALY<br />
+<a href="http://www.tecnick.com">www.tecnick.com</a>
+</td></tr>
+<tr valign="top"><td>License</td><td><a href="http://www.gnu.org/copyleft/gpl.html" target="_blank">GNU GENERAL PUBLIC LICENSE v.2</a></td></tr>
+</table>
+
+<br />
+<div align="center"><small>[ <a href="#description">description</a> | <a href="#features">features</a> | <a href="#example">example</a> | <a href="#setup">setup</a> ]</small></div>
+<br />
+
+<a name="description" id="description"></a>
+<h2>Description</h2>
+
+JXHTMLEDIT is a browser-based HTML/XHTML content authoring tool based on the Java 2 Platform that allows WYSIWYG editing on multiple platforms (require the <a href="http://java.sun.com/products/plugin/index.html" target="_blank">Sun Java<sup>TM</sup> Plug-in 1.4</a> or higher installed on client).<br />
+<br />
+WYSIWYG is the acronym of <i>What You See Is What You Get</i>, in other words, JXHTMLEDIT provides word processor-like user interface that allows to edit the document directly in the final form (as will be rendered). This empower non-technical users to become content contributors without any knowledge of HTML or XHTML.<br />
+<br />
+JXHTMLEDIT outputs to your choice HTML or well-formed XHTML. Note that JXHTMLEDIT is specifically designed and optimized to edit only the &lt;body&gt; portion of HTML/XHTML page and not the entire page structure.<br />
+<br />
+JXHTMLEDIT preloads the HTML/XHTML content during startup from a specified HTML form field (e.g.: &lt;textarea&gt;) where it also save generated code.<br />
+<br />
+JXHTMLEDIT is flexible and could be used to easily integrate WYSIWYG authoring functionality into existing products or services as CMS (Content Management System), CRM (Customer Relationship Management), KMS (Knowledge Management Systems), or e-Learning.<br />
+<br />
+
+<a name="features" id="features"></a>
+<h2>Main Features</h2>
+
+<ul>
+	<li>platform independent, works on most Operating Systems available today</li>
+	<li>browser-based and cross-browser Java Applet, works fine with any Javascript-enabled internet browser that support <a href="http://java.sun.com/products/plugin/index.html" target="_blank">Sun Java<sup>TM</sup> Plug-in 1.4</a> or higher</li>
+	<li>two different jar versions are available:
+	<ul>
+	<li>signed (<i>jxhtmledit.jar</i>) : to support cut-and-paste to and from system clipboard;</li>
+	<li>unsigned (<i>jxhtmledit_u.jar</i>) : support only local clipboard;</li>
+	</ul>
+	</li>
+	<li>applet jar is less than 140 KB</li>
+	<li>WYSIWYG and source code editing (the source editor pane may be disabled)</li>
+	<li>partial support for stylesheet CSS1</li>
+	<li>support custom tags</li>
+	<li>customizable charset encoding, support international character sets and html entities (require appropriate OS/browsers)</li>
+	<li>output HTML or well-formed XHTML to your choice</li>
+	<li>support XHTML indentation (to increase readability) or compact mode (to reduce code size)</li>
+	<li>could be launched as a popup window or used as a textarea</li>
+	<li>support copy, cut-n-paste, undo, redo, search and select-all</li>
+	<li>buttons and combo boxes are configured using external XML file (<i>java/config/buttons.xml</i>)</li>
+	<li>support custom buttons and custom selection boxes to add custom tags or execute predefined actions</li>
+	<li>strings (labels and buttons text) could be localized using external TMX file (<i>java/config/tmx.xml</i>)</li>
+	<li>all x/HTML tags and relative attributes are defined using external XML files (<i>java/config/tags.xml</i>, <i>attributes.xml</i>, <i>categories.xml</i>, <i>status.xml</i>)</li>
+	<li>support help tooltips (popup descriptions that appear when mouse pointer is over the button)</li>	
+</ul>
+
+<br />
+
+<hr />
+
+<a name="example" id="example"></a>
+<h2>Example</h2>
+
+To view this demo, you must have the <a href="http://java.sun.com/products/plugin/index.html" target="_blank">Sun Java<sup>TM</sup> Plug-in 1.4</a> or higher installed. If this plug-in is not yet installed, you can download it from: <a href="http://java.sun.com/products/plugin/index.html" target="_blank">http://java.sun.com/products/plugin/index.html</a><br />
+<br />
+As soon as you have installed the plug-in you can start the JXHTMLEDIT demo clicking the <b>[Edit]</b> button below.<br />
+
+<form action="void()" name="test_form" id="test_form">
+<b>XHTML Source Code:</b><br />
+<textarea cols="60" rows="10" name="testarea" id="testarea">
+&lt;h1&gt;Demo Page&lt;/h1&gt;This is a demonstrative page.&lt;br /&gt;&lt;br /&gt;&lt;b&gt;List&lt;/b&gt;&lt;ol&gt;&lt;li&gt;first&lt;/li&gt;&lt;li&gt;second&lt;/li&gt;&lt;li&gt;third&lt;/li&gt;&lt;/ol&gt;&lt;table cellspacing="2" border="2" cellpadding="2" title="Demo table" summary="Demonstrative Table"&gt;&lt;tr&gt;&lt;th colspan="2"&gt;Demonstrative&lt;br /&gt;Table&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1-1&lt;/td&gt;&lt;td&gt;1-2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2-1&lt;/td&gt;&lt;td&gt;2-2&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+</textarea>
+<br />
+<input type="button" name="editbutton" id="editbutton" value="Edit" onclick="F_open_jxhtmledit()" title="opens JXHTMLEdit on a popup window"/>
+<input type="button" name="loadbutton" id="loadbutton" value="Load" onclick="loadCode()" title="copy html code from textarea to JXHTMLEdit" />
+<input type="button" name="savebutton" id="savebutton" value="Save" onclick="saveCode()" title="copy html code from JXHTMLEdit to textarea" />
+<input type="button" name="previewbutton" id="previewbutton" value="Preview" onclick="F_open_doc_preview()" title="diplay code preview on a separate window" />
+</form>
+
+<script language="JavaScript" type="text/javascript">
+//<![CDATA[
+//Preview HTML Document
+function F_open_doc_preview() {
+	//open new browser window
+	docpreview = window.open('', 'docpreview', 'dependent, height=500, width=660, menubar=no, resizable=yes, scrollbars=yes, status=yes, toolbar=no');
+	//write code on window
+	docpreview.document.write('<html><body>');
+	docpreview.document.write(document.test_form.testarea.value);
+	docpreview.document.write('<\/body><\/html>');
+}
+
+//Open JXHTML Applet window
+function F_open_jxhtmledit() {
+	jxhtmledit = window.open('jxhtmledit.html', 'jxhtmledit', 'dependent, height=500, width=660, menubar=no, resizable=no, scrollbars=no, status=no, toolbar=no');
+}
+
+// copy html code from JXHTMLEdit to textarea
+function saveCode(){
+	try {
+		document.test_form.testarea.value=window.jxhtmledit.document.jxhtmleditA.getCode();
+	} catch(er) {
+		document.test_form.testarea.value=window.jxhtmledit.document.jxhtmleditB.getCode();
+	}
+}
+
+// copy html code from textarea to JXHTMLEdit
+function loadCode(){
+	try {
+		window.jxhtmledit.document.jxhtmleditA.setCode(document.test_form.testarea.value);
+	} catch(er) {
+		window.jxhtmledit.document.jxhtmleditB.setCode(document.test_form.testarea.value);
+	}
+}
+//]]>
+</script>
+
+See also the <a href="example_flat.html" target="_blank"><strong>flat-page example &gt;&gt;</strong></a>.
+<hr />
+
+<a name="setup" id="setup"></a>
+<h2>Setup</h2>
+
+To configure the XML files (java/config/) please refer to the XML files comments.<br />
+<br />
+
+To load the JXHTMLEDIT applet on your page use the following syntax:<br />
+
+<form action="void()" id="form_example_code" name="form_example_code" title="Example: XHTML code">
+<textarea cols="80" rows="10" name="example_code" id="example_code" readonly="readonly">
+&lt;!--[if !IE]&gt; Firefox and others will use outer object --&gt;
+&lt;object 
+	classid="java:com.tecnick.jxhtmledit.JXHTMLedit.class"
+	type="application/x-java-applet"
+	archive="jxhtmledit.jar"
+	standby="JXHTMLEDIT Loading ..."
+	width="640"
+	height="480"
+	hspace="0"
+	vspace="0"
+	align="middle"
+	border="0"
+	name="jxhtmleditA"
+	id="jxhtmleditA"
+&gt;
+	&lt;param name="java_codebase" value="java" /&gt;
+	&lt;param name="java_archive" value="jxhtmledit.jar" /&gt;
+	&lt;param name="java_code" value="com.tecnick.jxhtmledit.JXHTMLedit.class" /&gt;
+	&lt;param name="java_type" value="application/x-java-applet;version=1.4" /&gt;
+	&lt;param name="scriptable" value="true" /&gt;
+	&lt;param name="mayscript" value="mayscript" /&gt;
+	&lt;param name="progressbar" value="true" /&gt;
+	&lt;param name="boxmessage" value="JXHTMLEDIT Loading ..." /&gt;
+	
+	&lt;param name="param_page_encoding" value="UTF-8" /&gt;
+	&lt;param name="param_encoding" value="UTF-8" /&gt;
+	&lt;param name="param_lang" value="en" /&gt;
+	&lt;param name="param_separate_window" value="true" /&gt;
+	&lt;param name="param_callingform" value="test_form" /&gt;
+	&lt;param name="param_callingfield" value="testarea" /&gt;
+	&lt;param name="param_stylesheet" value="styles/default.css" /&gt;
+	&lt;param name="param_hide_source" value="false" /&gt;
+	&lt;param name="param_xhtml" value="true" /&gt;
+	&lt;param name="param_indent" value="false" /&gt;
+	&lt;param name="param_entities_off" value="false" /&gt;
+	&lt;param name="param_config_files_path" value="" /&gt;
+	&lt;param name="param_buttons_images_path" value="" /&gt;
+	&lt;param name="param_images_path" value="images" /&gt;
+	&lt;param name="param_images_list" value="_blank.png:bird.jpg" /&gt;
+	
+	&lt;param name="cache_archive" value="jxhtmledit.jar" /&gt;
+	&lt;param name="cache_version" value="0.0.0.1" /&gt;
+	&lt;param name="cache_archive_ex" value="jxhtmledit.jar" /&gt;
+
+&lt;!--&lt;![endif]--&gt;
+&lt;!-- MSIE (Microsoft Internet Explorer) will use inner object --&gt; 
+		
+	&lt;object 
+		classid="clsid:8AD9C840-044E-11D1-B3E9-00805F499D93" 
+	    codebase="http://javadl-esd.sun.com/update/1.5.0/jinstall-1_5_0_05-windows-i586.cab"
+		codetype="application/x-java-applet;version=1.4"
+		standby="JXHTMLEDIT Loading ..."
+		width="640"
+		height="480"
+		hspace="0"
+		vspace="0"
+		align="middle"
+		border="0"
+		name="jxhtmleditB"
+		id="jxhtmleditB"
+	&gt;
+		&lt;param name="java_codebase" value="java" /&gt;
+		&lt;param name="java_archive" value="jxhtmledit.jar" /&gt;
+		&lt;param name="java_code" value="com.tecnick.jxhtmledit.JXHTMLedit.class" /&gt;
+		&lt;param name="java_type" value="application/x-java-applet;version=1.4" /&gt;
+		&lt;param name="scriptable" value="true" /&gt;
+		&lt;param name="mayscript" value="mayscript" /&gt;
+		&lt;param name="progressbar" value="true" /&gt;
+		&lt;param name="boxmessage" value="JXHTMLEDIT Loading ..." /&gt;
+		
+		&lt;param name="param_page_encoding" value="UTF-8" /&gt;
+		&lt;param name="param_encoding" value="UTF-8" /&gt;
+		&lt;param name="param_lang" value="en" /&gt;
+		&lt;param name="param_separate_window" value="true" /&gt;
+		&lt;param name="param_callingform" value="test_form" /&gt;
+		&lt;param name="param_callingfield" value="testarea" /&gt;
+		&lt;param name="param_stylesheet" value="styles/default.css" /&gt;
+		&lt;param name="param_hide_source" value="false" /&gt;
+		&lt;param name="param_xhtml" value="true" /&gt;
+		&lt;param name="param_indent" value="false" /&gt;
+		&lt;param name="param_entities_off" value="false" /&gt;
+		&lt;param name="param_config_files_path" value="" /&gt;
+		&lt;param name="param_buttons_images_path" value="" /&gt;
+		&lt;param name="param_images_path" value="images" /&gt;
+		&lt;param name="param_images_list" value="_blank.png:bird.jpg" /&gt;
+				
+		&lt;param name="cache_archive" value="jxhtmledit.jar" /&gt;
+		&lt;param name="cache_version" value="0.0.0.1" /&gt;
+		&lt;param name="cache_archive_ex" value="jxhtmledit.jar" /&gt;
+		&lt;strong&gt;This browser does not have a Java Plug-in.&lt;br /&gt;&lt;a href="http://java.sun.com/products/plugin/downloads/index.html"&gt;Get the latest Java Plug-in here.&lt;/a&gt;&lt;/strong&gt;
+	&lt;/object&gt; 
+&lt;!--[if !IE]&gt; close outer object --&gt;
+&lt;/object&gt;
+&lt;!--&lt;![endif]--&gt;
+</textarea>
+</form>
+
+The following tables illustrates the meaning of customizable object parameters (or embed parameters), please leave other parameters as they are.<br />
+<br />
+<table class="edge" border="0" cellspacing="1" cellpadding="2">
+<tr class="edge"><th align="center" class="edge">Customizable Parameters</th></tr>
+<tr class="edge"><td class="edge">
+
+<table class="fill" border="0" cellspacing="1" cellpadding="4" title="Applet Parameters" summary="List of JXHTMLEDIT customizable parameters">
+<tr class="fillO">
+	<th class="fillOO">name</th>
+	<th class="fillOE">values</th>
+	<th class="fillOO">default</th>
+	<th class="fillOE">required</th>
+</tr>
+
+<tr class="fillE">
+	<td valign="top" class="fillEO">java_codebase (codebase)</td>
+	<td valign="top" class="fillEE"><i>relative path to applet archive directory (e.g.: "java")</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">yes</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">java_archive</td>
+	<td valign="top" class="fillOE"><i>jar file:</i><ul><li>jxhtmledit.jar <i>for signed applet</i></li><li>jxhtmledit_u.jar <i>for unsigned applet</i></li></ul></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">yes</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">progressbar</td>
+	<td valign="top" class="fillEE"><ul><li>true <i>display progress bar while loading applet</i></li><li>false <i>otherwise</i></li></ul></td>
+	<td valign="top" class="fillEO">false</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">boxmessage</td>
+	<td valign="top" class="fillOE"><i>applet loading message:</i> JXHTMLEDIT Loading ...</td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">name</td>
+	<td valign="top" class="fillEE"><i>applet name</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">id</td>
+	<td valign="top" class="fillOE"><i>applet id</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">width</td>
+	<td valign="top" class="fillEE"><i>applet width in pixels</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">yes</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">height</td>
+	<td valign="top" class="fillOE"><i>applet height in pixels</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">yes</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">hspace</td>
+	<td valign="top" class="fillEE"><i>applet horizontal space</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">vspace</td>
+	<td valign="top" class="fillOE"><i>applet vertical space</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">align</td>
+	<td valign="top" class="fillEE"><i>applet alignment</i><ul><li>left</li><li>right</li><li>top</li><li>middle</li><li>bottom</li></ul></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">param_page_encoding</td>
+	<td valign="top" class="fillOE"><i><a href="http://www.iana.org/assignments/character-sets" target="_blank">encoding character set</a> of the html page where the applet is loaded</i></td>
+	<td valign="top" class="fillOO">UTF-8</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">param_encoding</td>
+	<td valign="top" class="fillEE"><i><a href="http://www.iana.org/assignments/character-sets" target="_blank">encoding character set</a> of the document to edit</i></td>
+	<td valign="top" class="fillEO">UTF-8</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">param_lang</td>
+	<td valign="top" class="fillOE"><i>ISO 639 language identifier (a two- or three-letter code)</i></td>
+	<td valign="top" class="fillOO">en</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">param_separate_window</td>
+	<td valign="top" class="fillEE"><ul><li>true <i>the applet is on a popup window</i></li><li>false <i>the applet is on the same page of the &lt;form&gt; specified on the following parameter "param_callingform"</i></li></ul></td>
+	<td valign="top" class="fillEO">true</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">param_callingform</td>
+	<td valign="top" class="fillOE"><i>name of the &lt;form&gt; containing the field indicated on the following parameter "param_callingfield"</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">yes</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">param_callingfield</td>
+	<td valign="top" class="fillEE"><i>name of the &lt;form&gt; field (e.g.: &lt;textarea&gt;) from where to load and where to save HTML/XHTML document</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">yes</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">param_stylesheet</td>
+	<td valign="top" class="fillOE"><i>CSS1 file to use as a document stylesheet; it could specified using an absolute ULR (e.g.: http://www.mysite.com/stylesheet.css) or a path relativive to jxhtmledit.jar file folder</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">param_hide_source</td>
+	<td valign="top" class="fillEE"><ul><li>true <i>hide source edit panel</i></li><li>false <i>show source edit panel</i></li></ul></td>
+	<td valign="top" class="fillEO">false</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">param_xhtml</td>
+	<td valign="top" class="fillOE"><ul><li>true <i>output XHTML code</i></li><li>false <i>output HTML code</i></li></ul></td>
+	<td valign="top" class="fillOO">true</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">param_indent</td>
+	<td valign="top" class="fillEE"><ul><li>true <i>indent XHTML output code</i></li><li>false <i>compact XHTML output code</i></li></ul></td>
+	<td valign="top" class="fillEO">false</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">param_entities_off</td>
+	<td valign="top" class="fillOE"><ul><li>true <i>save extended chars as they are</i></li><li>false <i>save extended chars as html entities</i></li></ul></td>
+	<td valign="top" class="fillOO">true</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">param_config_files_path</td>
+	<td valign="top" class="fillEE"><i>directory containing XML configuration files; it could be an absolute ULR (e.g.: http://www.mysite.com/config/) or a path relativive to jxhtmledit.jar file folder; leave blank for default configuration files</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">yes</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">param_buttons_images_path</td>
+	<td valign="top" class="fillOE"><i>directory containing buttons images; it could be an absolute ULR (e.g.: http://www.mysite.com/buttons/) or a path relativive to jxhtmledit.jar file folder; leave blank for defaults buttons</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">yes</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">param_images_path</td>
+	<td valign="top" class="fillEE"><i>directory containing images that could be inserted on document; it could be an absolute ULR (e.g.: http://www.mysite.com/images/) or a path relativive to jxhtmledit.jar file folder</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">yes</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">param_images_list</td>
+	<td valign="top" class="fillOE"><i>lista dei nomi di file delle immagini inseribili nel documento separati dal carattere ":"</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">yes</td>
+</tr>
+</table>
+
+</td></tr>
+</table>
+
+<h2>JavaScript API</h2>
+
+JXHTMLEdit contains two public methods to get and set the HTML code from JavaScript call.
+These methods offers more compatibility for browser that do not support LiveConnect.
+<ul>
+<li><strong>void setCode(String code)</strong><br />
+Set the HTML code to JXHTMLEdit.<br />
+<ul>
+	<li>If the applet is on the same window of textarea:<br />
+	<code>document.APPLET_NAME.setCode(document.FORM_NAME.TEXTAREA_NAME.value);</code></li>
+	<li>If the applet is on a separate window:<br />
+	<code>window.APPLET_WINDOW_NAME.document.APPLET_NAME.setCode(document.FORM_NAME.TEXTAREA_NAME.value);</code></li>
+</ul>
+</li>
+<li><strong>String getCode()</strong><br />
+Get the HTML code from JXHTMLEdit.
+<ul>
+	<li>If the applet is on the same window of textarea:<br />
+	<code>document.FORM_NAME.TEXTAREA_NAME.value=document.APPLET_NAME.getCode();</code></li>
+	<li>If the applet is on a separate window:<br />
+	<code>document.FORM_NAME.TEXTAREA_NAME.value=window.APPLET_WINDOW_NAME.document.APPLET_NAME.getCode();</code></li>
+</ul>
+</li>
+</ul>
+<br/><br/>
+<a href="http://opensource.tecnick.com" title="[extrnal site on a new window]" target="_blank">Open Source projects from the same author &gt;&gt;</a>
+
+</body>
+</html>

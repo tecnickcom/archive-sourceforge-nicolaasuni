@@ -1,0 +1,1 @@
+This folder contain menu sounds files ("au" format).

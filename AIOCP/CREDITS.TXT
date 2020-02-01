@@ -1,0 +1,101 @@
+AIOCP - CREDITS
+============================================================
+
+AIOCP - All In One Control Panel
+Author: Nicola Asuni
+Copyright (c) 2001-2008: 
+	Tecnick.com LTD
+	Manor Coach House, Church Hill
+	Aldershot, Hants, GU12 4RQ
+	UK
+URLs:
+	http://aiocp.sourceforge.net
+	http://www.aiocp.com
+	http://www.aiocp.it
+	http://www.tecnick.com
+License: 
+	GNU GENERAL PUBLIC LICENSE v.2
+	http://www.gnu.org/copyleft/gpl.html
+
+------------------------------------------------------------
+
+phpMyAdmin (MySQL administrator) is distribuited "as is" 
+without modifications
+Homepage: http://phpwizard.net/projects/phpMyAdmin/
+License: GPL (GNU GENERAL PUBLIC LICENSE)
+Location: /admin/phpMyAdmin/
+
+------------------------------------------------------------
+
+overLIB library is distribuited "as is" with some 
+modifications.
+This library has been used to obtain the "onMouseOver" 
+tooltip effect.
+Author: Erik Bosrup (erik@bosrup.com)
+Homepage: http://www.bosrup.com/web/overlib/
+This script is published under an open source license.
+License: http://www.bosrup.com/web/overlib/license.html
+Location: /shared/jscripts/
+
+------------------------------------------------------------
+
+whois2.php (base class to do whois queries with php) is 
+distribuited "as is" without modifications (except the path 
+in include and require statements).
+Homepage: http://www.easydns.com/~markjr/whois2/
+License: GPL (GNU GENERAL PUBLIC LICENSE)
+Location: /admin/whois/
+
+------------------------------------------------------------
+
+phpmailer (PHP email class) is distribuited "as is" without 
+modifications.
+Class for sending email using either sendmail, PHP mail()or 
+SMTP. Methods are based upon the standard AspEmail(tm) 
+classes.
+Author: Brent R. Matzelle (bmatzelle@yahoo.com)
+License: LGPL (GNU LESSER GENERAL PUBLIC LICENSE)
+Location: /admin/phpmailer/cp_class_phpmailer.php
+
+------------------------------------------------------------
+
+SMTP class is distribuited "as is" without modifications
+Created: 2001-03-26
+Define an SMTP class that can be used to connect and 
+communicate with any SMTP server. It implements all the SMTP
+functions defined in RFC821 except TURN.
+Author: Chris Ryan (chris@greatbridge.com)
+License: Free
+Location: /admin/phpmailer/cp_class_smtp.php
+
+------------------------------------------------------------
+
+ZIP class is a modified version of ZIP File Maker 1.1.
+Author: Eric Mueller (eric@themepark.com)
+Homepage: http://www.zend.com/codex.php?id=696&single=1
+Licence: Public Domain
+Location: /admin/code/cp_functions_zip.php
+
+------------------------------------------------------------
+
+Some functions of shell explorer has been inspired to:
+PHP Explorer 0.5 Alpha version
+Author: Marcelo L. Mottalli (mottalli@sinectis.com.ar)
+Homepage: http://phpexplorer.sourceforge.net/
+Licence: Public Domain
+Note: Although I have not used his source-code, there are 
+some concepts I've borrowed from him.
+Location: /admin/cp/cp_functions_shell.php
+
+------------------------------------------------------------
+
+Barcode Render Class is distribuited "as is" with some 
+improvements.
+Created: 2001-04-01
+Barcode Render Class for PHP using the GD graphics library
+Author: Karim Mribti (barcode@mribti.com)
+Homepage: http://www.mribti.com/barcode/
+License: LGPL (GNU LESSER GENERAL PUBLIC LICENSE)
+Location: /shared/barcode/
+
+============================================================

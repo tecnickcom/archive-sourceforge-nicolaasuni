@@ -1,0 +1,14 @@
+1.0.004 (2006-12-09)
+	- square yard unit were fixed
+	
+1.0.003 (2006-10-18)
+	- configuration files were converted to UTF-8
+
+1.0.002 (2006-05-16)
+	- degree symbol on Kelvin unit were removed
+
+1.0.001 (2006-02-04)
+	- released as open source
+
+1.0.000 (2003-03-30)
+	- first release

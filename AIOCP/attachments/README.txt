@@ -1,0 +1,1 @@
+This directory will be used to save the attaches files for newsletter.

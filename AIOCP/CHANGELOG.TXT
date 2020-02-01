@@ -1,0 +1,554 @@
+1.4.002 (2010-01-15)
+	- A problem related to sessions was fixed.
+	- TCPDF library were updated.
+
+1.4.001 (2008-08-11)
+	- Authorization problem on user registration was fixed.
+	- TCPDF library were updated.
+
+1.4.000 (2008-07-31)
+	- TCPDF library were updated.
+	- FCKEditor was updated.
+	- phpMyAdmin was updated.
+	- VAT calculation were updated.
+	- Code cleanup.
+	- Page selection bug on search results was fixed.
+	- Menu files were updated.
+	- Installation script was improved
+	- barcode class was removed (now replaced by internal TCPDF functions).
+	
+1.3.018 (2007-07-30)
+	- TCPDF and fonts were updated.
+
+1.3.017 (2007-06-06)
+	- Security vulnerabilities for XSS were fixed on public/code/cp_dpage.php
+
+1.3.016 (2007-04-30)
+	- Some security vulnerabilities were fixed.
+	
+1.3.015 (2007-03-29)
+	- FCKeditor updated!
+	- TCPDF updated!
+	- phpMyAdmin updated!
+	- minor newsletter editor bugfixing.
+
+1.3.014 (2007-02-15)
+	- email field were added on PDF documents.
+	
+1.3.013 (2007-02-10)
+	- shared/jscripts/inserttag.js were fixed.
+	
+1.3.012 (2007-02-08)
+	- aiocp code editor were improved.
+	- images/aiocpcodebuttons folder were added.
+	- shared/jscript/inserttag.js were updated.
+	- company_fiscalcode now contains two codes separated by " - ".
+
+1.3.011 (2007-01-25)
+	- shared/code/cp_functions_form.php were updated.
+	- avatars images were removed.
+	- phpMyAdmin were updated.
+	
+1.3.010 (2007-01-14)
+	- some XSS security vulnerabilities were fixed.
+
+1.3.009 (2007-01-11)
+	- fixed security bug on shared/code/cp_functions_downloads.php
+	- changed paypal modules.
+	- changed default menu from java to html/css.
+	- fixed shared/config/cp_config.php
+	- phpMyAdmin were updated
+	- charset and collate were added on aiocp_db_structure.sql
+	- htmlentities on /shared/code/cp_functions_dynamic_pages.php were fixed
+	- this version contains only english and italian translations
+	
+1.3.008 (2006-11-27)
+	- Multiple security vulnerabilities were fixed.
+	- TCPDF library were updated.
+
+1.3.007 (2006-08-03)
+	- a bug on alternate menu visualization were fixed.
+	- Pure CSS menus are now supported:
+		replace the line
+		"echo F_show_client_menu(1);"
+		on Pages->Modules->"menu_default" and/or "menu"
+		with
+		"echo F_show_client_menu(1,true);"
+		
+1.3.006 (2006-08-01)
+	- language selection were restored.
+	
+1.3.005 (2006-07-06)
+	- TCPDF library were updated
+	- new fonts were installed
+	- fixed bug on forum page selection
+	
+1.3.004 (2006-05-10)
+	- Installation form were updated.
+	- configuration file for phpMyAdmin were fixed (/admin/phpMyAdmin/config.inc.php).
+	
+1.3.003 (2006-04-05)
+	- fixed 'save' bug on FCKeditor
+	
+1.3.002 (2006-03-02)
+	- FCKeditor [www.fckeditor.net] were added as alternative WYSIWYG HTML editor
+	- files changes:
+		- /admin/FCKeditor
+		- /admin/code/cp_edit_html_fckeditor.php
+		- /admin/code/cp_functions_htmleditor.php
+		- /shared/code/cp_functions_form.php
+	
+1.3.001 (2006-02-08)
+	- the following user interfaces were updated:
+		dictionary, downloads, products, news, newsletter, review
+	- fonts issue were fixed
+	
+1.3.000 (2006-02-07)
+	- first Open Source release
+	- the table colums relative to unused languages were removed by default
+	- the "Languge/Language List" editor may now dynamically create and destroy language columns
+	- TCPDF library were updated to latest version
+	- fonts directory were reorganized
+	- shared/config/tcpdf_config.php were added
+
+1.2.079 (2006-02-02)
+	- automatic creation of google sitemap index on admin/log/sitemap.xml during search spidering
+	- alternative <noscript> navigation links were added on several interfaces
+	- minor bugfixing
+
+1.2.078 (2006-01-18)
+	- phpMailer were updated
+
+1.2.077 (2006-01-18)
+	- direct download link were added on dondload module
+
+1.2.076 (2005-12-30)
+	- cookies related bugs were fixed
+
+1.2.075 (2005-12-27)
+	- phpMyAdmin were updated
+	- fixed cookies bugs (/shared/code/cp_authorization.php)
+	- fixed email check on contact-us form (/shared/code/cp_form_mailer.php)
+	- search word were limited to 3 chars (/admin/code/cp_functions_search_spider.php)
+
+1.2.074 (2005-12-21)
+	- fixed cookies bug in firefox
+
+1.2.073 (2005-10-03)
+	- fixed discounts issue on products PDF report
+
+1.2.072 (2005-07-14)
+	- A function to display awards filtered for a particular keyword were added on cp_functions_awards.php
+	- XHTML warning were fixed on cp_functions_ec_documents.php
+
+1.2.071 (2005-07-04)
+	- cp_edit_ec_product_resources.php were fixed
+
+1.2.070 (2005-06-30)
+	- all interfaces were tested and cleaned to comply with XHTML specifications.
+
+1.2.069 (2005-06-14)
+	- fixed dynamic modules (/shared/code/cp_functions_dynamic_pages.php)
+	- fixed banners viewer (/shared/code/cp_functions_banner.php)
+	- fixed minor bug on admin menu (/shared/code/cp_functions_menu_data.php)
+	- fixed bug on units of measure editor (/admin/code/cp_edit_unit_of_measure.php)
+	- fixed bug on language templates editor (/admin/code/cp_edit_language_templates.php)
+	- fixed bug on language help editor (/admin/code/cp_edit_languages_help.php)
+	- fixed "checked" attribute on: cp_edit_ec_documents.php, cp_edit_newsletter_categories.php, cp_edit_newsletter_users.php, cp_edit_unit_of_measure.php
+
+1.2.068 (2005-04-23)
+	- fixed auto BR and compact buttons for firefox
+
+1.2.067 (2005-04-13)
+	- improved products updater
+	- fixed shopping cart session issue
+
+1.2.066 (2005-03-30)
+	- jxhtmledit were updated to latest version (4.0.004)
+
+1.2.065 (2005-03-25)
+	- jxhtmledit were updated to latest version (4.0.003)
+
+1.2.064 (2005-03-22)
+	- improved xhtml validator.
+	- jxhtmledit were updated to latest version (4.0.000)
+
+1.2.063 (2005-03-15)
+	- fixed bug on F_resolve_url_path function on cp_functions_general.php file.
+
+1.2.062 (2005-03-10)
+	- improved page selector (/shared/code/cp_functions_page.php)
+	- some PHP settings were added on: /shared/config/cp_config.php
+	- jddm.jar and jwtm.jar were updated to latest versions
+
+1.2.061 (2005-01-20)
+	- fixed "posting quotes bug" on forms
+	- updated JDDM and JWTM applets
+
+1.2.060 (2005-01-10)
+	- download mechanism on
+	/shared/code/cp_functions_form.php
+	/shared/code/cp_functions_downloads.php
+	/shared/code/cp_download.php
+
+1.2.059 (2005-01-04)
+	- TTF fonts were replaced with Bitstream Vera (http://www.bitstream.com/font_rendering/products/dev_fonts/vera.html)
+	
+1.2.058 (2004-12-29)
+	- fixed minor bugs on:
+	/shared/code/cp_functions_ec_products.php
+	
+1.2.057 (2004-12-28)
+	- fixed user permissions on dynamic pages
+	/shared/code/cp_functions_dynamic_pages.php
+	- fixed update bug on:
+	/admin/code/cp_edit_user_groups.php
+	
+1.2.056 (2004-12-22)
+	- comment quotes bug were fixed on order document generation:
+	/shared/code/cp_functions_ec_order.php
+	- directory permission checking were fixed on shell:
+	/admin/code/cp_shell.php
+
+1.2.055 (2004-12-20)
+	- the language selection bug on dynamic menu were fixed:
+	/shared/code/cp_functions_menu_jddm.php
+	/shared/code/cp_functions_menu_jwtm.php
+
+1.2.054 (2004-12-14)
+	- fixed minor bug:
+	/admin/code/cp_update_ec_products.php
+	
+1.2.053 (2004-12-13)
+	- fixed minor bug:
+	/shared/code/cp_functions_form.php
+
+1.2.052 (2004-12-11)
+	- minor bugs were fixed
+	- updated phpMyAdmin
+
+1.2.051 (2004-12-07)
+	- PHP5 compatibility were improved
+
+1.2.050 (2004-09-30)
+	- improved PHP5 compatibility
+
+1.2.049 (2004-09-30)
+	- fixed downloadable files issues with mozilla and IE6 SP2
+	- phpMyAdmin where updated to 2.6.0-pl1
+
+1.2.048 (2004-08-20)
+	- XHTML to PDF conversion were improved
+	- a security e-commerce feature were added
+
+1.2.047 (2004-07-14)
+	- fixed XHTML to PDF conversion
+
+1.2.046 (2004-07-13)
+	- fixed XHTML button bug on document details editor
+	- XHTML parsing support were added on PDF documents
+
+1.2.045 (2004-06-11)
+	- third party libraries and applications were updated (fpdf, phpMailer, phpMyAdmin)
+
+1.2.044 (2004-05-31)
+	- improved email form security
+
+1.2.043 (2004-05-22)
+	- fixed barcode chaching bug
+
+1.2.042 (2004-05-20)
+	- fixed menu aligment attributes in lowercase
+
+1.2.041 (2004-05-12)
+	- fixed jddm submenu font
+
+1.2.040 (2004-05-09)
+	- fixed unincompatible xhtml char on menu
+
+1.2.039 (2004-05-08)
+	- fixed colors bug on menu styles
+
+1.2.038 (2004-05-06)
+	- minor bug fixes
+
+1.2.037 (2004-05-03)
+	- the menu fuctions were updated and improved
+
+1.2.036 (2004-05-01)
+	- updated JDDM and JWTM menus to latest version (fix jascript links issue on mozilla browser)
+	- improved menus visualization
+
+1.2.035 (2004-03-04)
+	- fixed minor bugs on:
+	- shared/code/cp_functions_review.php
+	- shared/code/cp_functions_newsletter.php
+	- shared/code/cp_functions_news.php
+	- shared/code/cp_functions_dictionary.php
+	- shared/code/cp_functions_downloads.php
+	- shared/code/cp_functions_calendar.php
+
+1.2.034 (2004-03-04)
+	- fixed minor bugs:
+	- admin/code/cp_show_file.php
+	- shared/code/cp_functions_form.php
+	- updated phpMyAdmin to 2.5.6
+
+1.2.033 (2004-02-26)
+	- updated JXHTMLEDIT to latest version
+
+1.2.032 (2004-02-23)
+	- fixed login error messages
+
+1.2.031 (2004-02-13)
+	- fixed JXHTMLEDIT bug
+
+1.2.030 (2004-01-29)
+	- fixed backup function
+	- updated phpMyAdmin to version 2.5.5-pl1
+
+1.2.029 (2004-01-28)
+	- updated jxhtmledit to latest version (3.0.000)
+
+1.2.028 (2004-01-03)
+	- fixed date selection bug on documents editor
+
+1.2.026 (2003-12-10)
+	- removed annoing popup windows on demo version.
+	- updaded JDDM and JWTM applets to latest versions.
+
+1.2.025 (2003-12-09)
+	- striped slashes on HTML to Text function
+
+1.2.024 (2003-12-08)
+	- removed erroneous encoding from phpMyAdmin
+
+1.2.023 (2003-11-25)
+	- fixed page selection bug in alphabetic selector.
+	- fixed minor graphic issues 
+	- fixed links editor
+
+1.2.022 (2003-11-20)
+	- updated phpMyAdmin to 2.5.4
+	- fixed a graphic issue on products catalog
+
+1.2.021 (2003-11-19)
+	- fixed taxes an products visualization
+
+1.2.020 (2003-11-18)
+	- improved XHTML compatibility.
+	- fixed taxes module bug.
+
+1.2.019 (2003-11-15)
+	- fixed html entities on email subject.
+
+1.2.018 (2003-11-13)
+	- updated JXHTMLEDIT to latest version (fix W98 bug).
+
+1.2.017 (2003-11-12)
+	- fixed regular expression for email validity
+
+1.2.016 (2003-11-12)
+	- fixed polls bug
+
+1.2.015 (2003-11-11)
+	- fixed reviews display order
+
+1.2.014 (2003-11-11)
+	- fixed missing doctype in XML products catalog
+
+1.2.013 (2003-11-10)
+	- added single news display option
+	- removed language selectors on forms when only one language is enabled
+	- textual menu alternative is now an option
+	- alphabetic selector buttons that point to a void content are now automatically hidden
+
+1.2.012 (2003-11-07)
+	- added user groups.
+	- added company types with custom discount.
+	- added states/provices editor (from country editor).
+	- improved taxes module to account countries, 
+  states/provinces, user/company/institute, product type.
+	- it's now possible to specify up to 3 different taxes for 
+  the same product.
+	- fixed the html visualization on the category description 
+  fields of the following modules: calendar, dictionary, 
+  forum, news.
+
+1.2.011 (2003-11-02)
+	- fixed small bugs
+
+1.2.010 (2003-11-01)
+	- fixed page header bug introduced on 1.2.008
+
+1.2.010 (2003-11-01)
+	- added function to copy a product in different category.
+	- added functions to export products catalog in XML and in froogle format.
+
+1.2.009 (2003-10-31)
+	- changed calendar module to support multiple categories and events.
+	- fixed minor bugs
+  
+1.2.008 (2003-10-30)
+	- improved calendar and user agenda modules
+	- added ability to add custom PHP modules on: forum, news,
+  dictionaries, links, downloads, reviews, awards,
+  chat rooms, polls, banners.
+
+1.2.007 (2003-10-27)
+	- fixed display bug on products catalog
+	- fixed mail error messages
+
+1.2.006 (2003-10-26)
+	- fixed redirection on polls result button
+	- fixed minor bugs
+
+1.2.005 (2003-10-25)
+	- fixed PHPSESSID issue on page module editor
+	- strip slashes from text on graphic buttons 
+
+1.2.004 (2003-10-23)
+	- enlarged menu column in AIOCP panel
+	- fixed backslashed quotes issue on some editors
+	- improved products display function
+	- fixed special characters on graphic buttons
+
+1.2.003 (2003-10-21)
+	- fixed category names bug on dictionary
+	- fixed form buttons names and values bug 
+	- fixed quote slashes in textarea fields
+
+1.2.002 (2003-10-15)
+	- added Dictionary Module
+	- added alphabetic filter on Links Module
+	- added download button on Download Module
+	- internal code cleanup
+	- fixed minor bugs
+
+1.2.001 (2003-10-12)
+	- added Database Abstraction Layer Mechanism
+
+1.1.008 (2003-10-02)
+	- fixed overlib error when description contains newlines
+
+1.1.007 (2003-10-01)
+	- updated show document function to increase security
+
+1.1.006 (2003-09-30)
+	- updated JWTM applet to latest version.
+	- fixed JWTM - JDDM function names.
+	- fixed WHOIS2 error message.
+	- now you could associate PHP module to each product and also sell user permissions to a reserved area.
+
+1.1.005 (2003-09-29)
+	- updated phpMyAdmin to latest version.
+	- updated WHOIS2 to latest version
+
+1.1.004 (2003-09-27)
+	- fixed missing PHP tags on PHP File generator.
+
+1.1.003 (2003-09-27)
+	- fixed table prefix issue.
+
+1.1.002 (2003-09-26)
+	- fixed syntax bug on /shared/pdf/cp_ec_pdf_doc.php class.
+
+1.1.001 (2003-09-25)
+	- fixed bug in menu display modules
+	- update JADC applet to 1.0.004 version (removed flickering)
+	- fixed &#039; symbol in overlib calls
+
+1.1.000 (2003-09-24)
+	- changed administration panel main structure
+	- changed admin panel menu with JWTM 1.0
+	- fixed corrupted menus
+	- improved right-to-left languages support
+	- updated JDDM to version 2.0.007
+	- updated documentation
+	- fixed language special characters
+	- added a module to edit time limited user access permissions to a particular resource/page
+	- added a module to get time limited links to download protected files
+	- error messages will be now displayed also using JavaScript popups.
+
+1.0.022 (2003-08-26)
+	- added garbage collector for newsletter users
+	- updated phpMyAdmin to latest version
+
+1.0.021 (2003-08-25)
+	- fixed minor bugs
+
+1.0.020 (2003-08-07)
+	- updated PHPMailer class to latest version (1.71)
+	- fixed minor bugs
+
+1.0.019 (2003-08-04)
+	- added RSS support for news, newsletters, links, reviews, awards
+	- added flags icons menu option to change menu
+	- updated phpMyAdmin to latest version
+	- added the following languages using "quick and dirty" automatic translations:
+	chi - chinese
+	fre - french
+	ger - german
+	jpn - japanese
+	kor - korean
+	por - portuguese
+	spa - spanish
+
+1.0.018 (2003-07-22)
+	- fixed session/login problems
+
+1.0.017 (2003-07-19)
+	- fixed timeout issue during long processes
+	- fixed alternate rows styles on products catalog
+	- fixed minor bugs
+
+1.0.016 (2003-06-12)
+	- fixed multiple language templates replacement on dynamic pages
+
+1.0.015 (2003-05-26)
+	- fixed URL addresses on forum email messages
+
+1.0.014 (2003-05-14)
+	- added active links for license and OS fields on 'Downloads View'
+
+1.0.013 (2003-05-14)
+	- updated included JDDM (Drop Down Menu) to version 2.0.004 (fixed menu items nesting bug).
+
+1.0.012 (2003-05-12)
+	- changed software license
+	- updated included PhpMyAdmin to version 2.5.0
+
+1.0.011 (2003-05-10)
+	- fixed html entities on forum messages
+	- user photo on user registration is now an option
+
+1.0.010 (2003-05-07)
+	- fixed language selection on user registration agreement.
+
+1.0.009 (2003-05-02)
+	- changed shared/java/jddm.jar (JDDM - Drop Down Menu) to 2.0.001
+
+1.0.008 (2003-04-29)
+	- fixed wrong error message on newsletter subscription form
+
+1.0.007 (2003-04-28)
+	- fixed language selection for void category on news
+
+1.0.006 (2003-04-28)
+	- fixed news, newsletter and poll multilanguage selection
+
+1.0.005 (2003-04-28)
+	- added all categories selection for: news, newsletter, reviews and downloads
+
+1.0.004 (2003-04-28)
+	- Removed experimental XHTML BASIC link from trancoding bar.
+	- Changed session.use_trans_sid default value to 0 on admin and public config files.
+	- fixed selection bug on cp_edit_ec_products.php
+	- fixed bugs on search engine (indexer and search interface)
+	- fixed and improved all search functions and interfaces
+
+1.0.003 (2003-04-01)
+	- First stable release
+	
+1.0.000 (2001-08-15)
+	- coding start

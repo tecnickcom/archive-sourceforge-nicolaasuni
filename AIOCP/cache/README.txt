@@ -1,0 +1,1 @@
+This directory will be used to save the temporary files/images.

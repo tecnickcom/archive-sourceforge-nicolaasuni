@@ -1,0 +1,19 @@
+1.1.005 (2006-08-01)
+	- fixed error on sample.php file
+	
+1.1.004 (2006-06-03)
+	- fixed minor bug
+	
+1.1.003 (2006-03-14)
+	- caching system were added
+	
+1.1.002 (2005-01-19)
+	- some extended caracters were added on sample.xml to test UTF-8.
+	- html headers were added on sample.php
+	
+1.1.001 (2005-01-18)
+	- code cleanup
+	- improved documentation
+	
+1.1.000 (2005-01-08)
+	- sourceforge release

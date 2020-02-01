@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 
+HTML-XHTML elements categories
+
+Elements definitions:
+
+item        = category ID
+name        = category name
+description = category description
+
+Copyright (c) 2004-2005 Tecnick.com S.r.l (www.tecnick.com) Via Ugo Foscolo n.19 - 09045 Quartu Sant'Elena (CA) - ITALY - www.tecnick.com - info@tecnick.com<br/>
+License: http://www.gnu.org/copyleft/lesser.html LGPL
+@author Nicola Asuni [www.tecnick.com].
+@version 1.0
+-->
+
+<jxedata version="1.0">
+	<item id="1">
+		<name>page composition</name>
+		<description>tags that describe the main structure of a page</description>
+	</item>
+	<item id="2">
+		<name>page elements</name>
+		<description>page elements</description>
+	</item>
+	<item id="3">
+		<name>formatting and layout</name>
+		<description>tags that describe the layout and appearance of the elements on a page</description>
+	</item>
+	<item id="4">
+		<name>lists</name>
+		<description>tags for the definition of lists</description>
+	</item>
+	<item id="5">
+		<name>forms</name>
+		<description>tags to define input forms</description>
+	</item>
+	<item id="6">
+		<name>tables</name>
+		<description>tags to define table layout</description>
+	</item>
+	<item id="7">
+		<name>scripting</name>
+		<description>tags that define a script or an alternative</description>
+	</item>
+	<item id="8">
+		<name>various</name>
+		<description>various tags that not fit other categories</description>
+	</item>
+</jxedata>

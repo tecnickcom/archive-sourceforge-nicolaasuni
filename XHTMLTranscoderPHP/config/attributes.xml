@@ -1,0 +1,1717 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE jxedata SYSTEM "jxedata.dtd">
+
+<!-- 
+HTML-XHTML elements attributes definitions
+
+Elements definitions:
+
+item        = attribute ID
+name        = attribute name
+description = attribute description
+status      = attribute status ID (see status.xml)
+dtdtype     = DTD type ID
+type        = type of input component: 0=inputttext; 1=checkbox; 2=textarea; 3=combobox; 4=colorchooser
+options     = list of selectable values separated by semicolon
+default     = default value
+
+Copyright (c) 2004-2005 Tecnick.com S.r.l (www.tecnick.com) Via Ugo Foscolo n.19 - 09045 Quartu Sant'Elena (CA) - ITALY - www.tecnick.com - info@tecnick.com<br/>
+License: http://www.gnu.org/copyleft/lesser.html LGPL
+@author Nicola Asuni [www.tecnick.com].
+@version 1.0
+-->
+
+<jxedata version="1.0">
+	<item id="1">
+		<name>abbr</name>
+		<description>abbreviation for header cell</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>2</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="2">
+		<name>accept-charset</name>
+		<description>list of supported charsets</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="3">
+		<name>accept</name>
+		<description>list of MIME types for file upload</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="4">
+		<name>accesskey</name>
+		<description>accessibility key character</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="5">
+		<name>action</name>
+		<description>server-side form handler</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="6">
+		<name>align</name>
+		<description>relative to table</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="7">
+		<name>align</name>
+		<description>vertical or horizontal alignment</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="8">
+		<name>align</name>
+		<description>relative to fieldset</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="9">
+		<name>align</name>
+		<description>table position relative to window</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="10">
+		<name>align</name>
+		<description>align</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="11">
+		<name>align</name>
+		<description>align, text alignment</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>3</type>
+		<options>left:center:right</options>
+		<default></default>
+	</item>
+	<item id="12">
+		<name>align</name>
+		<description>align</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>3</type>
+		<options>left:center:right:justify</options>
+		<default></default>
+	</item>
+	<item id="13">
+		<name>alink</name>
+		<description>color of selected links</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="14">
+		<name>alt</name>
+		<description>short description</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>2</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="15">
+		<name>alt</name>
+		<description>short description</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>2</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="16">
+		<name>alt</name>
+		<description>short description</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>2</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="17">
+		<name>archive</name>
+		<description>comma-separated archive list</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>2</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="18">
+		<name>archive</name>
+		<description>space-separated list of URIs</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>2</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="19">
+		<name>axis</name>
+		<description>comma-separated list of related headers</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>2</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="20">
+		<name>background</name>
+		<description>texture tile for document background</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="21">
+		<name>bgcolor</name>
+		<description>background color for cells</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="22">
+		<name>bgcolor</name>
+		<description>background color for row</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="23">
+		<name>bgcolor</name>
+		<description>cell background color</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="24">
+		<name>bgcolor</name>
+		<description>document background color</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="25">
+		<name>border</name>
+		<description>controls frame width around table</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="26">
+		<name>border</name>
+		<description>link border width</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="27">
+		<name>cellpadding</name>
+		<description>spacing within cells</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="28">
+		<name>cellspacing</name>
+		<description>spacing between cells</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="29">
+		<name>char</name>
+		<description>alignment char, e.g. char=':'</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="30">
+		<name>charoff</name>
+		<description>offset for alignment char</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="31">
+		<name>charset</name>
+		<description>char encoding of linked resource</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="32">
+		<name>checked</name>
+		<description>for radio buttons and check boxes</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>1</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="33">
+		<name>cite</name>
+		<description>URI for source document or msg</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="34">
+		<name>cite</name>
+		<description>info on reason for change</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="35">
+		<name>class</name>
+		<description>space-separated list of classes</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="36">
+		<name>classid</name>
+		<description>identifies an implementation</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="37">
+		<name>clear</name>
+		<description>control of text flow</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>3</type>
+		<options>left:all:right:none</options>
+		<default>none</default>
+	</item>
+	<item id="38">
+		<name>code</name>
+		<description>applet class file</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="39">
+		<name>codebase</name>
+		<description>base URI for classid, data, archive</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="40">
+		<name>codebase</name>
+		<description>optional base URI for applet</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="41">
+		<name>codetype</name>
+		<description>content type for code</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="42">
+		<name>color</name>
+		<description>text color</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="43">
+		<name>cols</name>
+		<description>list of lengths, default: 100% (1 col)</description>
+		<status>1</status>
+		<dtdtype>2</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="44">
+		<name>cols</name>
+		<description></description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="45">
+		<name>colspan</name>
+		<description>number of cols spanned by cell</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default>1</default>
+	</item>
+	<item id="46">
+		<name>compact</name>
+		<description>reduced interitem spacing</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>1</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="47">
+		<name>content</name>
+		<description>associated information</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="48">
+		<name>coords</name>
+		<description>comma-separated list of lengths</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="49">
+		<name>coords</name>
+		<description>for use with client-side image maps</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="50">
+		<name>data</name>
+		<description>reference to object's data</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="51">
+		<name>datetime</name>
+		<description>date and time of change</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="52">
+		<name>declare</name>
+		<description>declare but don't instantiate flag</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>1</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="53">
+		<name>defer</name>
+		<description>UA may defer execution of script</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>1</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="54">
+		<name>dir</name>
+		<description>direction for weak/neutral text</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>3</type>
+		<options>ltr:rtl</options>
+		<default></default>
+	</item>
+	<item id="55">
+		<name>dir</name>
+		<description>directionality</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>3</type>
+		<options>ltr:rtl</options>
+		<default></default>
+	</item>
+	<item id="56">
+		<name>disabled</name>
+		<description>unavailable in this context</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>1</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="57">
+		<name>enctype</name>
+		<description></description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default>application/x-www- form-urlencoded</default>
+	</item>
+	<item id="58">
+		<name>face</name>
+		<description>comma-separated list of font names</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>2</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="59">
+		<name>for</name>
+		<description>matches field ID value</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="60">
+		<name>frame</name>
+		<description>which parts of frame to render</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="61">
+		<name>frameborder</name>
+		<description>request frame borders?</description>
+		<status>1</status>
+		<dtdtype>2</dtdtype>
+		<type>3</type>
+		<options>1:0</options>
+		<default>1</default>
+	</item>
+	<item id="62">
+		<name>headers</name>
+		<description>list of id's for header cells</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>2</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="63">
+		<name>height</name>
+		<description>frame height</description>
+		<status>1</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="64">
+		<name>height</name>
+		<description>height for cell</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="65">
+		<name>height</name>
+		<description>override height</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="66">
+		<name>height</name>
+		<description>initial height</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="67">
+		<name>href</name>
+		<description>URI for linked resource</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="68">
+		<name>href</name>
+		<description>URI that acts as base URI</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="69">
+		<name>hreflang</name>
+		<description>language code</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="70">
+		<name>hspace</name>
+		<description>horizontal gutter</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="71">
+		<name>http-equiv</name>
+		<description>HTTP response header name</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="72">
+		<name>id</name>
+		<description>document-wide unique id</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="73">
+		<name>ismap</name>
+		<description>use server-side image map</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>1</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="74">
+		<name>label</name>
+		<description>for use in hierarchical menus</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>2</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="75">
+		<name>label</name>
+		<description>for use in hierarchical menus</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>2</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="76">
+		<name>lang</name>
+		<description>language code</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="77">
+		<name>language</name>
+		<description>predefined script language name</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="78">
+		<name>link</name>
+		<description>color of links</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="79">
+		<name>longdesc</name>
+		<description>link to long description (complements alt)</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="80">
+		<name>longdesc</name>
+		<description>link to long description (complements title)</description>
+		<status>1</status>
+		<dtdtype>2</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="81">
+		<name>marginheight</name>
+		<description>margin height in pixels</description>
+		<status>1</status>
+		<dtdtype>2</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="82">
+		<name>marginwidth</name>
+		<description>margin widths in pixels</description>
+		<status>1</status>
+		<dtdtype>2</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="83">
+		<name>maxlength</name>
+		<description>max chars for text fields</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="84">
+		<name>media</name>
+		<description>designed for use with these media</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="85">
+		<name>media</name>
+		<description>for rendering on these media</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="86">
+		<name>method</name>
+		<description>HTTP method used to submit the form</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>3</type>
+		<options>GET:POST</options>
+		<default>GET</default>
+	</item>
+	<item id="87">
+		<name>multiple</name>
+		<description>default is single selection</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>1</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="88">
+		<name>name</name>
+		<description></description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="89">
+		<name>name</name>
+		<description>allows applets to find each other</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="90">
+		<name>name</name>
+		<description>field name</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="91">
+		<name>name</name>
+		<description>name of form for scripting</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="92">
+		<name>name</name>
+		<description>name of frame for targetting</description>
+		<status>1</status>
+		<dtdtype>2</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="93">
+		<name>name</name>
+		<description>name of image for scripting</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="94">
+		<name>name</name>
+		<description>named link end</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="95">
+		<name>name</name>
+		<description>submit as part of form</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="96">
+		<name>name</name>
+		<description>for reference by usemap</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="97">
+		<name>name</name>
+		<description>property name</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="98">
+		<name>name</name>
+		<description>metainformation name</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="99">
+		<name>nohref</name>
+		<description>this region has no action</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>1</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="100">
+		<name>noresize</name>
+		<description>allow users to resize frames?</description>
+		<status>1</status>
+		<dtdtype>2</dtdtype>
+		<type>1</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="101">
+		<name>noshade</name>
+		<description></description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>1</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="102">
+		<name>nowrap</name>
+		<description>suppress word wrap</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>1</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="103">
+		<name>object</name>
+		<description>serialized applet file</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="104">
+		<name>onblur</name>
+		<description>the element lost the focus</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>2</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="105">
+		<name>onchange</name>
+		<description>the element value was changed</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>2</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="106">
+		<name>onclick</name>
+		<description>a pointer button was clicked</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>2</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="107">
+		<name>ondblclick</name>
+		<description>a pointer button was double clicked</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>2</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="108">
+		<name>onfocus</name>
+		<description>the element got the focus</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>2</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="109">
+		<name>onkeydown</name>
+		<description>a key was pressed down</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>2</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="110">
+		<name>onkeypress</name>
+		<description>a key was pressed and released</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>2</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="111">
+		<name>onkeyup</name>
+		<description>a key was released</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>2</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="112">
+		<name>onload</name>
+		<description>all the frames have been loaded</description>
+		<status>1</status>
+		<dtdtype>2</dtdtype>
+		<type>2</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="113">
+		<name>onload</name>
+		<description>the document has been loaded</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>2</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="114">
+		<name>onmousedown</name>
+		<description>a pointer button was pressed down</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>2</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="115">
+		<name>onmousemove</name>
+		<description>a pointer was moved within</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>2</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="116">
+		<name>onmouseout</name>
+		<description>a pointer was moved away</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>2</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="117">
+		<name>onmouseover</name>
+		<description>a pointer was moved onto</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>2</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="118">
+		<name>onmouseup</name>
+		<description>a pointer button was released</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>2</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="119">
+		<name>onreset</name>
+		<description>the form was reset</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>2</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="120">
+		<name>onselect</name>
+		<description>some text was selected</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>2</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="121">
+		<name>onsubmit</name>
+		<description>the form was submitted</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>2</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="122">
+		<name>onunload</name>
+		<description>all the frames have been removed</description>
+		<status>1</status>
+		<dtdtype>2</dtdtype>
+		<type>2</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="123">
+		<name>onunload</name>
+		<description>the document has been removed</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>2</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="124">
+		<name>profile</name>
+		<description>named dictionary of meta info</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="125">
+		<name>prompt</name>
+		<description>prompt message</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>2</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="126">
+		<name>readonly</name>
+		<description></description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>1</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="127">
+		<name>readonly</name>
+		<description>for text and passwd</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>1</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="128">
+		<name>rel</name>
+		<description>forward link types</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="129">
+		<name>rev</name>
+		<description>reverse link types</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="130">
+		<name>rows</name>
+		<description>list of lengths, default: 100% (1 row)</description>
+		<status>1</status>
+		<dtdtype>2</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="131">
+		<name>rows</name>
+		<description></description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="132">
+		<name>rowspan</name>
+		<description>number of rows spanned by cell</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default>1</default>
+	</item>
+	<item id="133">
+		<name>rules</name>
+		<description>rulings between rows and cols</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="134">
+		<name>scheme</name>
+		<description>select form of content</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="135">
+		<name>scope</name>
+		<description>scope covered by header cells</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="136">
+		<name>scrolling</name>
+		<description>scrollbar or none</description>
+		<status>1</status>
+		<dtdtype>2</dtdtype>
+		<type>3</type>
+		<options>yes:no:auto</options>
+		<default>auto</default>
+	</item>
+	<item id="137">
+		<name>selected</name>
+		<description></description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>1</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="138">
+		<name>shape</name>
+		<description>controls interpretation of coords</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default>rect</default>
+	</item>
+	<item id="139">
+		<name>shape</name>
+		<description>for use with client-side image maps</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default>rect</default>
+	</item>
+	<item id="140">
+		<name>size</name>
+		<description></description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="141">
+		<name>size</name>
+		<description>[+\-]nn e.g. size="+1", size="4"</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="142">
+		<name>size</name>
+		<description>specific to each type of field</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="143">
+		<name>size</name>
+		<description>base font size for FONT elements</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="144">
+		<name>size</name>
+		<description>rows visible</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="145">
+		<name>span</name>
+		<description>COL attributes affect N columns</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default>1</default>
+	</item>
+	<item id="146">
+		<name>span</name>
+		<description>default number of columns in group</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default>1</default>
+	</item>
+	<item id="147">
+		<name>src</name>
+		<description>URI for an external script</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="148">
+		<name>src</name>
+		<description>for fields with images</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="149">
+		<name>src</name>
+		<description>source of frame content</description>
+		<status>1</status>
+		<dtdtype>2</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="150">
+		<name>src</name>
+		<description>URI of image to embed</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="151">
+		<name>standby</name>
+		<description>message to show while loading</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>2</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="152">
+		<name>start</name>
+		<description>starting sequence number</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="153">
+		<name>style</name>
+		<description>associated style info</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>2</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="154">
+		<name>summary</name>
+		<description>purpose/structure for speech output</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>2</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="155">
+		<name>tabindex</name>
+		<description>position in tabbing order</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="156">
+		<name>target</name>
+		<description>render in this frame</description>
+		<status>1</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="157">
+		<name>text</name>
+		<description>document text color</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="158">
+		<name>title</name>
+		<description>advisory title</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="159">
+		<name>type</name>
+		<description>advisory content type</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="160">
+		<name>type</name>
+		<description>content type for data</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="161">
+		<name>type</name>
+		<description>content type for value when valuetype=ref</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="162">
+		<name>type</name>
+		<description>content type of script language</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="163">
+		<name>type</name>
+		<description>content type of style language</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="164">
+		<name>type</name>
+		<description>what kind of widget is needed</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default>TEXT</default>
+	</item>
+	<item id="165">
+		<name>type</name>
+		<description>list item style</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="166">
+		<name>type</name>
+		<description>numbering style</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="167">
+		<name>type</name>
+		<description>bullet style</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="168">
+		<name>type</name>
+		<description>for use as form button</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>3</type>
+		<options>button:submit:reset</options>
+		<default>submit</default>
+	</item>
+	<item id="169">
+		<name>usemap</name>
+		<description>use client-side image map</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="170">
+		<name>valign</name>
+		<description>vertical alignment in cells</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>3</type>
+		<options>top:middle:bottom:baseline</options>
+		<default></default>
+	</item>
+	<item id="171">
+		<name>value</name>
+		<description>Specify for radio buttons and checkboxes</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="172">
+		<name>value</name>
+		<description>defaults to element content</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="173">
+		<name>value</name>
+		<description>property value</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="174">
+		<name>value</name>
+		<description>sent to server when submitted</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="175">
+		<name>value</name>
+		<description>reset sequence number</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="176">
+		<name>valuetype</name>
+		<description>How to interpret value</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>3</type>
+		<options>DATA:REF:OBJECT</options>
+		<default>DATA</default>
+	</item>
+	<item id="177">
+		<name>version</name>
+		<description>Constant</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="178">
+		<name>vlink</name>
+		<description>color of visited links</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="179">
+		<name>vspace</name>
+		<description>vertical gutter</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="180">
+		<name>width</name>
+		<description></description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="181">
+		<name>width</name>
+		<description>frame width</description>
+		<status>1</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="182">
+		<name>width</name>
+		<description>override width</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="183">
+		<name>width</name>
+		<description>table width</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="184">
+		<name>width</name>
+		<description>width for cell</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="185">
+		<name>width</name>
+		<description>initial width</description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="186">
+		<name>width</name>
+		<description>column width specification</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="187">
+		<name>width</name>
+		<description>default width for enclosed COLs</description>
+		<status>1</status>
+		<dtdtype>0</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+	<item id="188">
+		<name>width</name>
+		<description></description>
+		<status>3</status>
+		<dtdtype>1</dtdtype>
+		<type>0</type>
+		<options></options>
+		<default></default>
+	</item>
+</jxedata>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- 
+Sample XML Configuration file.
+
+You could add your custom XML elements
+inside the <item> tags.
+It's a good idea to define your own
+DTD (Document Type Definition).
+
+Elements used in this example:
+
+item        = identifier
+name        = element name
+description = element description
+value       = element value
+
+
+Copyright (c) 2004-2005 Tecnick.com S.r.l (www.tecnick.com) Via Ugo Foscolo n.19 - 09045 Quartu Sant'Elena (CA) - ITALY - www.tecnick.com - info@tecnick.com<br/>
+License: http://www.gnu.org/copyleft/lesser.html LGPL
+@author Nicola Asuni [www.tecnick.com].
+@version 1.0
+-->
+
+<xmlconfig>
+	<item id="1">
+		<name>one</name>
+		<description>first element</description>
+		<value>value one</value>
+	</item>
+	<item id="2">
+		<name>two</name>
+		<description>second element</description>
+		<value>2</value>
+	</item>
+	<item id="3">
+		<name>three</name>
+		<description>third element</description>
+		<value>3.0</value>
+	</item>
+	<item id="4">
+		<name>four</name>
+		<description>fourth element</description>
+		<value>value 4 €àèìòù</value>
+	</item>
+</xmlconfig>

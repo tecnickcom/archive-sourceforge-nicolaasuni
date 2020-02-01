@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it" dir="ltr">
+
+<head>
+<title>JRelaxTimer</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="description" content="JRelaxTimer by Tecnick.com S.r.l." />
+<meta name="author"      content="Nicola Asuni" />
+<meta name="reply-to"    content="info@tecnick.com" />
+<meta name="keywords"    content="Tecnick.com, JRelaxTimer" />
+<link rel="stylesheet" href="default.css" type="text/css" />
+</head>
+
+<body>
+
+<h1>JRelaxTimer</h1>
+
+<table id="jrelaxtimer_info" title="JRelaxTimer Informazioni" summary="Informazioni su JRelaxTimer" border="1" cellspacing="0" cellpadding="4">
+<tr valign="top"><td>Nome</td><td><a href="http://jrelaxtimer.sourceforge.net">JRelaxTimer</a></td></tr>
+<tr valign="top"><td>Versione</td><td>1.0.001</td></tr>
+<tr valign="top"><td>Data</td><td>2006-02-04</td></tr>
+<tr valign="top"><td>Autore</td><td>Nicola Asuni</td></tr>
+<tr valign="top"><td>Copyright</td><td><a href="http://www.tecnick.com">Tecnick.com S.r.l.</a><br />
+Via Ugo Foscolo n.19<br />
+09045 Quartu Sant'Elena (CA)<br />
+ITALY<br />
+<a href="http://www.tecnick.com">www.tecnick.com</a>
+</td></tr>
+<tr valign="top"><td>Licenza</td><td><a href="http://www.gnu.org/copyleft/gpl.html" target="_blank">GNU GENERAL PUBLIC LICENSE v.2</a></td></tr>
+</table>
+
+<br />
+<div align="center"><small>[ <a href="#description">descrizione</a> | <a href="#features">caratteristiche</a> | <a href="#example">esempi</a> | <a href="#setup">impostazione</a> ]</small></div>
+<br />
+
+<a name="description" id="description"></a>
+<h2>Descrizione</h2>
+
+JRelaxTimer &egrave; un'applet Java, un timer avanzato che permette di aprire pagine Web a specifici intervalli di tempo. &Egrave; indipendente dal browser e pu&ograve; essere facilmente personalizzato utilizzando la propria grafica e varie opzioni cos&igrave; da poter ottenere un numero illimitato di aspetti e comportamenti.<br />
+JRelaxTimer &egrave; composto da alcuni componenti indipendenti che possono essere mostrati o nascosti a seconda delle opzioni (logo, pulsanti, display, selettori):<br />
+<br />
+<img src="images/jrelaxtimer_legend_ita.gif" alt="JRelaxTimer legenda" width="475" height="200" border="0"><br />
+<br />
+
+<h3>Legenda Pulsanti</h3>
+
+<img src="java/images/lcd_14x23/buttons/pause_on.gif" alt="pulsante PAUSA" width="28" height="23" border="0" align="middle" /> <b>PAUSA</b>: mette in pausa il timer.<br />
+<img src="java/images/lcd_14x23/buttons/stop_on.gif" alt="pulsante STOP" width="28" height="23" border="0" align="middle" /> <b>STOP</b>: ferma e resetta il timer.<br />
+<img src="java/images/lcd_14x23/buttons/play_on.gif" alt="pulsante PLAY" width="28" height="23" border="0" align="middle" /> <b>PLAY</b>: riavvia il timer dopo PAUSA o STOP.<br />
+<img src="java/images/lcd_14x23/buttons/break_on.gif" alt="pulsante BREAK" width="28" height="23" border="0" align="middle" /> <b>BREAK</b>: forza l'apertura di una pagina Web di intervallo.<br />
+
+<a name="features" id="features"></a>
+<h2>Caratteristiche Principali</h2>
+<ul>
+<li>indipendente dal browser, funziona con ogni browser che supporta almeno Java 1.1</li>
+<li>supporta due differenti meccanismi per la selezione delle pagine da aprire</li>
+<li>personalizzazione dei colori di sfondo</li>
+<li>personalizzazione delle immagini di sfondo</li>
+<li>personalizzazione della grafica per le cifre ed i simboli</li>
+<li>232 immagini pronte all'uso (13 set di cifre)</li>
+<li>supporto per immagini con trasparenze</li>
+</ul>
+<br />
+
+<a name="example" id="example"></a>
+<h2>Esempi</h2>
+
+Ognuno degli esempi seguenti apre l'applet JRelaxTimer in una piccola finestra popup. &Egrave; anche possibile inserire l'applet JRelaxTimer in una normale pagina xHTML con altri contenuti e grafica.<br />
+
+<ul>
+<li><a href="javascript:void(0)" onclick="javascript:window.open('example1.html','JRelaxTimer','menubar=no,scrollbars=no,resizable=no,width=171,height=110')">esempio 1</a></li>
+<li><a href="javascript:void(0)" onclick="javascript:window.open('example2.html','JRelaxTimer','menubar=no,scrollbars=no,resizable=no,width=228,height=110')">esempio 2</a></li>
+<li><a href="javascript:void(0)" onclick="javascript:window.open('example3.html','JRelaxTimer','menubar=no,scrollbars=no,resizable=no,width=266,height=120')">esempio 3</a></li>
+<li><a href="javascript:void(0)" onclick="javascript:window.open('example4.html','JRelaxTimer','menubar=no,scrollbars=no,resizable=no,width=140,height=46')">esempio 4</a></li>
+<li><a href="javascript:void(0)" onclick="javascript:window.open('example5.html','JRelaxTimer','menubar=no,scrollbars=no,resizable=no,width=90,height=30')">esempio 5</a></li>
+</ul>
+
+<a name="setup" id="setup"></a>
+<h2>Impostazione</h2>
+
+Per visualizzare il JRelaxTimer, copiate il file <b>.jar</b> sul vostro sito ed aggiungete il tag <b>applet</b> nel vostro documento XHTML/HTML. Per personalizzare rapidamente l'applet, il mio consiglio &egrave; quello di copiare ed incollare il codice applet usato negli <a href="#example">esempi</a> e modificarlo secondo le vostre esigenze.<br />
+<br />
+Le seguenti tabelle illustrano il significato e la funzione di ogni parametro dell'applet.
+ 
+<br /><br />
+<table class="edge" border="0" cellspacing="1" cellpadding="2">
+<tr class="edge"><th align="center" class="edge">Attributi Applet<br /><i>(&lt;applet attribute_name="attribute_value" ... &gt;)</i></th></tr>
+<tr class="edge"><td class="edge">
+
+<table class="fill" border="0" cellspacing="1" cellpadding="4" title="Attributi Applet" summary="Lista degli attributi applet per JRelaxTimer">
+<tr class="fillO">
+	<th class="fillOO">nome</th>
+	<th class="fillOE">valore</th>
+	<th class="fillOO">predefinito</th>
+	<th class="fillOE">richiesto</th>
+</tr>
+
+<tr class="fillE">
+	<td valign="top" class="fillEO">codebase</td>
+	<td valign="top" class="fillEE"><i>percorso relativo della directory contenente il file .jar (es: "../java/")</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">si</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">archive</td>
+	<td valign="top" class="fillOE">jrelaxtimer.jar <i>(nome dell'archivio java)</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">si</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">code</td>
+	<td valign="top" class="fillEE">com.tecnick.jrelaxtimer.JRelaxTimer.class <i>(nome della classe principale)</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">si</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">width</td>
+	<td valign="top" class="fillOE"><i>larghezza dell'applet in pixel</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">si</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">height</td>
+	<td valign="top" class="fillEE"><i>altezza dell'applet in pixel</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">si</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">hspace</td>
+	<td valign="top" class="fillOE"><i>spazio orizzontale dell'applet</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">vspace</td>
+	<td valign="top" class="fillEE"><i>spazio verticale dell'applet</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">align</td>
+	<td valign="top" class="fillOE"><i>allineamento applet</i><ul><li>left <i>(sinistra)</i></li><li>right <i>(destra)</i></li><li>top <i>(alto)</i></li><li>middle <i>(centrata)</i></li><li>bottom <i>(basso)</i></li></ul></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">name</td>
+	<td valign="top" class="fillEE"><i>nome dell'applet</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">id</td>
+	<td valign="top" class="fillOE"><i>id dell'applet</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">alt</td>
+	<td valign="top" class="fillEE"><i>testo alternativo all'applet</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+</table>
+
+</td></tr>
+</table>
+
+
+<br /><br />
+I seguenti sono i parametri principali dell'applet.<br />
+<br /><br />
+
+<table class="edge" border="0" cellspacing="1" cellpadding="2">
+<tr class="edge"><th align="center" class="edge">Parametri Principali<br /><i>(&lt;param name="param_name" value="param_value" /&gt;)</i></th></tr>
+<tr class="edge"><td class="edge">
+
+<table class="fill" border="0" cellspacing="1" cellpadding="4" title="Parametri Principali" summary="Lista dei parametri principali di JRelaxTimer">
+<tr class="fillO">
+	<th class="fillOO">nome</th>
+	<th class="fillOE">valore</th>
+	<th class="fillOO">predefinito</th>
+	<th class="fillOE">richiesto</th>
+</tr>
+
+
+<tr class="fillO">
+	<td valign="top" class="fillOO">target_url</td>
+	<td valign="top" class="fillOE"><i>L'URL (indirizzo internet) della radice contenente le directory specificate nel parametro break_types (es.: http://www.miosito.com/pagine_relax/).<br /><br />
+Se il parametro break_types non &egrave; specificato, questo parametro rappresenta l'URL dalla pagina dinamica che verr&agrave; chiamata ad ogni intervallo (es.: http://www.miosito.com/pagina_relax.php). I parametri seguenti verranno passati alla pagina dinamica:<ul>
+<li><b>l</b> il numero di licenza di quest'applet</li>
+<li><b>t</b> il tipo corrente di intervallo (numero intero)</li>
+<li><b>b</b> l'intervallo corrente (numero)</li>
+<li><b>i</b> la durata corrente dell'intervallo in minuti</li>
+</ul></i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">si</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">break_types</td>
+	<td valign="top" class="fillEE"><i>Lista delimitata di valori che rappresentano i tipi di pausa.<br />Ogni tipo di pausa &egrave; separato dal carattere "|".<br />Ogni tipo di pausa &egrave; composto da tre valori separati da virgola: nome del tipo di pausa, directory relativa al percorso pecificato in target_url, numero di pagine contenute nella directory.<br />(es.: tipo 1,dir1,7|tipo 2,dir2,5|tipo 3,dir3,11)<br />Le pagine contenute in ogni directory devono avere un nome numerico progressivo che parte da 1 (es.: 1.htm, 2.htm, 3.htm, etc...).</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">page_extension</td>
+	<td valign="top" class="fillOE"><i>questa &egrave; l'estensione che verr&agrave; aggiunta alla fine dell'URL delle pagine di pausa quando il parametro break_types &egrave; specificato</i></td>
+	<td valign="top" class="fillOO">.htm</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">intervals</td>
+	<td valign="top" class="fillEE"><i>ista di interi (minuti) separati da virgola che rappresentano gli intervalli di tempo selezionabili</i></td>
+	<td valign="top" class="fillEO">15,30,45,60</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">default_interval</td>
+	<td valign="top" class="fillOE"><i>numero intero che rappresenta l'intervallo predefinito in minuti</i></td>
+	<td valign="top" class="fillOO">30</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">logo_image</td>
+	<td valign="top" class="fillEE"><i>percorso relativo all'immagine da usare come logo</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">logo_url</td>
+	<td valign="top" class="fillOE"><i>indirizzo internet (URL) da aprire cliccando sul logo</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">display_started</td>
+	<td valign="top" class="fillEE">display che mostra il tempo iniziale<ul><li>true <i>mostra il display</i></li><li>false <i>nasconde il display</i></li></ul></td>
+	<td valign="top" class="fillEO">true</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">display_current_time</td>
+	<td valign="top" class="fillOE">display che mostra il tempo corrente<ul><li>true <i>mostra il display</i></li><li>false <i>nasconde il display</i></li></ul></td>
+	<td valign="top" class="fillOO">true</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">display_elapsed</td>
+	<td valign="top" class="fillEE">display che mostra il tempo trascorso<ul><li>true <i>mostra il display</i></li><li>false <i>nasconde il display</i></li></ul></td>
+	<td valign="top" class="fillEO">true</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">display_counter</td>
+	<td valign="top" class="fillOE">display che mostra il numero di pause effettuate<ul><li>true <i>mostra il display</i></li><li>false <i>nasconde il display</i></li></ul></td>
+	<td valign="top" class="fillOO">true</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">display_next</td>
+	<td valign="top" class="fillEE">display che mostra il tempo rimanente alla prossima pausa<ul><li>true <i>mostra il display</i></li><li>false <i>nasconde il display</i></li></ul></td>
+	<td valign="top" class="fillEO">true</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">background_color</td>
+	<td valign="top" class="fillOE"><i>colore di sfondo dell'applet<br />- Il colore &egrave; rappresentato da una terna di tre numeri esadecimali (da 00 a FF) che rappresentano i colori primari RRGGBB (R=Red=Rosso, G=Green=Verde, B=Blue=Blu)</i></td>
+	<td valign="top" class="fillOO">000000</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">background_color_started</td>
+	<td valign="top" class="fillEE"><i>colore di sfondo del display che mostra il tempo iniziale<br />- Il colore &egrave; rappresentato da una terna di tre numeri esadecimali (da 00 a FF) che rappresentano i colori primari RRGGBB (R=Red=Rosso, G=Green=Verde, B=Blue=Blu)</i></td>
+	<td valign="top" class="fillEO">000000</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">background_color_current_time</td>
+	<td valign="top" class="fillOE"><i>colore di sfondo del display che mostra il tempo corrente<br />- Il colore &egrave; rappresentato da una terna di tre numeri esadecimali (da 00 a FF) che rappresentano i colori primari RRGGBB (R=Red=Rosso, G=Green=Verde, B=Blue=Blu)</i></td>
+	<td valign="top" class="fillOO">000000</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">background_color_elapsed</td>
+	<td valign="top" class="fillEE"><i>colore di sfondo del display che mostra il tempo trascorso<br />- Il colore &egrave; rappresentato da una terna di tre numeri esadecimali (da 00 a FF) che rappresentano i colori primari RRGGBB (R=Red=Rosso, G=Green=Verde, B=Blue=Blu)</i></td>
+	<td valign="top" class="fillEO">000000</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">background_color_next</td>
+	<td valign="top" class="fillOE"><i>colore di sfondo del display che mostra il tempo rimanente alla prossima pausa<br />- Il colore &egrave; rappresentato da una terna di tre numeri esadecimali (da 00 a FF) che rappresentano i colori primari RRGGBB (R=Red=Rosso, G=Green=Verde, B=Blue=Blu)</i></td>
+	<td valign="top" class="fillOO">000000</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">background_color_counter</td>
+	<td valign="top" class="fillEE"><i>colore di sfondo del display che mostra il numero di pause effettuate<br />- Il colore &egrave; rappresentato da una terna di tre numeri esadecimali (da 00 a FF) che rappresentano i colori primari RRGGBB (R=Red=Rosso, G=Green=Verde, B=Blue=Blu)</i></td>
+	<td valign="top" class="fillEO">000000</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">background_image_started</td>
+	<td valign="top" class="fillOE"><i>percorso relativo all'immagine di sfondo del display che mostra il tempo iniziale</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">background_image_current_time</td>
+	<td valign="top" class="fillEE"><i>percorso relativo all'immagine di sfondo del display che mostra il tempo corrente</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">background_image_elapsed</td>
+	<td valign="top" class="fillOE"><i>percorso relativo all'immagine di sfondo del display che mostra il tempo trascorso</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">background_image_next</td>
+	<td valign="top" class="fillEE"><i>percorso relativo all'immagine di sfondo del display che mostra il tempo rimanente alla prossima pausa</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">background_image_counter</td>
+	<td valign="top" class="fillOE"><i>percorso relativo all'immagine di sfondo del display che mostra il numero di pause effettuate</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">img_dir_buttons</td>
+	<td valign="top" class="fillEE"><i>percorso relativo alla directory contenente il set di immagini per i pulsanti</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">img_dir_started</td>
+	<td valign="top" class="fillOE"><i>percorso relativo alla directory contenente il set di immagini per il display che mostra il tempo iniziale</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">img_dir_current_time</td>
+	<td valign="top" class="fillEE"><i>percorso relativo alla directory contenente il set di immagini per il display che mostra il tempo corrente</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillOO">img_dir_elapsed</td>
+	<td valign="top" class="fillOE"><i>percorso relativo alla directory contenente il set di immagini per il display che mostra il tempo trascorso</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+<tr class="fillE">
+	<td valign="top" class="fillEO">img_dir_next</td>
+	<td valign="top" class="fillEE"><i>percorso relativo alla directory contenente il set di immagini per il display che mostra il tempo rimanente alla prossima pausa</i></td>
+	<td valign="top" class="fillEO">&nbsp;</td>
+	<td valign="top" align="center" class="fillEE">no</td>
+</tr>
+<tr class="fillO">
+	<td valign="top" class="fillOO">img_dir_counter</td>
+	<td valign="top" class="fillOE"><i>percorso relativo alla directory contenente il set di immagini per il display che mostra il numero di pause effettuate</i></td>
+	<td valign="top" class="fillOO">&nbsp;</td>
+	<td valign="top" align="center" class="fillOE">no</td>
+</tr>
+</table>
+
+<a href="http://opensource.tecnick.com" title="[extrnal site on a new window]" target="_blank">Progetti Open Source dello stesso autore &gt;&gt;</a>
+
+
+</body>
+</html>

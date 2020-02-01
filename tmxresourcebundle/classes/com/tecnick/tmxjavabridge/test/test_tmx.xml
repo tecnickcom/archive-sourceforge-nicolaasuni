@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<tmx version="1.4">
+	<header
+		creationtool="hand made"
+		creationtoolversion="1"
+		datatype="PlainText"
+		segtype="sentence"
+		adminlang="en-us"
+		srclang="EN"
+		o-tmf="ABCTransMem">
+	</header>
+	<body>
+		<tu tuid="hello" datatype="plaintext">
+			<tuv xml:lang="EN">
+				<seg>Hello</seg>
+			</tuv>
+			<tuv xml:lang="IT">
+				<seg>Ciao</seg>
+			</tuv>
+		</tu>
+		<tu tuid="world" datatype="plaintext">
+			<tuv xml:lang="EN">
+				<seg>World</seg>
+			</tuv>
+			<tuv xml:lang="IT">
+				<seg>Mondo</seg>
+			</tuv>
+		</tu>
+	</body>
+</tmx>

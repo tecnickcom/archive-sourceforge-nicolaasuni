@@ -1,0 +1,126 @@
+<?php
+
+/*
+  Whois2.php	PHP classes to conduct whois queries
+  
+  Copyright (C)1999,2000 easyDNS Technologies Inc. & Mark Jeftovic 
+  
+  Maintained by Mark Jeftovic <markjr@easydns.com>
+  
+  For the most recent version of this package: 
+  
+  http://www.easydns.com/~markjr/whois2/
+  
+  This program is free software; you can redistribute it and/or
+  modify it under the terms of the GNU General Public License
+  as published by the Free Software Foundation; either version 2
+  of the License, or (at your option) any later version.
+  
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  
+  You should have received a copy of the GNU General Public License
+  along with this program; if not, write to the Free Software
+  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+*/
+
+/* gtld.whois	1.0	mark jeftovic	1999/12/06 */
+/* gtld.whois   1.1     david@ols.es    2003/02/09 */
+
+if(!defined("__GTLD_HANDLER__")) define("__GTLD_HANDLER__",1);
+
+require_once("../../shared/whois/generic2.whois");
+
+class gtld extends Whois {
+
+	var $HANDLER_VERSION = "1.1";
+
+	var $REG_FIELDS = array(
+		"regrinfo.domain.name" => "Domain Name:",
+		"regyinfo.registrar" => "Registrar:",
+		"regyinfo.whois" => "Whois Server:",
+		"regyinfo.referrer" => "Referral URL:",
+		"regrinfo.domain.nserver." => "Name Server:", // identical descriptors
+		"regrinfo.domain.changed" => "Updated Date:",
+		"regrinfo.domain.changed" => "Last Updated On:",
+		"regrinfo.domain.status" => "Status:", 
+		"regrinfo.domain.created" => "Creation Date:",
+		"regrinfo.domain.created" => "Created On:",
+		"regrinfo.domain.expires" => "Expiration Date:"
+		);             
+
+	var $REGISTRARS = array(
+		"ALABANZA, INC." => "bulkregistercom",
+		"BULKREGISTER.COM, INC."  => "bulkregistercom",
+		"CORE INTERNET COUNCIL OF REGISTRARS" => "core",
+		"R23-LROR" => "core",
+		"DOTSTER, INC." => "dotster",
+		"R34-LROR" => "dotster",
+		"ENOM, INC." => "enom",
+		"R39-LROR" => "enom",
+		"MELBOURNE IT, LTD. D/B/A INTERNET NAMES WORLDWIDE" => "inwwcom",
+		"R52-LROR" => "inwwcom",
+		"NETWORK SOLUTIONS, INC." => "netsol",
+		"R63-LROR" => "netsol",
+		"REGISTER.COM, INC." => "registercom",
+		"TUCOWS, INC." => "opensrsnet",
+		"R11-LROR"  => "opensrsnet",
+		"IHOLDINGS.COM, INC. D/B/A DOTREGISTRAR.COM" => "dotregistrar",
+		"R114-LROR" => "dotregistrar",
+		"INTERDOMAIN, S.A." => "interdomain",
+		"R49-LROR" => "interdomain",
+		"ASCIO TECHNOLOGIES, INC." => "ascio",
+		"R76-LROR" => "ascio",
+		"INTERCOSMOS MEDIA GROUP, INC. D/B/A DIRECTNIC.COM" => "directnic",
+		"R48-LROR" => "directnic",
+		"DOMAINDISCOVER" => "buydomains",
+		"R86-LROR" => "buydomains",
+		"TLDS, INC. DBA SRSPLUS" => "srsplus",
+		"R78-LROR" => "srsplus"
+		);
+
+	function gTLD ($data, $query) {
+		$this->Query = $query;
+		$this->SUBVERSION = sprintf("%s-%s", $query["handler"], $this->HANDLER_VERSION);
+		$this->result = generic_whois($data["rawdata"],$this->REG_FIELDS);
+
+		if($this->HACKS["nsi_referral_loop"] &&
+		   ($this->result["regyinfo"]["whois"] == $this->HACKS["wrong_netsol_whois"])) {
+			$this->Query["server"] = $this->HACKS["real_netsol_whois"];
+		} else {
+			$this->Query["server"] = $this->result["regyinfo"]["whois"];
+		}
+
+		$this->result["rawdata"] = $this->Lookup($this->Query["string"]);
+		// david@ols.es 16/10/2002 Fixes rawdata
+		
+		if (!isset($this->result["rawdata"]["rawdata"])) {
+			$this->Query["errstr"]="Domain not found";
+			unset($this->result["rawdata"]);
+			return;
+		}
+
+		if (isset($this->result["rawdata"]["rawdata"]))
+			$this->result["rawdata"] = $this->result["rawdata"]["rawdata"];
+
+		@$this->Query["handler"] = $this->REGISTRARS[$this->result["regyinfo"]["registrar"]];
+
+		if (!empty($this->Query["handler"])) {
+			if (strstr($this->result["regyinfo"]["registrar"],"-LROR"))
+                           {
+			     // Get the name of the registrar
+			     $key = array_search($this->Query["handler"],$this->REGISTRARS);
+                             $this->result["regyinfo"]["registrar"] = $key;
+                           } 
+			$this->Query["file"] = sprintf("%s.whois", $this->Query["handler"]);
+			$domaindata = $this->result["regrinfo"]["domain"];
+			$regrinfo = $this->Process($this->result["rawdata"]);
+			$this->result["regrinfo"] = $regrinfo;
+			$this->result["regrinfo"]["domain"] = array_merge($domaindata,$regrinfo["domain"]);
+		}
+	}
+}
+
+?>

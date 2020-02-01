@@ -1,0 +1,9 @@
+convertitore di unità di misura
+ingresso
+risultato
+categoria
+precisione
+valore
+moltiplicatore
+unità
+descrizione

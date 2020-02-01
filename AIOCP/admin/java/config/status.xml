@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE jxedata SYSTEM "jxedata.dtd" [
+<!ENTITY % html_entities SYSTEM "html_entities.ent" >
+%html_entities;
+]>
+
+<!-- 
+HTML-XHTML elements status for JXHTMLEDIT
+
+Elements definitions:
+
+item        = status ID
+name        = status name
+description = status description
+-->
+
+<jxedata version="1.0">
+	<item id="1">
+		<name>general</name>
+		<description>tag part of the current standard and not deprecated</description>
+	</item>
+	<item id="2">
+		<name>browser specific</name>
+		<description>element specific for a particular browser</description>
+	</item>
+	<item id="3">
+		<name>deprecated</name>
+		<description>deprecated element</description>
+	</item>
+	<item id="4">
+		<name>obsolete</name>
+		<description>obsolete tag</description>
+	</item>
+</jxedata>

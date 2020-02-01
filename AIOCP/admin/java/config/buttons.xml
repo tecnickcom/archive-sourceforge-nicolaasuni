@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE jxedata SYSTEM "jxedata.dtd" [
+<!ENTITY % html_entities SYSTEM "html_entities.ent" >
+%html_entities;
+]>
+
+<!-- 
+document containing buttons definitions for JXHTMLEDIT.
+This data will be loaded at JXHTMLEDIT application startup.
+
+Please backup this file before changing it.
+
+Elements definitions:
+
+item        = identifier
+name        = button name (used if icon is not available) - may be also a TMX key (e.g.: R_MY_TMX_KEY)
+description = button description (used on button tooltip) - may be also a TMX key (e.g.: R_MY_TMX_KEY)
+icon        = button icon filename (relative to the default icons dir)
+intag       = open tag to add at the start of selected text when the button is pressed (e.g.: &lt;h1&gt;)
+outtag      = closing tag to add at the end of selected text when the button is pressed (e.g.: &lt;/h1&gt;)
+keystroke   = integer number representing the keyboard key to associate to this action
+		see: http://java.sun.com/j2se/1.4.2/docs/api/constant-values.html#java.awt
+keymodifier = integer number representing the keyboard modifier key to associate to previous keystroke
+		The modifiers consist of any combination of: 
+		SHIFT_MASK (1) 
+		CTRL_MASK (2) 
+		META_MASK (4) 
+		ALT_MASK (8) 
+		Since these numbers are all different powers of two, 
+		any combination of them is an integer in which each bit 
+		represents a different modifier key. 
+		Use 0 to specify no modifiers.
+action      = predefined JXHTMLEDIT action ID to execute when button is pressed (see list below),
+              or list of custom tags for a comboBox (tag1 name|start tag1|end tag1||tag2 name|start tag2|end tag2)
+               
+             PREDEFINED ACTIONS:
+               0: cut selected text
+               1: copy text
+               2: paste text
+               3: undo
+               4: redo
+               5: display info dialog
+               6: reload document from calling form
+               7: save document on calling form
+               8: display font dialog
+               9: select all text
+              10: display search text dialog
+              11: find next searched string
+              12: display a font headings comboBox 
+              13: insert unordered list (<ul>)
+              14: insert ordered list (<ol>)
+              15: display insert table dialog
+              16: delete table row
+              17: delete table column
+              18: insert table row
+              19: insert table column
+              20: merge table cells horizontally
+              21: merge table cells vertically
+              22: display insert image dialog
+              23: display insert link dialog
+              24: set auto <br> mode
+              25: set auto <li> mode
+              26: remove tag
+              27: display a combo box to select all html tags
+              28: clear document (delete all)
+
+             100: display auto BR/LI selectors
+             101: display extended chars combo box
+             102: display headings combo box
+             103: display HTML elements combo box
+-->
+
+<jxedata version="1.0">
+	
+	<item id="1">
+		<name>Load</name>
+		<description>load document from calling form</description>
+		<icon>loaddoc.gif</icon>
+		<intag></intag>
+		<outtag></outtag>
+		<keystroke>78</keystroke>
+		<keymodifier>2</keymodifier>
+		<action>6</action>
+	</item>
+	<item id="2">
+		<name>Save</name>
+		<description>Save document on calling form</description>
+		<icon>save.gif</icon>
+		<intag></intag>
+		<outtag></outtag>
+		<keystroke>83</keystroke>
+		<keymodifier>2</keymodifier>
+		<action>7</action>
+	</item>
+	<item id="3">
+		<name>Clear</name>
+		<description>Clear document</description>
+		<icon>newdoc.gif</icon>
+		<intag></intag>
+		<outtag></outtag>
+		<keystroke></keystroke>
+		<keymodifier></keymodifier>
+		<action>28</action>
+	</item>
+	<item id="4">
+		<name>Cut</name>
+		<description>cut</description>
+		<icon>cut.gif</icon>
+		<intag></intag>
+		<outtag></outtag>
+		<keystroke>127</keystroke>
+		<keymodifier>1</keymodifier>
+		<action>0</action>
+	</item>
+	<item id="5">
+		<name>Copy</name>
+		<description>copy</description>
+		<icon>copy.gif</icon>
+		<intag></intag>
+		<outtag></outtag>
+		<keystroke>155</keystroke>
+		<keymodifier>2</keymodifier>
+		<action>1</action>
+	</item>
+	<item id="6">
+		<name>Paste</name>
+		<description>paste</description>
+		<icon>paste.gif</icon>
+		<intag></intag>
+		<outtag></outtag>
+		<keystroke>155</keystroke>
+		<keymodifier>1</keymodifier>
+		<action>2</action>
+	</item>
+	<item id="7">
+		<name>Undo</name>
+		<description>undo</description>
+		<icon>undo.gif</icon>
+		<intag></intag>
+		<outtag></outtag>
+		<keystroke>90</keystroke>
+		<keymodifier>2</keymodifier>
+		<action>3</action>
+	</item>
+	<item id="8">
+		<name>Redo</name>
+		<description>redo</description>
+		<icon>redo.gif</icon>
+		<intag></intag>
+		<outtag></outtag>
+		<keystroke>90</keystroke>
+		<keymodifier>1</keymodifier>
+		<action>4</action>
+	</item>
+	<item id="9">
+		<name>select all</name>
+		<description>select all</description>
+		<icon>selall.gif</icon>
+		<intag></intag>
+		<outtag></outtag>
+		<keystroke>65</keystroke>
+		<keymodifier>2</keymodifier>
+		<action>9</action>
+	</item>
+	<item id="10">
+		<name>Find</name>
+		<description>find text from cursor position</description>
+		<icon>find.gif</icon>
+		<intag></intag>
+		<outtag></outtag>
+		<keystroke>114</keystroke>
+		<keymodifier>8</keymodifier>
+		<action>10</action>
+	</item>
+	<item id="11">
+		<name>find next</name>
+		<description>find next</description>
+		<icon>findnext.gif</icon>
+		<intag></intag>
+		<outtag></outtag>
+		<keystroke>114</keystroke>
+		<keymodifier>0</keymodifier>
+		<action>11</action>
+	</item>
+	<item id="12">
+		<name>Font</name>
+		<description>font settings</description>
+		<icon>font.gif</icon>
+		<intag></intag>
+		<outtag></outtag>
+		<keystroke></keystroke>
+		<keymodifier></keymodifier>
+		<action>8</action>
+	</item>
+	<item id="13">
+		<name>B</name>
+		<description>bold</description>
+		<icon>bold.gif</icon>
+		<intag>&lt;b&gt;</intag>
+		<outtag>&lt;/b&gt;</outtag>
+		<keystroke></keystroke>
+		<keymodifier></keymodifier>
+		<action></action>
+	</item>
+	<item id="14">
+		<name>I</name>
+		<description>italic</description>
+		<icon>italic.gif</icon>
+		<intag>&lt;i&gt;</intag>
+		<outtag>&lt;/i&gt;</outtag>
+		<keystroke></keystroke>
+		<keymodifier></keymodifier>
+		<action></action>
+	</item>
+	<item id="15">
+		<name>U</name>
+		<description>underline</description>
+		<icon>under.gif</icon>
+		<intag>&lt;u&gt;</intag>
+		<outtag>&lt;/u&gt;</outtag>
+		<keystroke></keystroke>
+		<keymodifier></keymodifier>
+		<action></action>
+	</item>
+	<item id="16">
+		<name>S</name>
+		<description>strikethrough</description>
+		<icon>striketr.gif</icon>
+		<intag>&lt;s&gt;</intag>
+		<outtag>&lt;/s&gt;</outtag>
+		<keystroke></keystroke>
+		<keymodifier></keymodifier>
+		<action></action>
+	</item>
+	<item id="17">
+		<name>sup</name>
+		<description>superscript</description>
+		<icon>superscr.gif</icon>
+		<intag>&lt;sup&gt;</intag>
+		<outtag>&lt;/sup&gt;</outtag>
+		<keystroke></keystroke>
+		<keymodifier></keymodifier>
+		<action></action>
+	</item>
+	<item id="18">
+		<name>sub</name>
+		<description>subscript</description>
+		<icon>subscr.gif</icon>
+		<intag>&lt;sub&gt;</intag>
+		<outtag>&lt;/sub&gt;</outtag>
+		<keystroke></keystroke>
+		<keymodifier></keymodifier>
+		<action></action>
+	</item>
+	<item id="19">
+		<name>L</name>
+		<description>align left</description>
+		<icon>left.gif</icon>
+		<intag>&lt;div align="left"&gt;</intag>
+		<outtag>&lt;/div&gt;</outtag>
+		<keystroke></keystroke>
+		<keymodifier></keymodifier>
+		<action></action>
+	</item>
+	<item id="20">
+		<name>C</name>
+		<description>center</description>
+		<icon>center.gif</icon>
+		<intag>&lt;center&gt;</intag>
+		<outtag>&lt;/center&gt;</outtag>
+		<keystroke></keystroke>
+		<keymodifier></keymodifier>
+		<action></action>
+	</item>
+	<item id="21">
+		<name>R</name>
+		<description>right</description>
+		<icon>right.gif</icon>
+		<intag>&lt;div align="right"&gt;</intag>
+		<outtag>&lt;/div&gt;</outtag>
+		<keystroke></keystroke>
+		<keymodifier></keymodifier>
+		<action></action>
+	</item>
+	<item id="22">
+		<name>Link</name>
+		<description>insert link</description>
+		<icon>link.gif</icon>
+		<intag></intag>
+		<outtag></outtag>
+		<keystroke></keystroke>
+		<keymodifier></keymodifier>
+		<action>23</action>
+	</item>
+	<item id="23">
+		<name>Image</name>
+		<description>insert image</description>
+		<icon>image.gif</icon>
+		<intag></intag>
+		<outtag></outtag>
+		<keystroke></keystroke>
+		<keymodifier></keymodifier>
+		<action>22</action>
+	</item>
+	<item id="24">
+		<name>Table</name>
+		<description>insert table</description>
+		<icon>instable.gif</icon>
+		<intag></intag>
+		<outtag></outtag>
+		<keystroke></keystroke>
+		<keymodifier></keymodifier>
+		<action>15</action>
+	</item>
+	<item id="25">
+		<name>Ins Row</name>
+		<description>insert table row</description>
+		<icon>insrow.gif</icon>
+		<intag></intag>
+		<outtag></outtag>
+		<keystroke></keystroke>
+		<keymodifier></keymodifier>
+		<action>18</action>
+	</item>
+	<item id="26">
+		<name>Ins Col</name>
+		<description>insert table column</description>
+		<icon>inscol.gif</icon>
+		<intag></intag>
+		<outtag></outtag>
+		<keystroke></keystroke>
+		<keymodifier></keymodifier>
+		<action>19</action>
+	</item>
+	<item id="27">
+		<name>Del Row</name>
+		<description>remove table row</description>
+		<icon>delrow.gif</icon>
+		<intag></intag>
+		<outtag></outtag>
+		<keystroke></keystroke>
+		<keymodifier></keymodifier>
+		<action>16</action>
+	</item>
+	<item id="28">
+		<name>Del Col</name>
+		<description>remove table column</description>
+		<icon>delcol.gif</icon>
+		<intag></intag>
+		<outtag></outtag>
+		<keystroke></keystroke>
+		<keymodifier></keymodifier>
+		<action>17</action>
+	</item>
+	<item id="29">
+		<name>Merge H</name>
+		<description>merge table cell horizontally</description>
+		<icon>mrgcellh.gif</icon>
+		<intag></intag>
+		<outtag></outtag>
+		<keystroke></keystroke>
+		<keymodifier></keymodifier>
+		<action>20</action>
+	</item>
+	<item id="30">
+		<name>Merge V</name>
+		<description>merge table cell vertically</description>
+		<icon>mrgcellv.gif</icon>
+		<intag></intag>
+		<outtag></outtag>
+		<keystroke></keystroke>
+		<keymodifier></keymodifier>
+		<action>21</action>
+	</item>
+	<item id="31">
+		<name>P</name>
+		<description>paragraph</description>
+		<icon>parag.gif</icon>
+		<intag>&lt;p&gt;</intag>
+		<outtag>&lt;/p&gt;</outtag>
+		<keystroke></keystroke>
+		<keymodifier></keymodifier>
+		<action></action>
+	</item>
+	<item id="32">
+		<name>br</name>
+		<description>new line</description>
+		<icon>br.gif</icon>
+		<intag>&lt;br&gt;</intag>
+		<outtag></outtag>
+		<keystroke></keystroke>
+		<keymodifier></keymodifier>
+		<action></action>
+	</item>
+	<item id="33">
+		<name>nbsp</name>
+		<description>non-breaking space</description>
+		<icon>nb.gif</icon>
+		<intag>&nbsp;</intag>
+		<outtag></outtag>
+		<keystroke></keystroke>
+		<keymodifier></keymodifier>
+		<action></action>
+	</item>
+	<item id="34">
+		<name>UL</name>
+		<description>unordered list</description>
+		<icon>bullist.gif</icon>
+		<intag></intag>
+		<outtag></outtag>
+		<keystroke></keystroke>
+		<keymodifier></keymodifier>
+		<action>13</action>
+	</item>
+	<item id="35">
+		<name>OL</name>
+		<description>ordered list</description>
+		<icon>numlist.gif</icon>
+		<intag></intag>
+		<outtag></outtag>
+		<keystroke></keystroke>
+		<keymodifier></keymodifier>
+		<action>14</action>
+	</item>
+	<item id="36">
+		<name>li</name>
+		<description>list item</description>
+		<icon>li.gif</icon>
+		<intag>&lt;li&gt;</intag>
+		<outtag>&lt;/li&gt;</outtag>
+		<keystroke></keystroke>
+		<keymodifier></keymodifier>
+		<action></action>
+	</item>
+	<item id="37">
+		<name>hr</name>
+		<description>horizontal rule</description>
+		<icon>hr.gif</icon>
+		<intag>&lt;hr&gt;</intag>
+		<outtag></outtag>
+		<keystroke></keystroke>
+		<keymodifier></keymodifier>
+		<action></action>
+	</item>
+	<item id="38">
+		<name>Info</name>
+		<description>information about this software</description>
+		<icon>about.gif</icon>
+		<intag></intag>
+		<outtag></outtag>
+		<keystroke></keystroke>
+		<keymodifier></keymodifier>
+		<action>5</action>
+	</item>
+	<item id="39">
+		<name>Remove Tag</name>
+		<description>remove all adjacent tags to current selection</description>
+		<icon>remtag.gif</icon>
+		<intag></intag>
+		<outtag></outtag>
+		<keystroke></keystroke>
+		<keymodifier></keymodifier>
+		<action>26</action>
+	</item>
+	<item id="40">
+		<action>101</action>
+	</item>
+	<item id="41">
+		<action>102</action>
+	</item>
+	<item id="42">
+		<action>103</action>
+	</item>
+	<item id="43">
+		<action>100</action>
+	</item>
+	<item id="44">
+		<name>test</name>
+		<description>test custom tag list</description>
+		<icon></icon>
+		<intag></intag>
+		<outtag></outtag>
+		<keystroke></keystroke>
+		<keymodifier></keymodifier>
+		<action>mytag|&lt;mytag&gt;|&lt;/mytag&gt;||small|&lt;small&gt;|&lt;/small&gt;||HR|&lt;hr&gt;| </action>
+	</item>	
+</jxedata>

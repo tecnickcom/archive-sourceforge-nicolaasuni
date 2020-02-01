@@ -1,0 +1,136 @@
+/* ------------------------------------------------------------------
+GENERAL TAGS
+ ------------------------------------------------------------------*/
+* {
+	font-family : "Courier New", Courier, monospace;
+}
+
+body {
+	background-color : White;
+	color : Black;
+	margin-bottom : 10px;
+	margin-left : 10px;
+	margin-right : 10px;
+	margin-top : 10px;
+}
+
+
+small {
+	font-size : 0.7em;
+}
+
+a {
+	text-decoration: none;
+	color : Blue;
+}
+
+a:visited {
+	text-decoration: none;
+	color : Maroon;
+}
+
+a:hover {
+	text-decoration: underline;
+	color : Red;
+}
+
+input {
+	font-family: 'Courier New', Courier, monospace;
+}
+
+i.path {
+	font-family : "Courier New", Courier, monospace;
+	color : Maroon;
+	font-style : normal;
+}
+
+i.menu {
+	font-family : "Courier New", Courier, monospace;
+	color : Green;
+	font-style : normal;
+}
+
+i.constant {	
+	font-family : "Courier New", Courier, monospace;
+	color : Navy;
+	font-style : normal;
+}
+
+ /*  table diagrams */
+.level1 {
+	background-color : #EEFFEE;
+	
+}
+
+.level2{
+	background-color : #FFFFEE;
+}
+
+.level3{
+	background-color : #EEFFFF;
+}
+
+/* ------------------------------------------------------------------
+EDGE TABLE
+ ------------------------------------------------------------------*/
+TABLE.edge{
+
+}
+
+TR.edge{
+}
+
+TH.edge{
+
+}
+
+TD.edge{
+
+}
+
+/* ------------------------------------------------------------------
+FILL TABLE
+ ------------------------------------------------------------------*/
+TABLE.fill {
+	border : none;
+}
+
+TR.fill {
+}
+
+TH.fill {
+}
+
+TD.fill {
+}
+
+/* --- FILL TABLE VARIANTS --- 
+ O=odd; E=even;  XX = row | column
+*/
+TR.fillO {
+}
+
+TR.fillE {
+}
+
+TH.fillO {
+}
+
+TH.fillE {
+}
+
+TD.fillOO {
+}
+
+TD.fillOE {
+}
+
+TD.fillEO {
+}
+
+TD.fillEE {
+}
+
+/* ------------------------------------------------------------------
+END
+ ------------------------------------------------------------------*/

@@ -1,0 +1,2 @@
+This is a sample resource text file 
+to demonstrate AIOCP capabilities.

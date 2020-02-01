@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="67"
+   name=""
+   committed-date="2006-02-04T11:21:31.739878Z"
+   url="svn://192.168.1.31:3690/tecnick.com/java/_OPENSOURCE/junitconv/src/com/tecnick/junitconv"
+   last-author="nick"
+   kind="dir"
+   uuid="ce28f4bb-3f04-0410-a764-e6d3cd879b99"
+   repos="svn://192.168.1.31:3690/tecnick.com"
+   revision="112"/>
+<entry
+   committed-rev="67"
+   name="JUnitConv.java"
+   text-time="2006-05-28T12:43:45.406250Z"
+   committed-date="2006-02-04T11:21:31.739878Z"
+   checksum="54eb36d05c1addaad4332b2568815d6c"
+   last-author="nick"
+   kind="file"
+   prop-time="2006-05-28T12:43:45.296875Z"/>
+<entry
+   committed-rev="67"
+   name="GroupBox.java"
+   text-time="2006-05-28T12:43:45.500000Z"
+   committed-date="2006-02-04T11:21:31.739878Z"
+   checksum="6b07fcb6e1f4675b137e6caa4bc74468"
+   last-author="nick"
+   kind="file"
+   prop-time="2006-05-28T12:43:45.343750Z"/>
+</wc-entries>

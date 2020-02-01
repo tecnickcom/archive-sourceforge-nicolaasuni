@@ -1,0 +1,38 @@
+PayPal CONFIGURATION
+www.paypal.com
+
+
+1. Go to www.paypal.com and signup for a Premier/Business Account.
+
+2. setup the following variables on shared/payments/cp_paypal.php:
+
+$pp_paypal_id : This is your PayPal ID, or email address, where payments
+will be sent. This email address must be confirmed and linked to your
+Verified Business or Premier account.
+
+$pp_image_url : The internet URL of the 150 by 50 pixel image you would like
+to use as your logo. This is optional; if omitted, your customer will see
+your Business Name (if you have a Business account) or email address (if you
+have a Premier)
+
+
+3. Set up IPN to your account:
+    3.1. Log in to your Business or Premier PayPal1 account
+    3.2. Go to the 'Profile' subtab
+    3.3. Click on the 'Instant Payment Notification Preferences' link in the
+'Selling Preferences' column
+    3.4. Click Edit
+    3.5. Check the box and enter the URL at which you would like to receive
+your IPN Notifications:
+(http://www.yoursite.com/shared/payment/req_paypal_server.php)
+		3.6. check the optional data transfer
+    3.7. Click Save
+
+4. Go to AIOCP Business->Config->Payments
+    4.1 select credit card module (or create new one)
+    4.2 select the paypal module
+    4.3 check the enable flag
+    4.4 insert name and description for each enabled language
+    4.5 save (update or add by case).
+
+5. Test the payment system.

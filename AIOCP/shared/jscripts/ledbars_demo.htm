@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+
+<head>
+	<title>AIOCP - ledbars.js DEMO</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="aiocp_level" content="1" />
+	<meta name="description" content="ledbars.js demostrative application" />
+	<meta name="author"      content="Nicola Asuni - Tecnick.com LTD" />
+	<meta name="reply-to"    content="info@tecnick.com" />
+	<meta name="keywords"    content="Javascript,example,demo,ledbars" />
+</head>
+
+<body background="../../images/backgrounds/cp/background_cp.gif" bgcolor="#575757" text="#FFFFFF" link="#00FF00" vlink="#00FF00" alink="#FFFF00">
+
+<script language="JavaScript" src="ledbars.js" type="text/javascript"></script>
+
+<script language="JavaScript"type="text/javascript">
+//<![CDATA[
+//horizontal leds
+for(lx=0; lx<=8; lx++){
+	CreateHLedDisplay(0, 2, 2, 2, 2);
+	ShowLedValue(lx, lx, 8);
+	document.write('<br>');
+}
+
+//vertical leds
+document.write('<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr>');
+for(lx=0; lx<=8; lx++){
+    document.write('<td>');
+	CreateVLedDisplay(1, 2, 2, 2, 2);
+	document.write('</td>');
+	ShowLedValue(lx+9, lx, 8);
+}
+document.write('</tr></table>');
+
+//round leds
+for(lx=0; lx<=8; lx++){
+	CreateHLedDisplay(2, 2, 2, 2, 2);
+	ShowLedValue(lx+18, lx, 8);
+	document.write('<br>');
+}
+//]]>
+</script>
+
+</body>
+</html>

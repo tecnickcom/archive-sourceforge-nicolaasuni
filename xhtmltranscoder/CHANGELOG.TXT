@@ -1,0 +1,27 @@
+1.0.007 (2006-02-03)
+	- imports were reorganized
+	- XHTMLElements class were redesigned
+	- the source of following classes were removed from src directory and added as
+		.class resources on res directory.
+		- com.tecnick.htmlutils.htmlentities.HTMLEntities.class 
+			(http://htmlentities.sourceforge.net)
+		- com.tecnick.htmlutils.htmlstrings.HTMLStrings.class
+			(http://htmlstrings.sourceforge.net)
+		- com.tecnick.xmlconfigreader.XMLConfigReader.class 
+			(http://xmlconfigreader.sourceforge.net)
+1.0.006 (2005-03-30)
+	- config files may be located on jar file
+	- jar file were added on www directory
+1.0.005 (2005-03-24)
+	- fixed getProperty Exception when used in applet context
+	- java.net release
+1.0.004 (2005-03-20)
+	- minor bugfix
+1.0.003 (2005-03-20)
+	- fixed numeric entities recognition
+1.0.002 (2005-03-20)
+	- improved unhtmlentities function
+1.0.001 (2005-03-20)
+	- improved charset conversion
+1.0.000 (2005-03-15)
+	- sourceforge release
